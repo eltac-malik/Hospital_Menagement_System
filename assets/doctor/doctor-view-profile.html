@@ -13,10 +13,18 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="../style/doctor/doctor-view-profile.css" />
     <link rel="stylesheet" href="../style/global.css" />
     <link rel="stylesheet" href="../style/root.css" />
-    <title>Document</title>
+    <title>Doctor Profile</title>
   </head>
   <body>
     <div class="zb-container d-center-column">
@@ -50,7 +58,7 @@
 
         <div class="zb-d-contact-box">
           <!-- like -->
-          <div class="zb-d-contact-row">
+          <div class="zb-d-contact-row d-start-y">
             <div class="zb-d-contact-col-1 d-center">
               <i class="fa-solid fa-thumbs-up"></i>
             </div>
@@ -59,7 +67,7 @@
             </div>
           </div>
           <!-- Feedback -->
-          <div class="zb-d-contact-row">
+          <div class="zb-d-contact-row d-start-y">
             <div class="zb-d-contact-col-1 d-center">
               <i class="fa-regular fa-comment"></i>
             </div>
@@ -68,7 +76,7 @@
             </div>
           </div>
           <!-- Address -->
-          <div class="zb-d-contact-row">
+          <div class="zb-d-contact-row d-start-y">
             <div class="zb-d-contact-col-1 d-center">
               <i class="fa-solid fa-location-dot"></i>
             </div>
@@ -77,7 +85,7 @@
             </div>
           </div>
           <!-- Price -->
-          <div class="zb-d-contact-row">
+          <div class="zb-d-contact-row d-start-y">
             <div class="zb-d-contact-col-1 d-center">
               <i class="fa-solid fa-money-check-dollar"></i>
             </div>
@@ -93,16 +101,26 @@
             <div class="zb-c-box d-center zb-c-hover-green">
               <i class="fa-regular fa-message"></i>
             </div>
-            <div class="zb-c-box d-center zb-c-hover-green">
+            <div
+              class="zb-c-box zb-c-box-call d-center zb-c-hover-green"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
               <i class="fa-solid fa-phone-flip"></i>
             </div>
-            <div class="zb-c-box d-center zb-c-hover-green">
+            <div
+              class="zb-c-box zb-c-box-call d-center zb-c-hover-green"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
               <i class="fa-sharp fa-solid fa-video"></i>
             </div>
           </div>
 
           <div class="zb-d-booking d-center">
-            <a class="zb-d-booking-btn d-center" href="/"> BOOK APPOINTMENT </a>
+            <a class="zb-d-booking-btn d-center" onclick="getBooking()">
+              BOOK APPOINTMENT
+            </a>
           </div>
         </div>
       </div>
@@ -110,7 +128,11 @@
       <div class="zb-doctor-container-row-2">
         <div class="zb-d-c-row-2-header">
           <div class="zb-r-2-header">
-            <a class="zb-r-2-header-link d-center zb-font" href="/">Overview</a>
+            <a
+              class="zb-r-2-header-link d-center zb-font"
+              onclick="showDoctorDetails('zb-overview-d')"
+              >Overview</a
+            >
           </div>
           <div class="zb-r-2-header">
             <a class="zb-r-2-header-link d-center zb-font" href="/">Location</a>
@@ -119,12 +141,16 @@
             <a class="zb-r-2-header-link d-center zb-font" href="/">Reviews</a>
           </div>
           <div class="zb-r-2-header">
-            <a class="zb-r-2-header-link d-center zb-font" href="/">Business Hours</a>
+            <a
+              class="zb-r-2-header-link d-center zb-font"
+              onclick="showDoctorDetails('zb-business-hours')"
+              >Business Hours</a
+            >
           </div>
         </div>
 
         <div class="zb-d-c-row-2-context">
-          <div class="zb-overview">
+          <div id="zb-overview-d" class="zb-overview zb-d-fn">
             <h2>About Me</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -135,70 +161,94 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            
-              <div class="zb-row">
-                <div class="col-md-6 offset-md-3">
-                  <h2>Education</h2>
-                  <ul class="zb-timeline">
-                    <li>
-                      <a class="zb-font zb-text-decoration-none zb-links" target="_blank" href="/">American Dental Medical University</a>
-                      <p>BDS</p>
-                      <p>1998 - 2003</p>
-                    </li>
-                    <li>
-                      <a class="zb-font zb-text-decoration-none zb-links" href="#">American Dental Medical University</a>
-                      <p>MDS</p>
-                      <p>2003 - 2005</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
 
             <div class="zb-row">
-              <div class="col-md-6 offset-md-3">
-                <h2>Work & Experience</h2>
-                <ul class="zb-timeline">
-                  <li>
-                    <a class="zb-font zb-text-decoration-none zb-links" target="_blank" href="/">Glowing Smiles Family Dental Clinic</a>
-                    <p>2010 - Present (5 years)</p>
-                  </li>
-                  <li>
-                    <a class="zb-font zb-text-decoration-none zb-links" href="/">Comfort Care Dental Clinic</a>
-                    <p>2007 - 2010 (3 years)</p>
-                  </li>
-                  <li>
-                    <a class="zb-font zb-text-decoration-none zb-links" href="/">Dream Smile Dental Practice</a>
-                    <p>2005 - 2007 (2 years)</p>
-                  </li>                  
-                </ul>
-              </div>
+              <h2>Education</h2>
+              <ul class="zb-timeline">
+                <li>
+                  <a
+                    class="zb-font zb-text-decoration-none zb-links"
+                    target="_blank"
+                    href="/"
+                    >American Dental Medical University</a
+                  >
+                  <p>BDS</p>
+                  <p>1998 - 2003</p>
+                </li>
+                <li>
+                  <a class="zb-font zb-text-decoration-none zb-links" href="#"
+                    >American Dental Medical University</a
+                  >
+                  <p>MDS</p>
+                  <p>2003 - 2005</p>
+                </li>
+              </ul>
             </div>
 
             <div class="zb-row">
-              <div class="col-md-6 offset-md-3">
-                <h2>Awards</h2>
-                <ul class="zb-timeline">
-                  <li>
-                    <p>July 2019</p>
-                    <h3>Humanitarian Award</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                  </li>
-                  <li>
-                    <p>March 2011</p>
-                    <h3>Certificate for International Volunteer Service</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                  </li>
-                  <li>
-                    <p>May 2008</p>
-                    <h3>The Dental Professional of The Year Award</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                  </li>
-                </ul>
-              </div>
+              <h2>Work & Experience</h2>
+              <ul class="zb-timeline">
+                <li>
+                  <a
+                    class="zb-font zb-text-decoration-none zb-links"
+                    target="_blank"
+                    href="/"
+                    >Glowing Smiles Family Dental Clinic</a
+                  >
+                  <p>2010 - Present (5 years)</p>
+                </li>
+                <li>
+                  <a class="zb-font zb-text-decoration-none zb-links" href="/"
+                    >Comfort Care Dental Clinic</a
+                  >
+                  <p>2007 - 2010 (3 years)</p>
+                </li>
+                <li>
+                  <a class="zb-font zb-text-decoration-none zb-links" href="/"
+                    >Dream Smile Dental Practice</a
+                  >
+                  <p>2005 - 2007 (2 years)</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="zb-row">
+              <h2>Awards</h2>
+              <ul class="zb-timeline">
+                <li>
+                  <p>July 2019</p>
+                  <h3>Humanitarian Award</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque scelerisque diam non nisi semper, et elementum lorem
+                    ornare. Maecenas placerat facilisis mollis. Duis sagittis
+                    ligula in sodales vehicula....
+                  </p>
+                </li>
+                <li>
+                  <p>March 2011</p>
+                  <h3>Certificate for International Volunteer Service</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque scelerisque diam non nisi semper, et elementum lorem
+                    ornare. Maecenas placerat facilisis mollis. Duis sagittis
+                    ligula in sodales vehicula....
+                  </p>
+                </li>
+                <li>
+                  <p>May 2008</p>
+                  <h3>The Dental Professional of The Year Award</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque scelerisque diam non nisi semper, et elementum lorem
+                    ornare. Maecenas placerat facilisis mollis. Duis sagittis
+                    ligula in sodales vehicula....
+                  </p>
+                </li>
+              </ul>
             </div>
             <h2>Services</h2>
-            <div class="zb-services-box">           
-
+            <div class="zb-services-box">
               <div class="zb-d-contact-row zb-service-boxes">
                 <div class="zb-d-contact-col-1 d-center">
                   <i class="fa-solid fa-arrow-right"></i>
@@ -249,8 +299,7 @@
               </div>
             </div>
             <h2>Specializations</h2>
-            <div class="zb-services-box">           
-
+            <div class="zb-services-box">
               <div class="zb-d-contact-row zb-service-boxes">
                 <div class="zb-d-contact-col-1 d-center">
                   <i class="fa-solid fa-arrow-right"></i>
@@ -301,9 +350,79 @@
               </div>
             </div>
           </div>
+
+          <div id="zb-business-hours" class="zb-d-fn d-center">
+            <table class="zb-b-h-table">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="zb-t-th">
+                      <h4>Today</h4>
+                      <p>23 Feb 2023</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="zb-t-th">
+                      <span class="zb-b-h-open zb-b-h-font">Open Now</span>
+                      <p>07:00 AM - 09:00 PM</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>
+                    <span class="zb-b-h-close zb-b-h-font">Closed</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="../app/doctor/doctor-view-profile.js"></script>
   </body>
