@@ -3,6 +3,7 @@ let doctorCards = document.getElementById("cards")
 let doctors = [
     {
         name: 'Dr. Ruby Perrin',
+        hosp: "Massachusetts General Hospital",
         spec: "MDS - Periodontology and Oral Implantology, BDS",
         image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-01.jpg',
         depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-05.png",
@@ -16,6 +17,7 @@ let doctors = [
     },
         {
         name: 'Dr. Jessica Wong',
+        hosp: "Johns Hopkins Hospital",
         spec: "MD - Dermatology, MBBS",
         image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-03.jpg',
         depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-02.png",
@@ -29,6 +31,7 @@ let doctors = [
         },
         {
         name: 'Dr. James Smith',
+        hosp: "Duke University Hospital",
         spec: "MD - Cardiology, MBBS",
         image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-04.jpg',
         depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-04.png",
@@ -42,6 +45,7 @@ let doctors = [
         },
         {
         name: 'Dr. Maria Rodriguez',
+        hosp: "Mayo Clinic",
         spec: "MD - Obstetrics and Gynecology, MBBS",
         image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-05.jpg',
         depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-01.png",
@@ -55,6 +59,7 @@ let doctors = [
         },
         {
         name: 'Dr. David Kim',
+        hosp: "Cleveland Clinic",
         spec: "MD - Neurology, MBBS",
         image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-06.jpg',
         depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-07.png",
@@ -68,6 +73,7 @@ let doctors = [
         },
         {
             name: 'Dr. Jonathan Williams',
+            hosp: "University of California, San Francisco Medical Center",
             spec: "MD - Oncology, MBBS",
             image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-07.jpg',
             depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-08.png",
@@ -81,6 +87,7 @@ let doctors = [
             },
             {
             name: 'Dr. Sarah Park',
+            hosp: "NewYork-Presbyterian Hospital",
             spec: "MD - Pediatrics, MBBS",
             image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-08.jpg',
             depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-03.png",
@@ -94,6 +101,7 @@ let doctors = [
             },
             {
             name: 'Dr. Michael Johnson',
+            hosp: "Stanford Health Care",
             spec: "MD - Pulmonology, MBBS",
             image : 'https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-09.jpg',
             depimg: "https://doccure.dreamguystech.com/html/template/assets/img/specialities/specialities-06.png",
@@ -122,6 +130,7 @@ function profileWriter(e){
         </div>
         <div class="doc-info-cont">
         <h4 class="doc-name"><a href="#">${e.name}</a></h4>
+        <p class="doc-hospital">${e.hosp}</p>
         <p class="doc-speciality">${e.spec}</p>
         <h5 class="doc-department"><img src="${e.depimg}" class="img-fluid" alt="Speciality">${e.dep}</h5>
         <div class="rating">
@@ -187,19 +196,3 @@ profileWriter()
 
 
 
-
-function searchDoctors() {
-    const searchInput = document.getElementById("searcher");
-    const namesList = document.getElementById("doctors");
-  
-    const filteredNames = names.filter(name => {
-      return name.name.toLowerCase().includes(searchInput.value.toLowerCase());
-    });
-  
-    namesList.innerHTML = "";
-    filteredNames.forEach(name => {
-      const li = document.createElement("li");
-      li.textContent = name.name;
-      namesList.appendChild(li);
-    });
-  }
