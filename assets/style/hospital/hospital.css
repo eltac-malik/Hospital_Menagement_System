@@ -6,6 +6,13 @@
   body{
     
     font-family: 'Poppins', sans-serif;
+    
+      display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+       justify-content: center;
+      align-items: center;
+      
     }
 
   .AShospital-card {
@@ -61,3 +68,12 @@
     font-size:medium;
   }
   
+ .img-fluid2{
+    object-fit:cover;
+    width: 100px;
+    
+  }
+
+  .ASaddress{
+    font-size: 10px;
+  }
