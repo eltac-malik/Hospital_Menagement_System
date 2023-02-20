@@ -115,3 +115,12 @@ font-family: 'Poppins', sans-serif;
     color:var(--page-secondary-color);
     background-color: var(--alternate-color);
 }
+
+.docname{
+    cursor: pointer;
+}
+
+.docname:hover{
+    color: var(--accent-color);
+    border-bottom: solid 1 px var(--accent-color);
+}
