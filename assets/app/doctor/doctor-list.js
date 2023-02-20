@@ -521,8 +521,8 @@ let doctors = [
       "Behavioral and Mental Health Assessments",
       "Acute Illness and Injury Care",
       "Chronic Condition Management",
-      ],
-      specialization: [
+    ],
+    specialization: [
       "General Pediatrics",
       "Pediatric Cardiology",
       "Pediatric Endocrinology",
@@ -533,10 +533,10 @@ let doctors = [
       "Pediatric Neurology",
       "Pediatric Pulmonology",
       "Adolescent Medicine",
-      ],
-      overview: {
-        about: "Lorem ipsum dolor sit amet",
-      },
+    ],
+    overview: {
+      about: "Lorem ipsum dolor sit amet",
+    },
     name: "Dr. Sarah Park",
     hosp: "NewYork-Presbyterian Hospital",
     spec: "MD - Pediatrics, MBBS",
@@ -596,16 +596,16 @@ let doctors = [
       "Thoracentesis",
       "Pulmonary Rehabilitation",
       "Smoking Cessation",
-      ],
-      specialization: [
+    ],
+    specialization: [
       "General Pulmonology",
       "Critical Care Medicine",
       "Interventional Pulmonology",
       "Sleep Medicine",
-      ],   
-      overview: {
-        about: "Lorem ipsum dolor sit amet",
-      }, 
+    ],
+    overview: {
+      about: "Lorem ipsum dolor sit amet",
+    },
     name: "Dr. Michael Johnson",
     hosp: "Stanford Health Care",
     spec: "MD - Pulmonology, MBBS",
@@ -689,7 +689,7 @@ function profileWriter(e) {
         </ul>
         </div>
         <div class="clinic-booking">
-        <a class="view-pro-btn" style=" text-decoration: none;" href="#">View Profile</a>
+        <a class="view-pro-btn" style=" text-decoration: none;" href="#" onclick='getDoctorProfile(${e.doctorId})'>View Profile</a>
         <a class="apt-btn" style=" text-decoration: none;" href="#">Book Appointment</a>
         </div>
         </div>
@@ -700,3 +700,18 @@ function profileWriter(e) {
   });
 }
 profileWriter();
+
+// for Doctor view profile
+
+localStorage.setItem("doctors", JSON.stringify(doctors));
+
+function getDoctorProfile(id) {
+  let allDoctors = JSON.parse(localStorage.getItem("doctors"));
+
+  let currentDoctor = allDoctors.find((item) => item.doctorId === id);
+  localStorage.setItem("currentDoctor", JSON.stringify(currentDoctor));
+
+  currentDoctor
+    ? (window.location.href = "../doctor/doctor-view-profile.html")
+    : alert("It is wrong");
+}
