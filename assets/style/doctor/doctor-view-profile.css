@@ -153,7 +153,7 @@
 }
 
 .zb-r-2-header:hover {
-  border-bottom: 3px solid silver;
+  border-bottom: 3px solid silver !important;
 }
 
 .zb-d-c-row-2-context {
@@ -294,7 +294,7 @@ p {
 
 .zb-font {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .zb-color,
@@ -461,13 +461,15 @@ td:last-child {
   height: 100%;
 }
 
-/* sonda zb-overview-d none goturulecekkkkkk */
-#zb-overview-d {
-  display: none;
+#overview-h {
+  color: var(--button-secondary-color);
+  border-bottom: 3px solid var(--button-secondary-color);
 }
+
 #zb-location {
   width: 100%;
   height: auto;
+  display: none;
 }
 
 .zb-location-r {
@@ -477,10 +479,53 @@ td:last-child {
   border-radius: 5px;
   margin-top: 15px;
   padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 .zb-location-info-box {
   width: 50%;
+}
+
+.zb-hospital-time {
+  width: 25%;
+  padding: 0 20px;
+}
+
+.zb-h-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.zb-h-day {
+  font-weight: bold;
+}
+
+.zb-consulting-price {
+  width: 25%;
+  padding: 0 20px;
+}
+
+.zb-consulting-price p {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .zb-location-info-box {
+    width: 100%;  
+    text-align: left;
+  }
+
+  .zb-hospital-time {
+    width: 100%;
+  }
+    
+  .zb-consulting-price {
+    width: 100%;
+  }
   
+  .zb-consulting-price p {
+    text-align: left;
+  }
 }

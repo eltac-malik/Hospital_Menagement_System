@@ -219,8 +219,8 @@ function doctorAwardWriter() {
   awards.forEach((e) => {
     zb_awards.innerHTML += `
     <li>
-      <p>${e.year}</p>
-      <h4>${e.awardName}</h4>
+      <p style="color: blue">${e.year}</p>
+      <h6>${e.awardName}</h6>
       <p>${e.awardAbout}</p>
     </li>
   `;
@@ -264,15 +264,26 @@ function doctorSpecializationWriter() {
 }
 doctorSpecializationWriter();
 
-function showDoctorDetails(targetId) {
+function showDoctorDetails(targetId, headerId) {
   let zb_details = document.querySelectorAll(".zb-d-fn");
-  for (let i = 0; i < zb_details.length; i++) {
-    if (zb_details[i].id === targetId) {
-      zb_details[i].style.display = "flex";
+
+  zb_details.forEach((e) => {
+    if (e.id === targetId) {
+      e.style.display = "flex";
     } else {
-      zb_details[i].style.display = "none";
+      e.style.display = "none";
     }
-  }
+  });
+
+  let zb_r_2_header = document.querySelectorAll(".zb-r-2-header");
+  zb_r_2_header.forEach((e) => {
+    e.style.color = 'var(--text-primary-color)';
+    e.style.borderBottom = '1px solid silver';
+  })
+
+  let activeHeader = document.getElementById(headerId);
+  activeHeader.style.color = 'var(--button-secondary-color)';
+  activeHeader.style.borderBottom = "3px solid var(--button-secondary-color)";
 }
 
 function getBooking() {

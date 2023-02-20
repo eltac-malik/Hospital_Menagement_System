@@ -705,17 +705,6 @@ profileWriter();
 
 localStorage.setItem("doctors", JSON.stringify(doctors));
 
-function getDoctorProfile(id) {
-  let allDoctors = JSON.parse(localStorage.getItem("doctors"));
-
-  let currentDoctor = allDoctors.find((item) => item.doctorId === id);
-  localStorage.setItem("currentDoctor", JSON.stringify(currentDoctor));
-
-  currentDoctor
-    ? (window.location.href = "../doctor/doctor-view-profile.html")
-    : alert("It is wrong");
-}
-
 function createDoctorProfile(id) {
   let allDoctors = JSON.parse(localStorage.getItem("doctors"));
 
