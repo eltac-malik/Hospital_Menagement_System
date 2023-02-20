@@ -461,3 +461,26 @@ td:last-child {
   height: 100%;
 }
 
+/* sonda zb-overview-d none goturulecekkkkkk */
+#zb-overview-d {
+  display: none;
+}
+#zb-location {
+  width: 100%;
+  height: auto;
+}
+
+.zb-location-r {
+  width: 100%;
+  height: auto;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 15px 0;
+}
+
+
+.zb-location-info-box {
+  width: 50%;
+  
+}
