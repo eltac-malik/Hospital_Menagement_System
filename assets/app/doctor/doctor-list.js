@@ -636,7 +636,7 @@ function profileWriter(e) {
         </a>
         </div>
         <div class="doc-info-cont">
-        <h4 class="doc-name"><a href="#">${e.name}</a></h4>
+        <h4 class="doc-name"><a href="#" onclick='getDoctorProfile(${e.doctorId})'>${e.name}</a></h4>
         <p class="doc-hospital">${e.hosp}</p>
         <p class="doc-speciality">${e.spec}</p>
         <h5 class="doc-department"><img src="${e.depimg}" class="img-fluid" alt="Speciality">${e.dep}</h5>
