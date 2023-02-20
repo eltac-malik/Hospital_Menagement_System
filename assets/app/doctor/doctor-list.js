@@ -636,7 +636,7 @@ function profileWriter(e) {
         </a>
         </div>
         <div class="doc-info-cont">
-        <h4 class="doc-name"><a href="#" onclick='getDoctorProfile(${e.doctorId})'>${e.name}</a></h4>
+        <h4 class="doc-name"><a href="#" onclick='createDoctorProfile(${e.doctorId}); getDoctorProfile()'>${e.name}</a></h4>
         <p class="doc-hospital">${e.hosp}</p>
         <p class="doc-speciality">${e.spec}</p>
         <h5 class="doc-department"><img src="${e.depimg}" class="img-fluid" alt="Speciality">${e.dep}</h5>
@@ -689,8 +689,8 @@ function profileWriter(e) {
         </ul>
         </div>
         <div class="clinic-booking">
-        <a class="view-pro-btn" style=" text-decoration: none;" href="#" onclick='getDoctorProfile(${e.doctorId})'>View Profile</a>
-        <a class="apt-btn" style=" text-decoration: none;" href="#">Book Appointment</a>
+        <a class="view-pro-btn" style=" text-decoration: none;" href="#" onclick='createDoctorProfile(${e.doctorId}); getDoctorProfile()'>View Profile</a>
+        <a class="apt-btn" style=" text-decoration: none;" href="#" onclick='createDoctorProfile(${e.doctorId}); getBooking()'>Book Appointment</a>
         </div>
         </div>
         </div>
@@ -714,4 +714,19 @@ function getDoctorProfile(id) {
   currentDoctor
     ? (window.location.href = "../doctor/doctor-view-profile.html")
     : alert("It is wrong");
+}
+
+function createDoctorProfile(id) {
+  let allDoctors = JSON.parse(localStorage.getItem("doctors"));
+
+  let currentDoctor = allDoctors.find((item) => item.doctorId === id);
+  localStorage.setItem("currentDoctor", JSON.stringify(currentDoctor));
+}
+
+function getDoctorProfile() {
+  window.location.href = "../doctor/doctor-view-profile.html";
+}
+
+function getBooking() {
+  window.location.href = "../doctor/docor-book.html";
 }
