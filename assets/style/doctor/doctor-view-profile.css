@@ -529,3 +529,14 @@ td:last-child {
     text-align: left;
   }
 }
+
+.zb-modal-clinic-galary {
+  width: 500;
+  height: auto;
+  overflow: hidden;
+}
+
+.zb-modal-clinic-galary  img{
+  width: 100%;
+  height: 100%;
+}

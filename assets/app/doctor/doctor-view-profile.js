@@ -11,6 +11,16 @@ let zb_overview = document.querySelector(".zb-overview");
 
 let currentDoctor = JSON.parse(localStorage.getItem("currentDoctor"));
 
+let clinicGalaryArr = {
+  showGalary03:
+    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg",
+  showGalary02:
+    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg",
+  showGalary01:
+    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg",
+  showGalary04:
+    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg",
+};
 function doctorProfileWriter() {
   zb_doctor_container_row_1.innerHTML = `
   <div class="zb-d-col-1">
@@ -47,8 +57,10 @@ function doctorProfileWriter() {
             <!-- clinic galary -->
             <ul class="zb-clinic-gallery">
               <li>
-                <a
-                  href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg"
+                <a data-toggle="modal"
+                data-target="#showGalary03"
+                onclick="showClinicGalary('showGalary03')"
+                href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg"
                   data-fancybox="gallery"
                 >
                   <img
@@ -58,7 +70,9 @@ function doctorProfileWriter() {
                 </a>
               </li>
               <li>
-                <a
+                <a ata-toggle="modal"
+                data-target="#showGalary02"
+                onclick="showClinicGalary('showGalary02')"
                   href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg"
                   data-fancybox="gallery"
                 >
@@ -69,7 +83,9 @@ function doctorProfileWriter() {
                 </a>
               </li>
               <li>
-                <a
+                <a ata-toggle="modal"
+                data-target="#showGalary01"
+                onclick="showClinicGalary('showGalary01')"
                   href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg"
                   data-fancybox="gallery"
                 >
@@ -80,7 +96,9 @@ function doctorProfileWriter() {
                 </a>
               </li>
               <li>
-                <a
+                <a ata-toggle="modal"
+                data-target="#showGalary04"
+                onclick="showClinicGalary('showGalary04')"
                   href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg"
                   data-fancybox="gallery"
                 >
@@ -277,12 +295,12 @@ function showDoctorDetails(targetId, headerId) {
 
   let zb_r_2_header = document.querySelectorAll(".zb-r-2-header");
   zb_r_2_header.forEach((e) => {
-    e.style.color = 'var(--text-primary-color)';
-    e.style.borderBottom = '1px solid silver';
-  })
+    e.style.color = "var(--text-primary-color)";
+    e.style.borderBottom = "1px solid silver";
+  });
 
   let activeHeader = document.getElementById(headerId);
-  activeHeader.style.color = 'var(--button-secondary-color)';
+  activeHeader.style.color = "var(--button-secondary-color)";
   activeHeader.style.borderBottom = "3px solid var(--button-secondary-color)";
 }
 
@@ -319,4 +337,19 @@ function callDoctor() {
     </div>
   </div>
       `;
+}
+
+function showClinicGalary(dataId) {
+  let clinicDataId = clinicGalaryArr[dataId];
+  document.body.innerHTML += `
+    <!-- Modal -->
+    <div class="modal fade" id="${dataId}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="zb-modal-card zb-modal-clinic-galary"> 
+      <img src="${clinicDataId}" alt="Feature"/>
+    </div>
+      </div>
+    </div>
+    `;
+    console.log(dataId)
 }
