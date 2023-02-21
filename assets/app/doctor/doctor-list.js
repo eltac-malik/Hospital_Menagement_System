@@ -1,4 +1,7 @@
 let doctorCards = document.getElementById("cards");
+const searchBar = document.getElementById("searchBar");
+
+
 
 let doctors = [
   {
@@ -719,3 +722,21 @@ function getDoctorProfile() {
 function getBooking() {
   window.location.href = "../doctor/docor-book.html";
 }
+
+
+// Searchbar DOCTOR-LIST PAGE
+
+searchBar.addEventListener("keyup", (e)=>{
+const searchPerson = e.target.value;
+
+const filteredDoc = doctors.filter( person =>{
+
+ return ( person.name.toLowerCase().includes(searchPerson) || 
+ person.hosp.toLowerCase().includes(searchPerson)
+ );
+});
+
+console.log(filteredDoc)
+})
+
+
