@@ -326,7 +326,7 @@ function callDoctor() {
     <p class="zb-connecting"> Connecting...</p>
     <div class="d-center">
     <div class="zb-modal-hangup-icon zb-m-call-icon-font d-center">
-    <i class="fa-solid fa-phone"></i>
+    <i class="fa-solid fa-phone-slash"></i>
     </div>
     <div class="zb-modal-call-icon zb-m-call-icon-font d-center">
     <i class="fa-solid fa-phone"></i>
