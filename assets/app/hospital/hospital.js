@@ -6,7 +6,8 @@
 // })
     
 function fun (){
-window.location.href="doctor-cards.html"
+// window.location.href="doctor-cards.html"
+setTimeout(()=>window.location.href="doctor-cards.html", 500);
 }
 
 
