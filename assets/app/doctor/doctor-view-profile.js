@@ -259,13 +259,21 @@ function callDoctor() {
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="zb-modal-card">
+    <div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
     <div class="zb-modal-img">
     <img
                   class="zb-d-image"
                   src="https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-02.jpg"
                   alt="Dr. Darren Elder"
                   />
+
+   
     </div>
+  </div>
     <span> Dr. Darren Elder</span>
     <p class="zb-connecting"> Connecting...</p>
     <div class="d-center">
@@ -281,6 +289,7 @@ function callDoctor() {
     </div>
   </div>
       `;
+      playAudio('/assets/audio/58584423423234.mp3') 
 }
 
 function writeClinicGalary(){
@@ -320,4 +329,15 @@ function showClinicGalary(dataId, img) {
       </div>
     </div>
     `;
+}
+
+// stop audio func
+
+function playAudio(file) {
+  var audio = new Audio(file); 
+  audio.play();
+  setTimeout(function() {
+    stopAudio(audio);
+  }, 5000);
+  return audio;
 }
