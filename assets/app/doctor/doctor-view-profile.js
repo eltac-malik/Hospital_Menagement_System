@@ -305,7 +305,7 @@ function showDoctorDetails(targetId, headerId) {
 }
 
 function getBooking() {
-  window.location.href = "../doctor/docor-book.html";
+  window.location.href = "/pages/doctor/docor-book.html";
 }
 
 function callDoctor() {
