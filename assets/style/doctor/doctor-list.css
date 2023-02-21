@@ -249,6 +249,8 @@ color: var(--accent-color);
 }
 
 .doctor-widget {
+	display: flex;
+	flex-wrap: wrap;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -259,6 +261,7 @@ color: var(--accent-color);
 	display: flex;
 }
 .doc-info-right {
+	
     margin-left: auto;
     -ms-flex: 0 0 205px;
     flex: 0 0 205px;
@@ -862,7 +865,6 @@ Doctor Profile
 .dropzone .dz-preview.dz-error:hover .dz-error-message {
 	display: none;
 }
-
 
 
 .star-light{
