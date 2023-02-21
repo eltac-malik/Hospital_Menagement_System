@@ -625,8 +625,8 @@ let doctors = [
 
 // Doctor object - dynamic adder to the page
 
-function profileWriter(e) {
-  doctors.forEach((e) => {
+function profileWriter(param) {
+  param.forEach((e) => {
     doctorCards.innerHTML += `    
         <div class="card">
         <div class="card-body">
@@ -701,7 +701,7 @@ function profileWriter(e) {
         `;
   });
 }
-profileWriter();
+profileWriter(doctors);
 
 // for Doctor view profile
 
@@ -735,21 +735,31 @@ function getBooking() {
 // })
 
 
+
+
+if(JSON.parse(localStorage.getItem("doctors")) === null){
+
+localStorage.setItem("doctors", JSON.stringify(doctors))
+
+}
+
+let filteredDoc = []
 const searchBar = document.querySelector('#searchBar');
 if (searchBar) {
   searchBar.addEventListener('keyup', (e) => {
-  
+  doctorCards.innerHTML = "";
     const searchPerson = e.target.value.toLowerCase().trim();
     if (searchPerson.length > 0) {
-      const filteredDoc = doctors.filter(person => {
+    filteredDoc = doctors.filter(person => {
         return (person.name.toLowerCase().includes(searchPerson) || person.hosp.toLowerCase().includes(searchPerson));
       });
-
+      console.log(filteredDoc)
     } else {
       console.log(doctors);
     }
-  });
 
+  });
+profileWriter(filteredDoc)
 }
 
 
