@@ -643,11 +643,11 @@ function profileWriter(param) {
         <p class="doc-speciality">${e.spec}</p>
         <h5 class="doc-department"><img src="${e.depimg}" class="img-fluid" alt="Speciality">${e.dep}</h5>
         <div class="rating">
+       <span class="star-light"> <i class="fas fa-star filled"></i>
         <i class="fas fa-star filled"></i>
         <i class="fas fa-star filled"></i>
-        <i class="fas fa-star filled"></i>
-        <i class="fas fa-star filled"></i>
-        <i class="fas fa-star"></i>
+        <i class="fas fa-star filled"></i> </span>
+        <i class="text-light-grey fas fa-star"></i> 
         <span class="d-inline-block average-rating">(17)</span>
         </div>
         <div class="clinic-details">
@@ -758,8 +758,44 @@ if (searchBar) {
       console.log(doctors);
     }
 
+    profileWriter(filteredDoc)
   });
-profileWriter(filteredDoc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
