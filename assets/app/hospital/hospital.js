@@ -1,6 +1,10 @@
-let Asbutton = document.querySelector(".Asbutton")
+//  document.querySelector(".Asbutton")
 
-function Asbutton(e){
-    e.addEventListener("onclick", e )
-    window.location.href = ""
+// .addEventListener("click", ()=> {
+//     window.location.href=".pages/hospital/doctor-cards.html"
+    
+// })
+    
+function fun(){
+window.location.href="./pages/hospital/doctor-cards.html"
 }
