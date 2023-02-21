@@ -15,6 +15,11 @@
       
     }
 
+    #AS-main{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   .AShospital-card {
     width: 250px;
     margin: 20px;
@@ -31,7 +36,7 @@
   .AShospital-card img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 150px;
     object-fit: cover;
   }
   
@@ -58,7 +63,8 @@
   .ASbutton {
     width: 11rem;
     height: 3rem;
-    margin-top: 1rem;
+    margin-top: 1rem; 
+    margin-bottom: 0;
     border: 1px solid #ddd;
     border-radius: 0.4rem;
     background-color: #025fd9;
@@ -66,6 +72,7 @@
     cursor: pointer;
     font-weight: bold;
     font-size:medium;
+    
   }
   
  .img-fluid2{
