@@ -1,17 +1,18 @@
 const efDoprofile= document.getElementById('ef-doc-profile')
 const doctorName=document.querySelector(".docname")
+let currentDoctor = JSON.parse(localStorage.getItem("currentDoctor"));
 
 
 function doctorProfileWriter() {
     efDoprofile.innerHTML=`
     <div class="efdocimg">
     <img
-      src="https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-02.jpg"
-      alt=""
+      src="${currentDoctor.image}"
+      alt="${currentDoctor.name}"
     />
   </div>
   <div class="docinfo">
-    <p class="docname" onclick="doctorBacklist()">Dr. Darren Elder</p>
+    <p class="docname" onclick="doctorBacklist()">${currentDoctor.name}</p>
     <p class="docreyting">
       <span class="doc-star">
         <i class="fas fa-star filled"></i>
@@ -21,7 +22,7 @@ function doctorProfileWriter() {
       <i class="text-light-gray fa-solid fa-star"></i> 35
     </p>
     <p class="docloc">
-      <i class="text-light-gray fa-solid fa-location-dot"></i> Newyork, USA
+      <i class="text-light-gray fa-solid fa-location-dot"></i> ${currentDoctor.location}
     </p>
   </div>
     `

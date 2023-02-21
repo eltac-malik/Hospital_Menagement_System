@@ -118,9 +118,11 @@ font-family: 'Poppins', sans-serif;
 
 .docname{
     cursor: pointer;
+    font-size: 19px;
 }
 
 .docname:hover{
     color: var(--accent-color);
-    border-bottom: solid 1 px var(--accent-color);
+    border-bottom: solid 1.5px var(--accent-color);
+    font-size: 19px;
 }
