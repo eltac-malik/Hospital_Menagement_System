@@ -5,6 +5,6 @@
     
 // })
     
-function fun(){
-window.location.href="./pages/hospital/doctor-cards.html"
+function fun (){
+window.location.href="doctor-cards.html"
 }
