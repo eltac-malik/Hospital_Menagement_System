@@ -11,16 +11,13 @@ let zb_overview = document.querySelector(".zb-overview");
 
 let currentDoctor = JSON.parse(localStorage.getItem("currentDoctor"));
 
-let clinicGalaryArr = {
-  showGalary03:
-    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg",
-  showGalary02:
-    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg",
-  showGalary01:
-    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg",
-  showGalary04:
-    "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg",
-};
+let clinicGalary = [
+  "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg",
+  "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg",
+  "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg",
+  "https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg",
+];
+
 function doctorProfileWriter() {
   zb_doctor_container_row_1.innerHTML = `
   <div class="zb-d-col-1">
@@ -55,60 +52,7 @@ function doctorProfileWriter() {
             </p>
 
             <!-- clinic galary -->
-            <ul class="zb-clinic-gallery">
-              <li>
-                <a data-toggle="modal"
-                data-target="#showGalary03"
-                onclick="showClinicGalary('showGalary03')"
-                href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg"
-                  data-fancybox="gallery"
-                >
-                  <img
-                    src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg"
-                    alt="Feature"
-                  />
-                </a>
-              </li>
-              <li>
-                <a ata-toggle="modal"
-                data-target="#showGalary02"
-                onclick="showClinicGalary('showGalary02')"
-                  href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg"
-                  data-fancybox="gallery"
-                >
-                  <img
-                    src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg"
-                    alt="Feature"
-                  />
-                </a>
-              </li>
-              <li>
-                <a ata-toggle="modal"
-                data-target="#showGalary01"
-                onclick="showClinicGalary('showGalary01')"
-                  href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg"
-                  data-fancybox="gallery"
-                >
-                  <img
-                    src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg"
-                    alt="Feature"
-                  />
-                </a>
-              </li>
-              <li>
-                <a ata-toggle="modal"
-                data-target="#showGalary04"
-                onclick="showClinicGalary('showGalary04')"
-                  href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg"
-                  data-fancybox="gallery"
-                >
-                  <img
-                    src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg"
-                    alt="Feature"
-                  />
-                </a>
-              </li>
-            </ul>
+            <ul class="zb-clinic-gallery"></ul>
             <div class="zb-clinic-services">
               <span>${currentDoctor.procedure}</span>
               <span>${currentDoctor.procedure2}</span>
@@ -339,17 +283,41 @@ function callDoctor() {
       `;
 }
 
-function showClinicGalary(dataId) {
-  let clinicDataId = clinicGalaryArr[dataId];
+function writeClinicGalary(){
+  let zb_clinic_gallery = document.querySelector('.zb-clinic-gallery');
+  let count = 0;
+  clinicGalary.forEach(e=>{
+    count++;
+    zb_clinic_gallery.innerHTML += `
+    <li>
+                <a 
+                data-toggle="modal"
+                data-target="#showGalary0${count}"
+                onclick="showClinicGalary(${count}, '${e}')"
+                href=${e}
+                  data-fancybox="gallery"
+                >
+                  <img
+                    src=${e}
+                    alt="Feature"
+                  />
+                </a>
+              </li>
+    `
+  })
+}
+
+writeClinicGalary()
+function showClinicGalary(dataId, img) {
+  let str = 'showGalary0'+dataId;
   document.body.innerHTML += `
     <!-- Modal -->
-    <div class="modal fade" id="${dataId}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="${str}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="zb-modal-card zb-modal-clinic-galary"> 
-      <img src="${clinicDataId}" alt="Feature"/>
+      <img src=${img} alt="Feature"/>
     </div>
       </div>
     </div>
     `;
-    console.log(dataId)
 }
