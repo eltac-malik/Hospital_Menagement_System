@@ -623,6 +623,8 @@ let doctors = [
   },
 ];
 
+// Doctor object - dynamic adder to the page
+
 function profileWriter(e) {
   doctors.forEach((e) => {
     doctorCards.innerHTML += `    
@@ -719,3 +721,34 @@ function getDoctorProfile() {
 function getBooking() {
   window.location.href = "../doctor/docor-book.html";
 }
+
+// Searchbar DOCTOR-LIST PAGE
+
+// searchBar.addEventListener("keyup", (e)=>{
+// const searchPerson = e.target.value;
+// const filteredDoc = doctors.filter( person =>{
+//  return ( person.name.toLowerCase().includes(searchPerson) || 
+//  person.hosp.toLowerCase().includes(searchPerson)
+//  );
+// });
+// console.log(filteredDoc)
+// })
+
+
+const searchBar = document.querySelector('#searchBar');
+if (searchBar) {
+  searchBar.addEventListener('keyup', (e) => {
+    const searchPerson = e.target.value.toLowerCase().trim();
+    if (searchPerson.length > 0) {
+      const filteredDoc = doctors.filter(person => {
+        return (person.name.toLowerCase().includes(searchPerson) || person.hosp.toLowerCase().includes(searchPerson));
+      });
+      console.log(filteredDoc);
+    } else {
+      console.log(doctors);
+    }
+  });
+
+}
+
+
