@@ -623,8 +623,10 @@ let doctors = [
   },
 ];
 
-function profileWriter(e) {
-  doctors.forEach((e) => {
+// Doctor object - dynamic adder to the page
+
+function profileWriter(param) {
+  param.forEach((e) => {
     doctorCards.innerHTML += `    
         <div class="card">
         <div class="card-body">
@@ -641,11 +643,11 @@ function profileWriter(e) {
         <p class="doc-speciality">${e.spec}</p>
         <h5 class="doc-department"><img src="${e.depimg}" class="img-fluid" alt="Speciality">${e.dep}</h5>
         <div class="rating">
+       <span class="star-light"> <i class="fas fa-star filled"></i>
         <i class="fas fa-star filled"></i>
         <i class="fas fa-star filled"></i>
-        <i class="fas fa-star filled"></i>
-        <i class="fas fa-star filled"></i>
-        <i class="fas fa-star"></i>
+        <i class="fas fa-star filled"></i> </span>
+        <i class="text-light-grey fas fa-star"></i> 
         <span class="d-inline-block average-rating">(17)</span>
         </div>
         <div class="clinic-details">
@@ -699,7 +701,7 @@ function profileWriter(e) {
         `;
   });
 }
-profileWriter();
+profileWriter(doctors);
 
 // for Doctor view profile
 
@@ -719,3 +721,81 @@ function getDoctorProfile() {
 function getBooking() {
   window.location.href = "../doctor/docor-book.html";
 }
+
+// Searchbar DOCTOR-LIST PAGE
+
+// searchBar.addEventListener("keyup", (e)=>{
+// const searchPerson = e.target.value;
+// const filteredDoc = doctors.filter( person =>{
+//  return ( person.name.toLowerCase().includes(searchPerson) || 
+//  person.hosp.toLowerCase().includes(searchPerson)
+//  );
+// });
+// console.log(filteredDoc)
+// })
+
+
+
+
+if(JSON.parse(localStorage.getItem("doctors")) === null){
+
+localStorage.setItem("doctors", JSON.stringify(doctors))
+
+}
+
+let filteredDoc = []
+const searchBar = document.querySelector('#searchBar');
+if (searchBar) {
+  searchBar.addEventListener('keyup', (e) => {
+  doctorCards.innerHTML = "";
+    const searchPerson = e.target.value.toLowerCase().trim();
+    if (searchPerson.length > 0) {
+    filteredDoc = doctors.filter(person => {
+        return (person.name.toLowerCase().includes(searchPerson) || person.hosp.toLowerCase().includes(searchPerson));
+      });
+      console.log(filteredDoc)
+    } else {
+      console.log(doctors);
+    }
+
+    profileWriter(filteredDoc)
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
