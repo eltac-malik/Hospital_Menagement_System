@@ -15,11 +15,14 @@
       
     }
 
+/* card div */
     #AS-main{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    /* one card design */
   .AShospital-card {
     width: 250px;
     margin: 20px;
