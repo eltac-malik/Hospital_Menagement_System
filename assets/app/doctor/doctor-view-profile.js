@@ -289,36 +289,31 @@ function callDoctor() {
     </div>
   </div>
       `;
-      playAudio('/assets/audio/58584423423234.mp3') 
+  playAudio("/assets/audio/58584423423234.mp3");
 }
 
-function writeClinicGalary(){
-  let zb_clinic_gallery = document.querySelector('.zb-clinic-gallery');
+function writeClinicGalary() {
+  let zb_clinic_gallery = document.querySelectorAll(".zb-clinic-gallery");
   let count = 0;
-  clinicGalary.forEach(e=>{
-    count++;
-    zb_clinic_gallery.innerHTML += `
-    <li>
-                <a 
-                data-toggle="modal"
-                data-target="#showGalary0${count}"
-                onclick="showClinicGalary(${count}, '${e}')"
-                href=${e}
-                  data-fancybox="gallery"
-                >
-                  <img
-                    src=${e}
-                    alt="Feature"
-                  />
-                </a>
-              </li>
-    `
-  })
+  zb_clinic_gallery.forEach((galary) => {
+    clinicGalary.forEach((e) => {
+      count++;
+      galary.innerHTML += `
+      <li>
+        <a data-toggle="modal" data-target="#showGalary0${count}"
+          onclick="showClinicGalary(${count}, '${e}')"
+          href=${e} data-fancybox="gallery">
+          <img src=${e} alt="Feature"/>
+        </a>
+      </li>
+      `;
+    });
+  });
 }
 
-writeClinicGalary()
+writeClinicGalary();
 function showClinicGalary(dataId, img) {
-  let str = 'showGalary0'+dataId;
+  let str = "showGalary0" + dataId;
   document.body.innerHTML += `
     <!-- Modal -->
     <div class="modal fade" id="${str}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -334,9 +329,9 @@ function showClinicGalary(dataId, img) {
 // stop audio func
 
 function playAudio(file) {
-  var audio = new Audio(file); 
+  var audio = new Audio(file);
   audio.play();
-  setTimeout(function() {
+  setTimeout(function () {
     stopAudio(audio);
   }, 5000);
   return audio;
