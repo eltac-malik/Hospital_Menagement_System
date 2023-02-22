@@ -38,14 +38,7 @@ function doctorProfileWriter() {
                 alt="Speciality"
               />${currentDoctor.dep}
             </p>
-            <p class="zb-d-padding-t-b-5">
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-icon-bg-gray fa-solid fa-star"></i>
-              <span>(35)</span>
-            </p>
+            <p class="zb-d-padding-t-b-5 zb-ratings"></p>
             <p class="zb-d-address zb-d-padding-t-b-5">
               <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
               <span>${currentDoctor.location}</span>
@@ -336,3 +329,60 @@ function playAudio(file) {
   }, 5000);
   return audio;
 }
+
+function writeWeekDays() {
+  let tbody = document.querySelector(".zb-business-days");
+  let weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  weekdays.forEach((e) => {
+    tbody.innerHTML += `
+  <tr>
+    <td>${e}</td>
+    <td>07:00 AM - 09:00 PM</td>
+  </tr>
+  `;
+  });
+  tbody.innerHTML += `
+  <tr>
+    <td>Sunday</td>
+    <td>
+      <span class="zb-b-h-close zb-b-h-font">Closed</span>
+    </td>
+  </tr>
+  `;
+}
+writeWeekDays();
+
+function showTodayDate() {
+  let today_b_table = document.querySelector(".today-date");
+  const today = new Date();
+  const dateString = today.toLocaleDateString("en-US", {
+    year: "numeric",
+    day: "numeric",
+    month: "short",
+  });
+  today_b_table.innerHTML = `${dateString}`;
+}
+showTodayDate();
+
+function ratings() {
+  let zb_ratings = document.querySelectorAll(".zb-ratings");
+  zb_ratings.forEach((rate) => {
+    rate.innerHTML = `
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-icon-bg-gray fa-solid fa-star"></i>
+      <span>(35)</span>
+    `;
+  });
+}
+ratings();
