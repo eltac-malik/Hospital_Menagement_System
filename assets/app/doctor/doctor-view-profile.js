@@ -38,14 +38,7 @@ function doctorProfileWriter() {
                 alt="Speciality"
               />${currentDoctor.dep}
             </p>
-            <p class="zb-d-padding-t-b-5">
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
-              <i class="zb-icon-bg-gray fa-solid fa-star"></i>
-              <span>(35)</span>
-            </p>
+            <p class="zb-d-padding-t-b-5 zb-ratings"></p>
             <p class="zb-d-address zb-d-padding-t-b-5">
               <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
               <span>${currentDoctor.location}</span>
@@ -289,36 +282,31 @@ function callDoctor() {
     </div>
   </div>
       `;
-      playAudio('/assets/audio/58584423423234.mp3') 
+  playAudio("/assets/audio/58584423423234.mp3");
 }
 
-function writeClinicGalary(){
-  let zb_clinic_gallery = document.querySelector('.zb-clinic-gallery');
+function writeClinicGalary() {
+  let zb_clinic_gallery = document.querySelectorAll(".zb-clinic-gallery");
   let count = 0;
-  clinicGalary.forEach(e=>{
-    count++;
-    zb_clinic_gallery.innerHTML += `
-    <li>
-                <a 
-                data-toggle="modal"
-                data-target="#showGalary0${count}"
-                onclick="showClinicGalary(${count}, '${e}')"
-                href=${e}
-                  data-fancybox="gallery"
-                >
-                  <img
-                    src=${e}
-                    alt="Feature"
-                  />
-                </a>
-              </li>
-    `
-  })
+  zb_clinic_gallery.forEach((galary) => {
+    clinicGalary.forEach((e) => {
+      count++;
+      galary.innerHTML += `
+      <li>
+        <a data-toggle="modal" data-target="#showGalary0${count}"
+          onclick="showClinicGalary(${count}, '${e}')"
+          href=${e} data-fancybox="gallery">
+          <img src=${e} alt="Feature"/>
+        </a>
+      </li>
+      `;
+    });
+  });
 }
 
-writeClinicGalary()
+writeClinicGalary();
 function showClinicGalary(dataId, img) {
-  let str = 'showGalary0'+dataId;
+  let str = "showGalary0" + dataId;
   document.body.innerHTML += `
     <!-- Modal -->
     <div class="modal fade" id="${str}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -334,10 +322,67 @@ function showClinicGalary(dataId, img) {
 // stop audio func
 
 function playAudio(file) {
-  var audio = new Audio(file); 
+  var audio = new Audio(file);
   audio.play();
-  setTimeout(function() {
+  setTimeout(function () {
     stopAudio(audio);
   }, 5000);
   return audio;
 }
+
+function writeWeekDays() {
+  let tbody = document.querySelector(".zb-business-days");
+  let weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  weekdays.forEach((e) => {
+    tbody.innerHTML += `
+  <tr>
+    <td>${e}</td>
+    <td>07:00 AM - 09:00 PM</td>
+  </tr>
+  `;
+  });
+  tbody.innerHTML += `
+  <tr>
+    <td>Sunday</td>
+    <td>
+      <span class="zb-b-h-close zb-b-h-font">Closed</span>
+    </td>
+  </tr>
+  `;
+}
+writeWeekDays();
+
+function showTodayDate() {
+  let today_b_table = document.querySelector(".today-date");
+  const today = new Date();
+  const dateString = today.toLocaleDateString("en-US", {
+    year: "numeric",
+    day: "numeric",
+    month: "short",
+  });
+  today_b_table.innerHTML = `${dateString}`;
+}
+showTodayDate();
+
+function ratings() {
+  let zb_ratings = document.querySelectorAll(".zb-ratings");
+  zb_ratings.forEach((rate) => {
+    rate.innerHTML = `
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-star-icon-bg-yellow fa-solid fa-star"></i>
+      <i class="zb-icon-bg-gray fa-solid fa-star"></i>
+      <span>(35)</span>
+    `;
+  });
+}
+ratings();
