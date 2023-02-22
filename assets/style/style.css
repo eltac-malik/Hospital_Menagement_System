@@ -1,101 +1,121 @@
+/* p{
+    color: var(--text-primary-color);
+} */
 
-p{
-    color: var(--primary-color);
+.ih-content{
+    margin: auto;
+    width: 90%;
 }
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  
-  .ih-header {
-    width: 100%;
-    font-family: var(--body-font);
-  }
-  .ih-navbar {
-    width: 100%;
-    background-color:#ffffff;
-  
-  }
-  
-  .ih-container {
-    display: flex;
-  }
-  .ih-logo {
-    width: auto;
-    display: flex;
-    align-items: center;
-        justify-content: flex-end;
-
-  }
-  .ih-log{
-        justify-content: flex-end;
-
-  }
-  .ih-logo img {
-    height: max(var(--logo-height));
-    display: block;
-  }
-  .ih-navigation {
-    display: flex;
-    width: 85%;
-    font-size: 16px;
-        justify-content: end;
-
-  }
-  .ih-primary-menu-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .ih-primary-menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-    padding-left: 50px;
-  }
-  .ih-login-list {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
-  .ih-logo img{
-    width: 93px;
-  }
-
-  body{
-    background-color: aqua;
-  }
-  .ch-current-page{padding-bottom: 5px;
-    border-bottom: 2px solid var(--primary-color);
-  }
-
-
-  .hc-mob-menu .collapse{
-    position: fixed  !important;
-    left: 0;
-    top: 0;
-    width: 280px;
-    background-color: transparent !important;
- 
+.ih-main{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 35px;
 }
-.hc-mob-menu nav ul{
-   width: 280px;
-   background-color: #ffffff !important;
-   padding: 15px;
-   /* position: relative; */
-   left: 0;
-   top: 0;
-   height: 100vh;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.ih-bgimg-wrapper{
    
+    overflow: hidden;
+    background-size: inherit;
+    background-position: inherit;
+    z-index: -45;
+    
 }
-.hc-remove-btn{
-    float: right;
-    z-index: 1;
+.ih-bgimg{
+    background-image: url("https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/hero_home_02.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    z-index: -1;
+    border-radius: 35px;
 }
+.ih-bgimg:after {
+    content: "";
+    position: absolute;
+    top: 93%;
+    left: 0;
+    height: 100%;
+    width: 120%;
+    background:white ;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-2.5deg);
+  }
+.ih-bb-port{
+    padding-top:8em ;
+    padding-bottom: 8em;
+    display: flex;
+    justify-content: center;
+}
+.ih-column h1{
+    font-size: 4.768125em;
+    font-weight: 700;
+    text-align: left;
+    color: var(--page-secondary-color);
+    line-height: 91px;
+}
+.ih-column p{
+    font-size: 25px;
+    font-weight: 200;
+    text-align: left;
+    color: var(--page-secondary-color)
+}
+.ih-item-num{
+    font-size: 48px;
+    color: var(--page-secondary-color);
+}
+.ih-item-text{
+    font-size: 20px;
+    color: var(--page-secondary-color);
+}
+.ih-main-row{
+    padding: 0px -20px;
+}
+
+.ih-inner-row-item i{
+    color: var(--page-secondary-color);
+}
+.ih-button-row  {
+    display: flex;
+    align-items: center;
+   }
+   .ih-button-row h1{
+    font-size: 48px;
+    font-weight: 700;
+   }
+   .ih-btn {
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border:2px solid #025fd9;
+    color:#025fd9;
+    position: relative;
+    top: 0;
+
+   }
+   
+   .ih-btn:hover {
+    box-shadow: inset 0 0 0 4px #025fd9, 
+                 inset 0 0 0 8px #025fd9, 
+                 inset 0 0 0 12px #025fd9,
+                 inset 0 0 0 16px #025fd9;
+    background: #025fd9;
+    color: #fff;
+    top: -5px;
+   }
