@@ -652,28 +652,52 @@ function profileWriter(param) {
         </div>
         <div class="clinic-details">
         <p class="doc-location"><i class="fas fa-map-marker-alt"></i>${e.location}</p>
-        <ul class="clinic-gallery">
+        <ul class="zb-clinic-gallery">
         <li>
-        <a href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg" data-fancybox="gallery">
-        <img src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg" alt="Feature">
-        </a>
+          <a
+            href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg"
+            data-fancybox="gallery"
+          >
+            <img
+              src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-03.jpg"
+              alt="Feature"
+            />
+          </a>
         </li>
         <li>
-        <a href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg" data-fancybox="gallery">
-        <img src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg" alt="Feature">
-        </a>
+          <a
+            href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg"
+            data-fancybox="gallery"
+          >
+            <img
+              src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-02.jpg"
+              alt="Feature"
+            />
+          </a>
         </li>
         <li>
-        <a href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg" data-fancybox="gallery">
-        <img src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg" alt="Feature">
-        </a>
+          <a
+            href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg"
+            data-fancybox="gallery"
+          >
+            <img
+              src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-01.jpg"
+              alt="Feature"
+            />
+          </a>
         </li>
         <li>
-        <a href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg" data-fancybox="gallery">
-        <img src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg" alt="Feature">
-        </a>
+          <a
+            href="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg"
+            data-fancybox="gallery"
+          >
+            <img
+              src="https://doccure.dreamguystech.com/html/template/assets/img/features/feature-04.jpg"
+              alt="Feature"
+            />
+          </a>
         </li>
-        </ul>
+      </ul>
         </div>
         <div class="clinic-services">
         <span>${e.procedure}</span>
@@ -757,10 +781,13 @@ if (searchBar) {
     } else {
       console.log(doctors);
     }
+    let sorted = filteredDoc
+    sorted.sort(function(a, b){return b - a});
 
-    profileWriter(filteredDoc)
+    profileWriter(sorted)
   });
 
+  
 
 
 
