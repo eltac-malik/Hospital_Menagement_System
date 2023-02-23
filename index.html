@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/assets/style/root.css" />
   <link rel="stylesheet" href="/assets/style/style.css" />
   <link rel="stylesheet" href="/assets/style/global.css" />
+  <link rel="stylesheet" href="/assets/style/home/navbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,6 +20,104 @@
 </head>
 
 <body>
+ 
+  <header>
+    <!-- <div class="hc-header-cont"></div> -->
+    <div class="hc-cont-header">
+      <div class="row hc-nav">
+        <div class="hc-shadow"> </div>
+
+        <div class="col-6 col-md-1 hc-logo">
+          <div class="hc-mob-bar d-block d-md-none">
+            <div class=" hc-mob-bar1"></div>
+            <div class="hc-mob-bar2"></div>
+            <div class="hc-mob-bar3"></div>
+          </div>
+          <img src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2019/02/logo_black.png"
+            alt="">
+          <ul class="hc-nav-list-drop">
+            <div class="hc-drop-logo">
+              <img
+                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
+                alt="">
+            </div>
+            <li>
+              <a href="">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Doctors
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Hospitals
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Profile
+              </a>
+            </li>
+            <div class="hc-adr-drop">
+              <div>
+                <i class="fa-solid fa-location-dot"></i> <span><a>Visit Us Anytime</a></span>
+                <p>14th Swann Street</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <span><a>Book A Doctor</a></span>
+                <p>0-800-433-5788</p>
+              </div>
+              <form action="" class="hc-mob-menu-serch">
+                <input type="text" placeholder="search...">
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+            <button type="button" id="hc-remove-mob" class="btn-close" aria-label="Close"></button>
+          </ul>
+
+        </div>
+        <div class="col-md-8  d-none d-md-block">
+          <ul class="hc-nav-list">
+            <li>
+              <a href="">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Doctors
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Hospitals
+              </a>
+            </li>
+            <li id="profile">
+              <a href="">
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class=" col-6 col-md-3">
+          <ul class="hc-log-list">
+            <li id="logout"><a href="">Logout</a></li>
+            <li id="login"><a href="">Login</a></li>
+            <li id="registr"><a href="">Registration</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+ 
+ 
+ 
   <div class="ih-content">
     <section class="ih-main">
       <div class="ih-bgimg-wrapper">
@@ -159,10 +258,10 @@
         <div class="ih-fifth-row row">
           <div class=" col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7">
             <div class="ih-inner-content">
-              <header>
+              <div class="ih-consult-one">
                 <span>How Can We Help You?</span>
                 <h1>Discover a Path To Excellent Health</h1>
-              </header>
+              </div>
               <div class="ih-text">
                 <p>
                   Our Office provides the services of the pediatrician and consultants, covering all fields of
@@ -340,97 +439,7 @@
     <section>
       <div class="container">
         <div class="ih-popular-doctors">
-          <div class="row">
-            <div class="ih-doctor-column-outer col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-              <div class="ih-doctor-column-inner">
-                <div class="ih-doctor-img-content">
-                  <img
-                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/team_01_home_02.jpg"
-                    alt="">
-                  <div class="ih-doctors-inner-icon">
-                    <i class="fa-solid fa-2x fa-heart"></i>
-                  </div>
-                </div>
-                <div class="ih-doctor-text-content">
-                  <span>Founder, Cardiologist</span>
-                  <h3>Anthony O'Neil</h3>
-                  <p>Globally harness multimedia based collaboration and idea-sharing with backend products scenarios.
-                  </p>
-                  <a href="">
-                    <span>Biography</span>
-                    <i class="fa-solid  fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ih-doctor-column-outer col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-              <div class="ih-doctor-column-inner">
-                <div class="ih-doctor-img-content">
-                  <img
-                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/team_02_home_02.jpg"
-                    alt="">
-                  <div class="ih-doctors-inner-icon">
-                    <i class="fa-solid fa-2x fa-stethoscope"></i>
-                  </div>
-                </div>
-                <div class="ih-doctor-text-content">
-                  <span>Pulmonologist
-                  </span>
-                  <h3>Nicholas Horton</h3>
-                  <p>Efficiently myocardinate market-driven innovation rather than imperative optimal customer service.
-                  </p>
-                  <a href="">
-                    <span>Biography</span>
-                    <i class="fa-solid  fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ih-doctor-column-outer col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-              <div class="ih-doctor-column-inner">
-                <div class="ih-doctor-img-content">
-                  <img
-                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/team_03_home_02.jpg"
-                    alt="">
-                  <div class="ih-doctors-inner-icon">
-                    <i class="fa-solid fa-2x fa-eye"></i>
-                  </div>
-                </div>
-                <div class="ih-doctor-text-content">
-                  <span>Orthopedist</span>
-                  <h3>Todd Howard</h3>
-                  <p>Efficiently enable enabled sources and cost effective products information after ethical community
-                    technologies.</p>
-                  <a href="">
-                    <span>Biography</span>
-                    <i class="fa-solid  fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ih-doctor-column-outer col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-              <div class="ih-doctor-column-inner">
-                <div class="ih-doctor-img-content">
-                  <img
-                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/team_04_home_02.jpg"
-                    alt="">
-                  <div class="ih-doctors-inner-icon">
-                    <i class="fa-solid fa-2x fa-file-medical"></i>
-                  </div>
-                </div>
-                <div class="ih-doctor-text-content">
-                  <span>Head Nurse</span>
-                  <h3>Gloria Walker</h3>
-                  <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test additional
-                    client clickthroughs.
-                  </p>
-                  <a href="">
-                    <span>Biography</span>
-                    <i class="fa-solid  fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="ih-doctorcards row">
 
           </div>
         </div>
@@ -619,20 +628,18 @@
           </div>
         </div>
       </div>
-      </footer> -->
+      </footer>
 
 
 
 
   </div>
-  <script>
-    $(".slider").owlCarousel({
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2000, //2000ms = 2s;
-      autoplayHoverPause: true,
-    });
-  </script>
+
+
+  <script src="/assets/app/doctor/doctor-list.js"></script>
+ 
+  <script src="/assets/app/app.js"></script>
+ 
 </body>
 
 </html>
