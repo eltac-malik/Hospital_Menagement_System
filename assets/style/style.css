@@ -2,120 +2,431 @@
     color: var(--text-primary-color);
 } */
 
-.ih-content{
-    margin: auto;
-    width: 90%;
+.ih-content {
+  margin: auto;
+  width: 90%;
 }
-.ih-main{
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 35px;
+.ih-main {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 35px;
 }
-.ih-bgimg-wrapper{
-   
-    overflow: hidden;
-    background-size: inherit;
-    background-position: inherit;
-    z-index: -45;
-    
+.ih-bgimg-wrapper {
+  overflow: hidden;
+  background-size: inherit;
+  background-position: inherit;
+  z-index: -45;
 }
-.ih-bgimg{
-    background-image: url("https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/hero_home_02.jpg");
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-size: inherit;
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-attachment: cover;
-    z-index: -1;
-    border-radius: 35px;
+.ih-bgimg {
+  background-image: url("https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/hero_home_02.jpg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  z-index: -1;
+  border-radius: 35px;
 }
 .ih-bgimg:after {
-    content: "";
-    position: absolute;
-    top: 93%;
-    left: 0;
-    height: 100%;
-    width: 120%;
-    background:white ;
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-6deg);
-    transform: rotate(-2.5deg);
-  }
-.ih-bb-port{
-    padding-top:8em ;
-    padding-bottom: 8em;
-    display: flex;
-    justify-content: center;
+  content: "";
+  position: absolute;
+  top: 93%;
+  left: 0;
+  height: 100%;
+  width: 120%;
+  background: white;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-6deg);
+  transform: rotate(-2.5deg);
 }
-.ih-column h1{
-    font-size: 4.768125em;
-    font-weight: 700;
-    text-align: left;
-    color: var(--page-secondary-color);
-    line-height: 91px;
+.ih-bb-port {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.ih-column p{
-    font-size: 25px;
-    font-weight: 200;
-    text-align: left;
-    color: var(--page-secondary-color)
+.ih-column h1 {
+  font-size: 4.768125em;
+  font-weight: 700;
+  text-align: left;
+  color: var(--page-secondary-color);
+  line-height: 91px;
 }
-.ih-item-num{
-    font-size: 48px;
-    color: var(--page-secondary-color);
+.ih-column p {
+  font-size: 25px;
+  font-weight: 200;
+  text-align: left;
+  color: var(--page-secondary-color);
 }
-.ih-item-text{
-    font-size: 20px;
-    color: var(--page-secondary-color);
+.ih-item-num {
+  font-size: 48px;
+  color: var(--page-secondary-color);
 }
-.ih-main-row{
-    padding: 0px -20px;
+.ih-item-text {
+  font-size: 20px;
+  color: var(--page-secondary-color);
+}
+.ih-main-row {
+  padding: 0px -20px;
 }
 
-.ih-inner-row-item i{
-    color: var(--page-secondary-color);
+.ih-inner-row-item i {
+  color: var(--page-secondary-color);
 }
-.ih-button-row  {
+.ih-button-row {
+  display: flex;
+  align-items: center;
+}
+.ih-button-row h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.ih-btn {
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid #025fd9;
+  color: #025fd9;
+  position: relative;
+  top: 0;
+}
+.ih-image {
+  width: 375px;
+  height: 450px;
+}
+.ih-image img {
+  width: 100%;
+}
+.ih-second-column {
+  display: flex;
+  justify-content: center;
+}
+
+.ih-btn:hover {
+  box-shadow: inset 0 0 0 4px #025fd9, inset 0 0 0 8px #025fd9,
+    inset 0 0 0 12px #025fd9, inset 0 0 0 16px #025fd9;
+  background: #025fd9;
+  color: #fff;
+  top: -5px;
+}
+.ih-second-blog-row {
+  padding-top: 64px;
+}
+.ih-second-blog-row h3 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 16px;
+}
+.ih-second-blog-row p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+
+.ih-second-blog-row a {
+  color: rgb(2, 92, 217);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 22px 0px;
+}
+
+.ih-second-blog-row-icon {
+  color: rgb(2, 92, 217);
+}
+.ih-third-bb {
+  border-radius: 105.5px;
+  height: 200px;
+  background-image: url(https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/background_01_home_02.jpg);
+  background-repeat: no-repeat;
+}
+
+.ih-third-row-second {
+  color: #fff;
+  padding: 40px 0px;
+}
+.ih-fourth-row-first {
+  display: flex;
+  justify-content: end;
+  margin-left: 120px;
+  margin-top: -220px;
+}
+@media (max-width: 1025) {
+  .ih-fourth-row-first {
+    margin-left: 120px;
+    margin-top: -250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ih-fourth-row-first {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .ih-third-bb {
+    height: auto;
+  }
+}
+.ih-inner-content span {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.ih-inner-content h1 {
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 73px;
+}
+.ih-text p {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ih-fifth-column-inner-content {
+  background-color: rgb(242, 242, 242);
+  border-radius: 15px;
+}
+.ih-dropdown {
+  display: flex;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+.ih-dropdown-select {
+  padding-left: 10px;
+}
+.ih-dropdown-img img {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ih-consult h1 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  margin: 0px;
+  padding-left: 20px;
+}
+.ih-consult p {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+.ih-img-consult {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 100%;
+  justify-content: flex-end;
+}
+.ih-img-consult img {
+  width: 100%;
+  justify-self: flex-end;
+}
+
+.ih-departments {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.ih-departments-col {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+.ih-departments-col-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ih-departments-col-item i {
+  color: #025fd9;
+}
+.ih-departments-col-item span {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(25, 25, 25);
+  line-height: 24px;
+  padding-top: 16px;
+}
+.ih-fifth-row {
+  padding-bottom: 64px;
+}
+.ih-fifth {
+  padding-top: 128px;
+}
+.ih-six {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ih-six-bg {
+  background-image: url("https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/background_03_home_02.jpg");
+  border-radius: 35px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: -5;
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+.ih-six-col span {
+  font-size: 17px;
+  font-weight: 400;
+}
+.ih-six-col h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.ih-six-row {
+  padding-top: 200px;
+}
+.ih-coverage-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 2;
+  background-color: #55555501;
+}
+.ih-coverage-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+}
+.ih-button-side{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.ih-quotes{display: flex;
+align-items: center;}
+.ih-quotes hr{
+    width: 200px;
+    margin-left: 10px;
+}
+.ih-quotes i{
+   color: #025fd9;
+}
+.ih-quotes-img{
+    padding-right: 20px;
+}
+.ih-quotes-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+.ih-bottom-hr{
+    width: 100px;
+}
+.ih-quotes-text p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ih-quotes-row{
+   display: flex;
+   justify-content: center;
+   padding-top:50px;
+}
+.ih-bb-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ih-seperate{
+    width: 100%;
+    height: 1px;
+    padding: 100px;
+}
+.ih-doctor-column-inner {
+    border-radius: 20px;
+    
+ background-color: #025fd9;
+
+}
+.ih-doctor-img-content{
+    position: relative;
+}
+.ih-doctor-img-content img{
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 0;
+}
+.ih-popular-doctors{
+    margin-top: -100px;
+}
+.ih-doctors-inner-icon{
+    background-color: #fff;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-   }
-   .ih-button-row h1{
-    font-size: 48px;
-    font-weight: 700;
-   }
-   .ih-btn {
-    width: 250px;
-    height: 60px;
-    font-size: 18px;
-    font-weight: 700;
-    background: #fff;
-    border: none;
-    border-radius: 50px;
-    color: #000;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s;
-    border:2px solid #025fd9;
-    color:#025fd9;
-    position: relative;
-    top: 0;
-
-   }
-   
-   .ih-btn:hover {
-    box-shadow: inset 0 0 0 4px #025fd9, 
-                 inset 0 0 0 8px #025fd9, 
-                 inset 0 0 0 12px #025fd9,
-                 inset 0 0 0 16px #025fd9;
-    background: #025fd9;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+    
+}
+.ih-doctor-text-content{
+    padding: 10px 30px;
     color: #fff;
-    top: -5px;
-   }
+}
+.ih-doctor-text-content span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.ih-doctor-text-content h3{
+    font-size: 31px;
+    font-weight: 700;
+}
+.ih-doctor-text-content p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.ih-doctor-text-content a{
+   text-decoration: 0;
+   color: #fff;
+   font-size: 16px;
+    font-weight: 700;
+}
