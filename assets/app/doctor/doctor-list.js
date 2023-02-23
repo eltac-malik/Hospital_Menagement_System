@@ -68,7 +68,7 @@ let doctors = [
       about: "Lorem ipsum dolor sit amet",
     },
     name: "Dr. Ruby Perrin",
-    hosp: "Massachusetts General Hospital",
+    hosp: "Glowing Smiles Family Dental Clinic",
     spec: "MDS - Periodontology and Oral Implantology, BDS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-01.jpg",
@@ -101,7 +101,7 @@ let doctors = [
     experience: [
       {
         year: "2016 - Present (7 years)",
-        hospital: "SkinCare Clinic",
+        hospital: "Johns Hopkins Hospital",
       },
       {
         year: "2013 - 2016 (3 years)",
@@ -178,7 +178,7 @@ let doctors = [
     experience: [
       {
         year: "2016 - Present (7 years)",
-        hospital: "HeartCare Clinic",
+        hospital: "Duke University Hospital",
       },
       {
         year: "2013 - 2016 (3 years)",
@@ -295,7 +295,7 @@ let doctors = [
       about: "Lorem ipsum dolor sit amet",
     },
     name: "Dr. Maria Rodriguez",
-    hosp: "Mayo Clinic",
+    hosp: "Women's Health Clinic",
     spec: "MD - Obstetrics and Gynecology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-05.jpg",
@@ -378,7 +378,7 @@ let doctors = [
       about: "A neurologist is a medical doctor who specializes ..",
     },
     name: "Dr. David Kim",
-    hosp: "Cleveland Clinic",
+    hosp: "Neurology Specialists",
     spec: "MD - Neurology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-06.jpg",
@@ -457,7 +457,7 @@ let doctors = [
       about: "Lorem ipsum dolor sit amet",
     },
     name: "Dr. Jonathan Williams",
-    hosp: "University of California, San Francisco Medical Center",
+    hosp: "Cancer Treatment Centers of America",
     spec: "MD - Oncology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-07.jpg",
@@ -538,7 +538,7 @@ let doctors = [
       about: "Lorem ipsum dolor sit amet",
     },
     name: "Dr. Sarah Park",
-    hosp: "NewYork-Presbyterian Hospital",
+    hosp: "Pediatrics Associates",
     spec: "MD - Pediatrics, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-08.jpg",
@@ -555,7 +555,7 @@ let doctors = [
   {
     doctorId: Math.random(),
     price: 95,
-    isPopular: false,
+    isPopular: true,
     education: [
       {
         year: "2004 - 2010",
@@ -607,7 +607,7 @@ let doctors = [
       about: "Lorem ipsum dolor sit amet",
     },
     name: "Dr. Michael Johnson",
-    hosp: "Stanford Health Care",
+    hosp: "Pulmonary Associates",
     spec: "MD - Pulmonology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-09.jpg",
@@ -622,6 +622,13 @@ let doctors = [
     procedure2: "bronchoscopy",
   },
 ];
+
+
+if(JSON.parse(localStorage.getItem("doctors")) === null){
+
+  localStorage.setItem("doctors", JSON.stringify(doctors))
+  
+  }
 
 // Doctor object - dynamic adder to the page
 
@@ -761,11 +768,7 @@ function getBooking() {
 
 
 
-if(JSON.parse(localStorage.getItem("doctors")) === null){
 
-localStorage.setItem("doctors", JSON.stringify(doctors))
-
-}
 
 let filteredDoc = []
 const searchBar = document.querySelector('#searchBar');
