@@ -4,9 +4,7 @@
     padding: 0;
   }
   body{
-    
-    font-family: 'Poppins', sans-serif;
-    
+      font-family: 'Poppins', sans-serif;
       display: flex; 
       flex-direction: row;
       flex-wrap: wrap;
@@ -15,8 +13,9 @@
       background-color: #025fd9;
       
     }
+
     .text{
-      font-family: 'arial black';
+      font-family: 'Poppins', sans-serif;
       font-size: 60px;
       text-align: center;
       padding: 0;
@@ -27,17 +26,13 @@
       animation: slide-in-anim 1.5s ease-out forwards;
     }
     
-   
-    
     .AS-header{
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       margin-top:1.5rem;
-      margin-bottom: 1.5rem;
-      margin-left: 10rem;
-      border-radius: 5px;
+      margin-bottom: 1.5rem;  
       letter-spacing: 2px;
       font-size: 50px;
       background-color: #025fd9;
@@ -45,8 +40,12 @@
       transform: translateX(-200%);
       opacity: 0;
       animation: left-header 1.5s ease-out forwards;
+      width: 15rem;
+text-align: center;
       
     }
+    
+    /* animation header */
     @keyframes left-header {
       20% {
         opacity: 0;
@@ -59,11 +58,11 @@
       }
       100% {
         opacity: 1;
-        transform: translateX(-50%);
+        transform: translateX(-62%);
       }
     }
 
-
+    /* screen div */
     #AS-main{
       display: flex;
       flex-direction: row;
@@ -72,6 +71,7 @@
       flex-wrap: wrap;
       
     }
+
     .AShospital-card {
       display: inline-block;
       vertical-align: middle;
@@ -89,6 +89,7 @@
       transition:transform .2s;
     }
 
+/* card hoverleri */
   .AShospital-card:hover {
     -ms-transform: scale(1.1); 
     -webkit-transform: scale(1.1); 
@@ -153,3 +154,53 @@
   }
 
   
+ /* page butonlari */
+  .AS-w3-button{
+    margin: 0.5rem;
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #025fd9;
+  }
+
+  .AS-w3-button:hover{
+
+    background-color: #025fd9;
+    color: white;
+    
+  }
+
+.AS-w3-bar{
+  margin: 1.5rem;
+  
+}
+
+ /* repsonsive design */
+
+ @media (min-width: 768px) {
+  .AS-header {
+    font-size: 50px;
+    width: 15rem;
+  }
+}
+
+
+ 
+  @media screen and (max-width: 600px) {
+    .AS-header {
+    width: 100%;
+    font-size: 30px;
+    transform: none;
+    opacity: 1;
+    animation: none;
+    }
+    }
+
+
