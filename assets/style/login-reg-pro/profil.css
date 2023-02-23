@@ -186,12 +186,19 @@
   
   
   
-  /*  */
   
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   .hc-fot-cont{
     max-width: 1600px;
     margin: auto;
@@ -212,7 +219,6 @@
     color: #ffffff !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-
   .hc-footer>div{
     width: 90%;
     margin: auto;
@@ -292,54 +298,12 @@
     text-decoration: underline !important;
     padding-right: 4px;
   }
-  
-  
-  
-  
-  
-  .hc-before-footer{
-    max-width: 1600px;
-    margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    align-items: center;
-  }
-  .hc-before-footer-img{
-    display: flex;
-    justify-content: center;
-  }
-  .hc-before-footer-img img{
-    max-width: 100%;
-  }
-  .hc-before-footer h1{
-    font-size: 3.815rem;
-  
-  }
-  .hc-before-footer .hc-right>div{
-    display: flex;
-    align-items: center;
-    padding: 25px;
-   
-  }
-  .hc-before-footer-right{
-    padding: 30px;
-  }
-  .hc-before-footer .hc-right i{
-    font-size: 37px;
-    color: #025fd9;
-    padding-right: 15px;
-  }
-  .hc-before-footer .hc-right span{
-    font-size: 1em;
-  }
-  .hc-before-footer .hc-right span a{
-    font-weight: 900;
-    font-size: 1.5rem;
-  }
   .user-avatar img{
     width: 200px;
   }
-  
+  .gutters{
+    padding-top: 120px;
+  }
   
   
   
