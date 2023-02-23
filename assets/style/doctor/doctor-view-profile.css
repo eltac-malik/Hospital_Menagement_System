@@ -152,6 +152,7 @@ body{
   height: 100%;
   font-weight: var(--heading-font-weight);
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .zb-r-2-header-link:hover {
