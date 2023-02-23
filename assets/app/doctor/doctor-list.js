@@ -69,6 +69,7 @@ let doctors = [
     },
     name: "Dr. Ruby Perrin",
     hosp: "Massachusetts General Hospital",
+    hospitalImage: "https://assets-varnish.triblive.com/2022/01/4688143_web1_vnd-acmh-012822.jpg",
     spec: "MDS - Periodontology and Oral Implantology, BDS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-01.jpg",
@@ -141,6 +142,7 @@ let doctors = [
     },
     name: "Dr. Jessica Wong",
     hosp: "Johns Hopkins Hospital",
+    hospitalImage:"https://www.stanfordchildrens.org/content-public/location/stanford-hospital/stanford-hospital-720x315.jpg",
     spec: "MD - Dermatology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-03.jpg",
@@ -218,6 +220,8 @@ let doctors = [
     },
     name: "Dr. James Smith",
     hosp: "Duke University Hospital",
+    hospitalImage:"https://www.stlukeshealth.org/content/dam/stlukeshealth/images/location-header/new-bslmc-day-2-0.jpg/jcr:content/renditions/cq5dam.web.1120.743.jpeg",
+
     spec: "MD - Cardiology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-04.jpg",
@@ -296,6 +300,8 @@ let doctors = [
     },
     name: "Dr. Maria Rodriguez",
     hosp: "Mayo Clinic",
+    hospitalImage:"https://images.squarespace-cdn.com/content/v1/58b72c843a04112a613d2251/1597326999218-V3KMZDILZMCPV2G7VZEN/Emory1.jpg?format=1500w",
+
     spec: "MD - Obstetrics and Gynecology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-05.jpg",
@@ -379,6 +385,8 @@ let doctors = [
     },
     name: "Dr. David Kim",
     hosp: "Cleveland Clinic",
+    hospitalImage: "https://npr.brightspotcdn.com/dims4/default/d2465fe/2147483647/strip/true/crop/1200x630+0+0/resize/1760x924!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb6%2Ffa%2F7fa96f134f41b7bfe00856755edc%2Fcleveland-clinic.jpg",
+
     spec: "MD - Neurology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-06.jpg",
@@ -458,6 +466,8 @@ let doctors = [
     },
     name: "Dr. Jonathan Williams",
     hosp: "University of California, San Francisco Medical Center",
+    hospitalImage:"https://www.usa.skanska.com/48ff5f/siteassets/what-we-deliver/projects/west-memorial-place-i-and-ii/image-gallery/west-memorial-place-01.jpg?w=944&h=531&mode=crop&scale=both",
+
     spec: "MD - Oncology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-07.jpg",
@@ -539,6 +549,8 @@ let doctors = [
     },
     name: "Dr. Sarah Park",
     hosp: "NewYork-Presbyterian Hospital",
+    hospitalImage:"https://www.universityofcalifornia.edu/sites/default/files/styles/article_default_banner/public/Jacobs-Medical-Center_hero.jpg?itok=OhwUy3X_",
+
     spec: "MD - Pediatrics, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-08.jpg",
@@ -608,6 +620,8 @@ let doctors = [
     },
     name: "Dr. Michael Johnson",
     hosp: "Stanford Health Care",
+    hospitalImage:"https://www.beckershospitalreview.com/images/2017-images/08/Oncology/University%20of%20Wisconsin%20Hospital%20and%20Clinics.jpg",
+
     spec: "MD - Pulmonology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-09.jpg",
