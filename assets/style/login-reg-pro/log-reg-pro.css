@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-bg-color: rgb(45, 99, 101);
+  --primary-hover-color: rgb(45, 99, 101, 25%);
+}
+
+.zf-half {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  width: 100%;
+  /* height: 100%; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zf-whare {
+  padding: 100px 0px;
+}
+.zf-input-wrapper {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.zf-input {
+  width: 100%;
+  background: rgba(145, 158, 171, 0.08);
+  height: 53px;
+  padding: 4px 0 5px;
+  border: 0;
+  line-height: 1.8571428571428572;
+  font-size: 0.875rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  transition: 0.3s ease-in-out background;
+  border-radius: 10px;
+  text-indent: 10px;
+}
+
+.zf-input:hover {
+  background: #dadddf;
+  outline: none;
+}
+
+.zf-input:focus {
+  background: var(--primary-hover-color);
+  outline: none;
+}
+
+.zf-inside {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.zf-forgotten {
+  text-align: end;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #637381;
+}
+
+.zf-lefts {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 60px;
+  height: 100%;
+  padding: 64px 80px;
+}
+.zf-mainers {
+  font-size: 35px;
+}
+.zf-starter {
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.zf-starter .zf-legend {
+  color: #637381;
+}
+
+.zf-getter {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-bg-color);
+}
+
+.zf-right {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.zf-right img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.zf-knocking {
+  /* padding: 10px 0px; */
+  text-align: center;
+  background: #637381;
+  cursor: pointer;
+  background-color: var(--primary-bg-color);
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 15px 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: 600;
+
+  font-size: 0.9375rem;
+  text-transform: capitalize;
+  font-family: Poppins, sans-serif;
+  min-width: px;
+  padding: 8px 22px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(45, 99, 101);
+  width: 100%;
+  box-shadow: none;
+  height: 48px;
+  transition: 0.1s ease-in-out transform;
+}
+
+.zf-knocking:active {
+  transform: scale(0.97);
+}
+.zf-carousel {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+}
+
+.zf-carousel.slide-1 {
+  background-image: url(https://img.freepik.com/free-vector/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg?w=1060&t=st=1677094709~exp=1677095309~hmac=1cec4354906c4690fa68dc12e107e0da2126c0842e1f5c2fd004efb9a7984224);
+}
+
+.zf-carousel.slide-2 {
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1530210124550-912dc1381cb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lZGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+}
+.zf-carousel.slide-3 {
+  background-image: url(https://img.freepik.com/free-photo/medium-shot-doctors-working-together_23-2149994390.jpg?w=1380&t=st=1677094882~exp=1677095482~hmac=8e8f064421d452049b0f06723cb78ea79f1075e1dbf834e24950eded64f000f2);
+}
+
+.zf-half .swiper-pagination-bullet-active {
+  background: var(--primary-bg-color);
+  width: 20px;
+  border-radius: 15px;
+}
+
+.swiper-pagination-bullet {
+  transition: 0.3s ease-in-out width;
+}
