@@ -334,99 +334,120 @@
   user-select: none;
   float: left;
 }
-.ih-button-side{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.ih-button-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.ih-quotes{display: flex;
-align-items: center;}
-.ih-quotes hr{
-    width: 200px;
-    margin-left: 10px;
+.ih-quotes {
+  display: flex;
+  align-items: center;
 }
-.ih-quotes i{
-   color: #025fd9;
+.ih-quotes hr {
+  width: 200px;
+  margin-left: 10px;
 }
-.ih-quotes-img{
-    padding-right: 20px;
+.ih-quotes i {
+  color: #025fd9;
+}
+.ih-quotes-img {
+  padding-right: 20px;
 }
 .ih-quotes-img img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
-.ih-bottom-hr{
-    width: 100px;
+.ih-bottom-hr {
+  width: 100px;
 }
-.ih-quotes-text p{
-    font-size: 16px;
-    font-weight: 700;
+.ih-quotes-text p {
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.ih-quotes-row{
-   display: flex;
-   justify-content: center;
-   padding-top:50px;
+.ih-quotes-row {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 .ih-bb-padding {
-    padding-left: 100px;
-    padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-.ih-seperate{
-    width: 100%;
-    height: 1px;
-    padding: 100px;
+.ih-seperate {
+  width: 100%;
+  height: 1px;
+  padding: 100px;
 }
 .ih-doctor-column-inner {
-    border-radius: 20px;
-    
- background-color: #025fd9;
+  border-radius: 20px;
 
+  background-color: #025fd9;
 }
-.ih-doctor-img-content{
-    position: relative;
+.ih-doctor-img-content {
+  position: relative;
 }
-.ih-doctor-img-content img{
-    width: 100%;
-    border-radius: 20px;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 0;
+.ih-doctor-img-content img {
+  width: 100%;
+  border-radius: 20px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 0;
 }
-.ih-popular-doctors{
-    margin-top: -100px;
+.ih-popular-doctors {
+  margin-top: -100px;
 }
-.ih-doctors-inner-icon{
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 10px;
-    left: 35px;
-    
+.ih-doctors-inner-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 35px;
 }
-.ih-doctor-text-content{
-    padding: 10px 30px;
-    color: #fff;
+.ih-doctor-text-content {
+  padding: 10px 30px;
+  color: #fff;
 }
-.ih-doctor-text-content span{
-    font-size: 16px;
-    font-weight: 400;
+.ih-doctor-text-content span {
+  font-size: 16px;
+  font-weight: 400;
 }
-.ih-doctor-text-content h3{
-    font-size: 31px;
-    font-weight: 700;
+.ih-doctor-text-content h3 {
+  font-size: 31px;
+  font-weight: 700;
 }
-.ih-doctor-text-content p{
-    font-size: 14px;
-    font-weight: 300;
+.ih-doctor-text-content p {
+  font-size: 14px;
+  font-weight: 300;
 }
-.ih-doctor-text-content a{
-   text-decoration: 0;
-   color: #fff;
-   font-size: 16px;
-    font-weight: 700;
+.ih-doctor-text-content a {
+  text-decoration: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.slider {
+  display: flex;
+  border: none;
+}
+.slider .card {
+  flex: 1;
+  margin: 0 10px;
+  border: none;
+}
+.slider .card .img {
+  height: 70px;
+  width: 100%;
+  border: none;
+}
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: none;
 }
