@@ -1,382 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="/assets/style/doctor/doctor-view-profile.css" />
-    <link rel="stylesheet" href="/assets/style/global.css" />
-    <link rel="stylesheet" href="/assets/style/root.css" />
-    <title>Doctor Profile</title>
-  </head>
-  <body>
-    <div class="zb-container d-center-column">
-      <div class="zb-doctor-container-row-1"></div>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-      <div class="zb-doctor-container-row-2">
-        <div class="zb-d-c-row-2-header">
-          <div id="overview-h" class="zb-r-2-header">
-            <a
-              class="zb-r-2-header-link d-center zb-font"
-              onclick="showDoctorDetails('zb-overview-d', 'overview-h')"
-              >Overview</a
-            >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/assets/style/doctor/doctor-view-profile.css" />
+  <link rel="stylesheet" href="/assets/style/global.css" />
+  <link rel="stylesheet" href="/assets/style/root.css" />
+  <link rel="stylesheet" href="/assets/style/home/navbar.css">
+  <title>Doctor Profile</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- <div class="hc-header-cont"></div> -->
+    <div class="hc-cont-header">
+      <div class="row hc-nav">
+        <div class="hc-shadow"> </div>
+
+        <div class="col-6 col-md-1 hc-logo">
+          <div class="hc-mob-bar d-block d-md-none">
+            <div class=" hc-mob-bar1"></div>
+            <div class="hc-mob-bar2"></div>
+            <div class="hc-mob-bar3"></div>
           </div>
-          <div id="location-h" class="zb-r-2-header">
-            <a
-              class="zb-r-2-header-link d-center zb-font"
-              onclick="showDoctorDetails('zb-location', 'location-h')"
-              >Location</a
-            >
+          <img src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2019/02/logo_black.png"
+            alt="">
+          <ul class="hc-nav-list-drop">
+            <div class="hc-drop-logo">
+              <img
+                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
+                alt="">
+            </div>
+            <li>
+              <a href="/index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/pages/doctor/doctor-list.html">
+                Doctors
+              </a>
+            </li>
+            <li>
+              <a href="/pages/hospital/hospital.html">
+                Hospitals
+              </a>
+            </li>
+            <li>
+              <a href="/pages/log-re-pro/profil.html">
+                Profile
+              </a>
+            </li>
+            <div class="hc-adr-drop">
+              <div>
+                <i class="fa-solid fa-location-dot"></i> <span><a>Visit Us Anytime</a></span>
+                <p>14th Swann Street</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <span><a>Book A Doctor</a></span>
+                <p>0-800-433-5788</p>
+              </div>
+              <form action="" class="hc-mob-menu-serch">
+                <input type="text" placeholder="search...">
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+            <button type="button" id="hc-remove-mob" class="btn-close" aria-label="Close"></button>
+          </ul>
+
+        </div>
+        <div class="col-md-8  d-none d-md-block">
+          <ul class="hc-nav-list">
+            <li>
+              <a href="/index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/pages/doctor/doctor-list.html">
+                Doctors
+              </a>
+            </li>
+            <li>
+              <a href="/pages/hospital/hospital.html">
+                Hospitals
+              </a>
+            </li>
+            <li id="profile">
+              <a href="/pages/log-re-pro/profil.html">
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class=" col-6 col-md-3">
+          <ul class="hc-log-list">
+            <li id="logout"><a href="/index.html">Logout</a></li>
+            <li id="login"><a href="/pages/log-re-pro/log-reg-pro.html">Login</a></li>
+            <li id="registr"><a href="/pages/log-re-pro/register.html">Registration</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="zb-container d-center-column" style="margin-top:83px">
+    <div class="zb-doctor-container-row-1"></div>
+
+    <div class="zb-doctor-container-row-2">
+      <div class="zb-d-c-row-2-header">
+        <div id="overview-h" class="zb-r-2-header">
+          <a class="zb-r-2-header-link d-center zb-font"
+            onclick="showDoctorDetails('zb-overview-d', 'overview-h')">Overview</a>
+        </div>
+        <div id="location-h" class="zb-r-2-header">
+          <a class="zb-r-2-header-link d-center zb-font"
+            onclick="showDoctorDetails('zb-location', 'location-h')">Location</a>
+        </div>
+        <div id="review-h" class="zb-r-2-header">
+          <a class="zb-r-2-header-link d-center zb-font"
+            onclick="showDoctorDetails('zb-reviews', 'review-h')">Reviews</a>
+        </div>
+        <div id="busin-h" class="zb-r-2-header">
+          <a class="zb-r-2-header-link d-center zb-font"
+            onclick="showDoctorDetails('zb-business-hours', 'busin-h')">Business Hours</a>
+        </div>
+      </div>
+
+      <div class="zb-d-c-row-2-context">
+        <div id="zb-overview-d" class="zb-overview zb-d-fn">
+          <h4>About Me</h4>
+          <p class="zb-overview-about"></p>
+
+          <div class="zb-row">
+            <h4>Education</h4>
+            <ul class="zb-timeline zb-education"></ul>
           </div>
-          <div id="review-h" class="zb-r-2-header">
-            <a
-              class="zb-r-2-header-link d-center zb-font"
-              onclick="showDoctorDetails('zb-reviews', 'review-h')"
-              >Reviews</a
-            >
+
+          <div class="zb-row">
+            <h4>Work & Experience</h4>
+            <ul class="zb-timeline zb-experience"></ul>
           </div>
-          <div id="busin-h" class="zb-r-2-header">
-            <a
-              class="zb-r-2-header-link d-center zb-font"
-              onclick="showDoctorDetails('zb-business-hours', 'busin-h')"
-              >Business Hours</a
-            >
+
+          <div class="zb-row">
+            <h4>Awards</h4>
+            <ul class="zb-timeline zb-awards"></ul>
           </div>
+          <h4>Services</h4>
+          <div class="zb-services-box zb-service-w"></div>
+          <h4>Specializations</h4>
+          <div class="zb-services-box zb-specialization-w"></div>
         </div>
 
-        <div class="zb-d-c-row-2-context">
-          <div id="zb-overview-d" class="zb-overview zb-d-fn">
-            <h4>About Me</h4>
-            <p class="zb-overview-about"></p>
-
-            <div class="zb-row">
-              <h4>Education</h4>
-              <ul class="zb-timeline zb-education"></ul>
+        <div id="zb-location" class="zb-d-fn" style="flex-direction: column;">
+          <div class="zb-location-r">
+            <div class="zb-d-info-box zb-location-info-box">
+              <h4 id="zb-d-name">Smile Cute Dental Care Center</h4>
+              <p id="zb-d-hospital">
+                MDS - Periodontology and Oral Implantology, BDS
+              </p>
+              <p class="zb-d-padding-t-b-5 zb-ratings"></p>
+              <p class="zb-d-address zb-d-padding-t-b-5">
+                <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
+                <span>2286 Sundown Lane, Austin, Texas 78749, USA</span>
+              </p>
+              <!-- clinic galary -->
+              <ul class="zb-clinic-gallery"></ul>
             </div>
-
-            <div class="zb-row">
-              <h4>Work & Experience</h4>
-              <ul class="zb-timeline zb-experience"></ul>
+            <div class="zb-hospital-time">
+              <p class="zb-h-day">Mon - Sat</p>
+              <p class="zb-h-time">
+                <span>10:00 AM - 2:00 PM</span>
+                <span>4:00 PM - 9:00 PM</span>
+              </p>
+              <p class="zb-h-day">Sun</p>
+              <p class="zb-h-time">
+                <span>10:00 AM - 2:00 PM</span>
+              </p>
             </div>
-
-            <div class="zb-row">
-              <h4>Awards</h4>
-              <ul class="zb-timeline zb-awards"></ul>
-            </div>
-            <h4>Services</h4>
-            <div class="zb-services-box zb-service-w"></div>
-            <h4>Specializations</h4>
-            <div class="zb-services-box zb-specialization-w"></div>
-          </div>
-
-          <div id="zb-location" class="zb-d-fn" style="flex-direction: column;">
-            <div class="zb-location-r">
-              <div class="zb-d-info-box zb-location-info-box">
-                <h4 id="zb-d-name">Smile Cute Dental Care Center</h4>
-                <p id="zb-d-hospital">
-                  MDS - Periodontology and Oral Implantology, BDS
-                </p>
-                <p class="zb-d-padding-t-b-5 zb-ratings"></p>
-                <p class="zb-d-address zb-d-padding-t-b-5">
-                  <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
-                  <span>2286 Sundown Lane, Austin, Texas 78749, USA</span>
-                </p>
-                <!-- clinic galary -->
-                <ul class="zb-clinic-gallery"></ul>
-              </div>
-              <div class="zb-hospital-time">
-                <p class="zb-h-day">Mon - Sat</p>
-                <p class="zb-h-time">
-                  <span>10:00 AM - 2:00 PM</span>
-                  <span>4:00 PM - 9:00 PM</span>
-                </p>
-                <p class="zb-h-day">Sun</p>
-                <p class="zb-h-time">
-                  <span>10:00 AM - 2:00 PM</span>
-                </p>
-              </div>
-              <div class="zb-consulting-price">
-                <p>$250</p>
-              </div>
-            </div>
-            <div class="zb-location-r">
-              <div class="zb-d-info-box zb-location-info-box">
-                <h4 id="zb-d-name">Smile Cute Dental Care Center</h4>
-                <p id="zb-d-hospital">
-                  MDS - Periodontology and Oral Implantology, BDS
-                </p>
-                <p class="zb-d-padding-t-b-5 zb-ratings"></p>
-                <p class="zb-d-address zb-d-padding-t-b-5">
-                  <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
-                  <span>2286 Sundown Lane, Austin, Texas 78749, USA</span>
-                </p>
-
-                <!-- clinic galary -->
-                <ul class="zb-clinic-gallery"></ul>
-              </div>
-              <div class="zb-hospital-time">
-                <p class="zb-h-day">Tue - Fri</p>
-                <p class="zb-h-time">
-                  <span>11:00 AM - 1:00 PM</span>
-                  <span>6:00 PM - 11:00 PM</span>
-                </p>
-                <p class="zb-h-day">Sat - Sun</p>
-                <p class="zb-h-time">
-                  <span>8:00 AM - 10:00 AM</span>
-                  <span>3:00 PM - 7:00 PM</span>
-                </p>
-              </div>
-              <div class="zb-consulting-price">
-                <p>$350</p>
-              </div>
+            <div class="zb-consulting-price">
+              <p>$250</p>
             </div>
           </div>
-          <div id="zb-reviews" class="zb-d-fn">
-            
-            <div role="tabpanel" id="doc_reviews" class="tab-pane fade active show">
-              <div class="widget review-listing">
+          <div class="zb-location-r">
+            <div class="zb-d-info-box zb-location-info-box">
+              <h4 id="zb-d-name">Smile Cute Dental Care Center</h4>
+              <p id="zb-d-hospital">
+                MDS - Periodontology and Oral Implantology, BDS
+              </p>
+              <p class="zb-d-padding-t-b-5 zb-ratings"></p>
+              <p class="zb-d-address zb-d-padding-t-b-5">
+                <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
+                <span>2286 Sundown Lane, Austin, Texas 78749, USA</span>
+              </p>
+
+              <!-- clinic galary -->
+              <ul class="zb-clinic-gallery"></ul>
+            </div>
+            <div class="zb-hospital-time">
+              <p class="zb-h-day">Tue - Fri</p>
+              <p class="zb-h-time">
+                <span>11:00 AM - 1:00 PM</span>
+                <span>6:00 PM - 11:00 PM</span>
+              </p>
+              <p class="zb-h-day">Sat - Sun</p>
+              <p class="zb-h-time">
+                <span>8:00 AM - 10:00 AM</span>
+                <span>3:00 PM - 7:00 PM</span>
+              </p>
+            </div>
+            <div class="zb-consulting-price">
+              <p>$350</p>
+            </div>
+          </div>
+        </div>
+        <div id="zb-reviews" class="zb-d-fn">
+
+          <div role="tabpanel" id="doc_reviews" class="tab-pane fade active show">
+            <div class="widget review-listing">
               <ul class="comments-list">
 
-              <li>
-              <div class="comment">
-              <img class="avatar avatar-sm rounded-circle" alt="User Image" src="https://doccure.dreamguystech.com/html/template/assets/img/patients/patient.jpg">
-              <div class="comment-body">
-              <div class="meta-data">
-              <div class="meta-data-1">
-                <span class="comment-author">Richard Wilson</span>
-              <span class="comment-date">Reviewed 2 Days ago</span>
-              </div>
-              <div class="review-count rating"></div>
-              </div>
-              <p class="recommended"><i class="far fa-thumbs-up"></i> I recommend the doctor</p>
-              <p class="comment-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation.
-              Curabitur non nulla sit amet nisl tempus
-              </p>
-              <div class="comment-reply">
-              <a class="comment-btn" href="#">
-              <i class="fas fa-reply"></i> Reply
-              </a>
-              <p class="recommend-btn">
-               <span>Recommend?</span>
-              <a href="#" class="like-btn">
-              <i class="far fa-thumbs-up"></i> Yes
-              </a>
-              <a href="#" class="dislike-btn">
-              <i class="far fa-thumbs-down"></i> No
-              </a>
-              </p>
-              </div>
-              </div>
-              </div>
-              
-              <ul class="comments-reply">
-              <li>
-              <div class="comment">
-              <img class="avatar avatar-sm rounded-circle" alt="User Image" src="https://doccure.dreamguystech.com/html/template/assets/img/patients/patient1.jpg">
-              <div class="comment-body">
-              <div class="meta-data">
-              <div class="meta-data-1">
-                <span class="comment-author">Charlene Reed</span>
-              <span class="comment-date">Reviewed 3 Days ago</span>
-              </div>
-              <div class="review-count rating"></div>
-              </div>
-              <p class="comment-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam.
-              Curabitur non nulla sit amet nisl tempus
-              </p>
-              <div class="comment-reply">
-              <a class="comment-btn" href="#">
-              <i class="fas fa-reply"></i> Reply
-              </a>
-              <p class="recommend-btn">
-              <span>Recommend?</span>
-              <a href="#" class="like-btn">
-              <i class="far fa-thumbs-up"></i> Yes
-              </a>
-              <a href="#" class="dislike-btn">
-              <i class="far fa-thumbs-down"></i> No
-              </a>
-              </p>
-              </div>
-              </div>
-              </div>
-              </li>
+                <li>
+                  <div class="comment">
+                    <img class="avatar avatar-sm rounded-circle" alt="User Image"
+                      src="https://doccure.dreamguystech.com/html/template/assets/img/patients/patient.jpg">
+                    <div class="comment-body">
+                      <div class="meta-data">
+                        <div class="meta-data-1">
+                          <span class="comment-author">Richard Wilson</span>
+                          <span class="comment-date">Reviewed 2 Days ago</span>
+                        </div>
+                        <div class="review-count rating"></div>
+                      </div>
+                      <p class="recommended"><i class="far fa-thumbs-up"></i> I recommend the doctor</p>
+                      <p class="comment-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation.
+                        Curabitur non nulla sit amet nisl tempus
+                      </p>
+                      <div class="comment-reply">
+                        <a class="comment-btn" href="#">
+                          <i class="fas fa-reply"></i> Reply
+                        </a>
+                        <p class="recommend-btn">
+                          <span>Recommend?</span>
+                          <a href="#" class="like-btn">
+                            <i class="far fa-thumbs-up"></i> Yes
+                          </a>
+                          <a href="#" class="dislike-btn">
+                            <i class="far fa-thumbs-down"></i> No
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="comments-reply">
+                    <li>
+                      <div class="comment">
+                        <img class="avatar avatar-sm rounded-circle" alt="User Image"
+                          src="https://doccure.dreamguystech.com/html/template/assets/img/patients/patient1.jpg">
+                        <div class="comment-body">
+                          <div class="meta-data">
+                            <div class="meta-data-1">
+                              <span class="comment-author">Charlene Reed</span>
+                              <span class="comment-date">Reviewed 3 Days ago</span>
+                            </div>
+                            <div class="review-count rating"></div>
+                          </div>
+                          <p class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam.
+                            Curabitur non nulla sit amet nisl tempus
+                          </p>
+                          <div class="comment-reply">
+                            <a class="comment-btn" href="#">
+                              <i class="fas fa-reply"></i> Reply
+                            </a>
+                            <p class="recommend-btn">
+                              <span>Recommend?</span>
+                              <a href="#" class="like-btn">
+                                <i class="far fa-thumbs-up"></i> Yes
+                              </a>
+                              <a href="#" class="dislike-btn">
+                                <i class="far fa-thumbs-down"></i> No
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                </li>
+
+
+                <li>
+                  <div class="comment">
+                    <img class="avatar avatar-sm rounded-circle" alt="User Image"
+                      src="https://doccure.dreamguystech.com/html/template/assets/img/patients/patient2.jpg">
+                    <div class="comment-body">
+                      <div class="meta-data">
+                        <div class="meta-data-1">
+                          <span class="comment-author">Travis Trimble</span>
+                          <span class="comment-date">Reviewed 4 Days ago</span>
+                        </div>
+                        <div class="review-count rating"></div>
+                      </div>
+                      <p class="comment-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation.
+                        Curabitur non nulla sit amet nisl tempus
+                      </p>
+                      <div class="comment-reply">
+                        <a class="comment-btn" href="#">
+                          <i class="fas fa-reply"></i> Reply
+                        </a>
+                        <p class="recommend-btn">
+                          <span>Recommend?</span>
+                          <a href="#" class="like-btn">
+                            <i class="far fa-thumbs-up"></i> Yes
+                          </a>
+                          <a href="#" class="dislike-btn">
+                            <i class="far fa-thumbs-down"></i> No
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
               </ul>
-              
-              </li>
-              
-              
-              <li>
-              <div class="comment">
-              <img class="avatar avatar-sm rounded-circle" alt="User Image" src="https://doccure.dreamguystech.com/html/template/assets/img/patients/patient2.jpg">
-              <div class="comment-body">
-              <div class="meta-data">
-              <div class="meta-data-1">
-                <span class="comment-author">Travis Trimble</span>
-              <span class="comment-date">Reviewed 4 Days ago</span>
-              </div>
-              <div class="review-count rating"></div>
-              </div>
-              <p class="comment-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation.
-              Curabitur non nulla sit amet nisl tempus
-              </p>
-              <div class="comment-reply">
-              <a class="comment-btn" href="#">
-              <i class="fas fa-reply"></i> Reply
-              </a>
-              <p class="recommend-btn">
-              <span>Recommend?</span>
-              <a href="#" class="like-btn">
-              <i class="far fa-thumbs-up"></i> Yes
-              </a>
-              <a href="#" class="dislike-btn">
-              <i class="far fa-thumbs-down"></i> No
-              </a>
-              </p>
-              </div>
-              </div>
-              </div>
-              </li>
-              
-              </ul>
-              
-              
+
+
               <div class="all-feedback text-center">
-              <a href="#" class="btn btn-primary btn-sm">
-              Show all feedback <strong style="color: white">(167)</strong>
-              </a>
-              </div>
-              
-              </div>
-              
-              
-              <div class="write-review">
-              <h5>Write a review for <strong class="write-review-to"></strong></h5>
-              
-              <form>
-              <div class="form-group">
-              <label>Review</label>
-              <div class="star-rating">
-              <input id="star-5" type="radio" name="rating" value="star-5">
-              <label for="star-5" title="5 stars">
-              <i class="active fa fa-star"></i>
-              </label>
-              <input id="star-4" type="radio" name="rating" value="star-4">
-              <label for="star-4" title="4 stars">
-              <i class="active fa fa-star"></i>
-              </label>
-              <input id="star-3" type="radio" name="rating" value="star-3">
-              <label for="star-3" title="3 stars">
-              <i class="active fa fa-star"></i>
-              </label>
-              <input id="star-2" type="radio" name="rating" value="star-2">
-              <label for="star-2" title="2 stars">
-              <i class="active fa fa-star"></i>
-              </label>
-              <input id="star-1" type="radio" name="rating" value="star-1">
-              <label for="star-1" title="1 star">
-              <i class="active fa fa-star"></i>
-              </label>
-              </div>
-              </div>
-              <div class="form-group">
-              <label>Title of your review</label>
-              <input class="form-control" type="text" placeholder="If you could say it in one sentence, what would you say?">
-              </div>
-              <div class="form-group">
-              <label>Your review</label>
-              <textarea id="review_desc" maxlength="100" class="form-control"></textarea>
-              <div class="d-flex justify-content-between mt-3"><small class="text-muted"><span id="chars">100</span> characters remaining</small></div>
-              </div>
-              <hr>
-              <div class="form-group">
-              <div class="terms-accept">
-              <div class="custom-checkbox">
-              <input type="checkbox" id="terms_accept">
-              <label for="terms_accept">I have read and accept <a href="#">Terms &amp; Conditions</a></label>
-              </div>
-              </div>
-              </div>
-              <div class="submit-section">
-              <button type="submit" class="btn btn-primary submit-btn">Add Review</button>
-              </div>
-              </form>
-              
-              </div>
-              
+                <a href="#" class="btn btn-primary btn-sm">
+                  Show all feedback <strong style="color: white">(167)</strong>
+                </a>
               </div>
 
-          </div>
-          <div id="zb-business-hours" class="zb-d-fn d-center">
-            <table class="zb-b-h-table">
-              <thead>
-                <tr>
-                  <th>
-                    <div class="zb-t-th">
-                      <h4>Today</h4>
-                      <p class="today-date"></p>
+            </div>
+
+
+            <div class="write-review">
+              <h5>Write a review for <strong class="write-review-to"></strong></h5>
+
+              <form>
+                <div class="form-group">
+                  <label>Review</label>
+                  <div class="star-rating">
+                    <input id="star-5" type="radio" name="rating" value="star-5">
+                    <label for="star-5" title="5 stars">
+                      <i class="active fa fa-star"></i>
+                    </label>
+                    <input id="star-4" type="radio" name="rating" value="star-4">
+                    <label for="star-4" title="4 stars">
+                      <i class="active fa fa-star"></i>
+                    </label>
+                    <input id="star-3" type="radio" name="rating" value="star-3">
+                    <label for="star-3" title="3 stars">
+                      <i class="active fa fa-star"></i>
+                    </label>
+                    <input id="star-2" type="radio" name="rating" value="star-2">
+                    <label for="star-2" title="2 stars">
+                      <i class="active fa fa-star"></i>
+                    </label>
+                    <input id="star-1" type="radio" name="rating" value="star-1">
+                    <label for="star-1" title="1 star">
+                      <i class="active fa fa-star"></i>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Title of your review</label>
+                  <input class="form-control" type="text"
+                    placeholder="If you could say it in one sentence, what would you say?">
+                </div>
+                <div class="form-group">
+                  <label>Your review</label>
+                  <textarea id="review_desc" maxlength="100" class="form-control"></textarea>
+                  <div class="d-flex justify-content-between mt-3"><small class="text-muted"><span id="chars">100</span>
+                      characters remaining</small></div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="terms-accept">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="terms_accept">
+                      <label for="terms_accept">I have read and accept <a href="#">Terms &amp; Conditions</a></label>
                     </div>
-                  </th>
-                  <th>
-                    <div class="zb-t-th check-open-close"></div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="zb-business-days"></tbody>
-            </table>
+                  </div>
+                </div>
+                <div class="submit-section">
+                  <button type="submit" class="btn btn-primary submit-btn">Add Review</button>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div id="zb-business-hours" class="zb-d-fn d-center">
+          <table class="zb-b-h-table">
+            <thead>
+              <tr>
+                <th>
+                  <div class="zb-t-th">
+                    <h4>Today</h4>
+                    <p class="today-date"></p>
+                  </div>
+                </th>
+                <th>
+                  <div class="zb-t-th check-open-close"></div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="zb-business-days"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+
+    <div class="hc-fot-cont">
+      <div class="hc-drop-logo">
+        <img
+          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
+          alt="">
+      </div>
+      <div class="hc-footer">
+
+        <div class="row">
+          <div class="col-md-3">
+            <p class="color-white">Dynamically procrastinate B2C users after installed base benefits directed content in
+              real time will have
+              multiple touchpoints for offshoring without revolutionary medicine.</p>
+            <div>
+              <p><i class="fa-solid fa-envelope color-white"></i></i> <span
+                  class="color-white">info@vivomedic.com</span></p>
+              <p><i class="fa-solid fa-location-dot color-white"></i> <span class="color-white">68 Erie St, Jersey City,
+                  NJ 07302</span></p>
+              <p><i class="fa fa-phone color-white"></i> <span class="color-white">0-800-400-6556</span></p>
+
+
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h1 class="color-white">About Vivo</h1>
+            <ul>
+              <li><a class="color-white" href="">General Information</a></li>
+              <li><a class="color-white" href="">Working Hours</a></li>
+              <li><a class="color-white" href="">Appointments</a></li>
+              <li><a class="color-white" href="">Contact & Location</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h1 class="color-white">Medical Services</h1>
+            <ul>
+              <li><a href="">Your Family Doctor</a></li>
+              <li><a href="">Pediatrics</a></li>
+              <li><a href="">Clinics</a></li>
+              <li><a href="">Dentistry</a></li>
+              <li><a href="">Optometrist</a></li>
+              <li><a href="">Surgery</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h1 class="color-white">Latest News</h1>
+            <ul class="hc-shot-link">
+
+              <li>
+                <p><a href="" maxlength="10">How Should You Treat Seborrheic Dermatitis</a>
+                </p>
+                <span class="color-white">July 16, 2022</span>
+
+              </li>
+
+              <li>
+                <p>
+                  <a href="">What Should You Know About Hyperpigmentation</a>
+                </p>
+                <span class="color-white">July 16, 2022</span>
+              </li>
+
+              <li>
+                <p>
+                  <a href="">How Long Should You Wash Your Hands Every Time?</a>
+                </p>
+                <span class="color-white">July 16, 2022</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h1 class="color-white">Social Networks</h1>
+            <div class="hc-social">
+              <a href=""><i class="fa-brands fa-facebook-f color-white"></i> </a>
+              <a href=""><i class="fa-brands fa-twitter color-white"></i> </a>
+              <a href=""><i class="fa-brands fa-linkedin-in color-white"></i> </a>
+              <a href=""><i class="fa-brands fa-facebook-messenger color-white"></i> </a>
+              <a href=""><i class="fa-brands fa-instagram color-white"></i> </a>
+            </div>
+            <div class="hc-cookie">
+              <a href="">Cookie Policy</a>
+              <a href="">Terms of Use</a>
+              <a href="">Privacy Policy</a>
+            </div>
+            <p class="color-white">Copyright © 2022 BoldThemes. <br>
+              All Rights Reserved.</p>
+
           </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <script src="../../assets/app/nav-bar/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <script src="/assets/app/doctor/doctor-view-profile.js"></script>
+  <script src="/assets/app/doctor/doctor-view-profile.js"></script>
 
 
-  </body>
+</body>
+
 </html>
