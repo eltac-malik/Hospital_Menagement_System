@@ -684,6 +684,8 @@ setTimeout(()=>window.location.href="doctor-cards.html", 500);
 
 
 
+
+
 // for Doctor view profile
 
 // localStorage.setItem("doctors", JSON.stringify(doctors));
