@@ -451,3 +451,84 @@
   object-fit: cover;
   border: none;
 }
+
+.ih-company-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.ih-company-slide h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ih-company-slide p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.owl-carousel {
+  margin: 40px 0px;
+}
+.ih-form-image img{
+  width: 100%;
+}
+
+.ih-form span{
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.ih-form h1{
+  font-size: 61px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+.ih-form p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ih-inp-style{
+  border: none;
+  height: 40px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgb(25, 25, 25, 0.07);
+}
+.ih-inp-style-two{border: none;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgb(25, 25, 25, 0.07);}
+  
+  .ih-btn-appointment{
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #025fd9;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  border: 2px solid #025fd9;
+  position: relative;
+  top: 0;
+  }
+
+  .ih-btn-appointment:hover {  
+    top: -5px;
+  }
