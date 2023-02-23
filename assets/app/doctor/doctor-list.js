@@ -555,7 +555,7 @@ let doctors = [
   {
     doctorId: Math.random(),
     price: 95,
-    isPopular: false,
+    isPopular: true,
     education: [
       {
         year: "2004 - 2010",
@@ -622,6 +622,13 @@ let doctors = [
     procedure2: "bronchoscopy",
   },
 ];
+
+
+if(JSON.parse(localStorage.getItem("doctors")) === null){
+
+  localStorage.setItem("doctors", JSON.stringify(doctors))
+  
+  }
 
 // Doctor object - dynamic adder to the page
 
@@ -737,11 +744,7 @@ function getBooking() {
 
 
 
-if(JSON.parse(localStorage.getItem("doctors")) === null){
 
-localStorage.setItem("doctors", JSON.stringify(doctors))
-
-}
 
 let filteredDoc = []
 const searchBar = document.querySelector('#searchBar');
