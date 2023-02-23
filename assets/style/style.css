@@ -1,7 +1,3 @@
-/* p{
-    color: var(--text-primary-color);
-} */
-
 .ih-content {
   margin: auto;
   width: 90%;
@@ -169,13 +165,14 @@
   margin-left: 120px;
   margin-top: -220px;
 }
+
+
 @media (max-width: 1025) {
   .ih-fourth-row-first {
     margin-left: 120px;
     margin-top: -250px;
   }
 }
-
 @media (max-width: 767px) {
   .ih-fourth-row-first {
     margin-left: 0px;

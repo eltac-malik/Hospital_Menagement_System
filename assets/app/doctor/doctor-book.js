@@ -1,10 +1,9 @@
-const efDoprofile= document.getElementById('ef-doc-profile')
-const doctorName=document.querySelector(".docname")
+const efDoprofile = document.getElementById('ef-doc-profile')
+const doctorName = document.querySelector(".docname")
 let currentDoctor = JSON.parse(localStorage.getItem("currentDoctor"));
 
-
 function doctorProfileWriter() {
-    efDoprofile.innerHTML=`
+  efDoprofile.innerHTML = `
     <div class="efdocimg">
     <img
       src="${currentDoctor.image}"
@@ -30,8 +29,6 @@ function doctorProfileWriter() {
 }
 doctorProfileWriter()
 
-
-function doctorBacklist(){
-    window.location.href="../doctor/doctor-list.html"
-
+function doctorBacklist() {
+  window.location.href = "../doctor/doctor-list.html"
 }
