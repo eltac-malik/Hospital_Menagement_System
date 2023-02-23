@@ -105,15 +105,15 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   border-color: #223a66;
 }
 .btn-main:hover {
-  background: #025fd9;
-  border-color: #025fd9;
+  background: var(--button-secondary-color);
+  border-color: var(--button-secondary-color);
   color: #fff;
 }
 
 .btn-main-2 {
-  background: #025fd9;
+  background: var(--button-secondary-color);
   color: #fff;
-  border-color: #025fd9;
+  border-color: var(--button-secondary-color);
 }
 .btn-main-2:hover {
   background: #223a66;
@@ -275,7 +275,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #025fd9;
+  color: var(--button-secondary-color);
   text-decoration: none;
 }
 
@@ -358,7 +358,7 @@ a:focus {
 }
 #navbarmain .nav-link:hover,
 #navbarmain .active .nav-link {
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 
 .dropdown-toggle::after {
@@ -401,7 +401,7 @@ a:focus {
 .navigation .dropdown-menu {
   padding: 0px;
   border: 0px;
-  border-top: 5px solid #025fd9;
+  border-top: 5px solid var(--button-secondary-color);
   background: #fff;
   border-radius: 0px;
 }
@@ -452,7 +452,7 @@ a:focus {
 .navigation .dropdown-item.active,
 .navigation .dropdown-item:hover {
   background: rgba(225, 36, 84, 0.05);
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 .navigation button:focus {
   outline: 0;
@@ -515,13 +515,13 @@ a:focus {
 }
 
 .text-color-2 {
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 
 .divider {
   width: 40px;
   height: 5px;
-  background: #025fd9;
+  background: var(--button-secondary-color);
 }
 
 @media (max-width: 480px) {
@@ -683,7 +683,7 @@ a:focus {
   margin-bottom: 10px;
 }
 .service i {
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 .service h4 {
   padding-left: 20px;
@@ -711,7 +711,7 @@ a:focus {
   margin-bottom: 10px;
 }
 .department-service li i {
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 
 .doctors .btn-group .btn {
@@ -725,7 +725,7 @@ a:focus {
 .doctors .btn-group .btn.active {
   box-shadow: none !important;
   border-color: transparent;
-  background: #025fd9;
+  background: var(--button-secondary-color);
   color: #fff;
 }
 .doctors .btn-group .btn.focus {
@@ -735,13 +735,13 @@ a:focus {
 .doctors .btn-group .btn:focus {
   box-shadow: none !important;
   border-color: transparent;
-  background: #025fd9;
+  background: var(--button-secondary-color);
   color: #fff;
 }
 .doctors .btn-group .btn:hover {
   box-shadow: none !important;
   border-color: transparent;
-  background: #025fd9;
+  background: var(--button-secondary-color);
   color: #fff;
 }
 .doctors .btn-group > .btn-group:not(:last-child) > .btn, .doctors .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .doctors .btn-group > .btn:not(:first-child) {
@@ -773,7 +773,7 @@ a:focus {
 }
 .doctor-info li i {
   margin-right: 20px;
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 
 .read-more {
@@ -911,7 +911,7 @@ a:focus {
 }
 .testimonial-block.style-2 i {
   bottom: -20px;
-  color: #025fd9;
+  color: var(--button-secondary-color);
   opacity: 0.3;
 }
 
@@ -998,7 +998,7 @@ a:focus {
   font-size: 50px;
   margin-bottom: 15px;
   display: inline-block;
-  color: #025fd9;
+  color: var(--button-secondary-color);
 }
 
 .blog-item-content h2 {
@@ -1020,7 +1020,7 @@ a:focus {
   }
 }
 .backtop:hover {
-  background-color: #025fd9;
+  background-color: var(--button-secondary-color);
 }
 .backtop i {
   color: #fff;
