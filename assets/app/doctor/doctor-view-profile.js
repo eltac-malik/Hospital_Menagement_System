@@ -369,6 +369,15 @@ function showTodayDate() {
     month: "short",
   });
   today_b_table.innerHTML = `${dateString}`;
+  let check_open_close = document.querySelector(".check-open-close");
+  let dayOfWeek = today.getDay();
+  if (dayOfWeek !== 0) {
+    check_open_close.innerHTML += `
+  <span class="zb-b-h-open zb-b-h-font">Open Now</span>
+  <p>07:00 AM - 09:00 PM</p>`;
+  } else {
+    check_open_close.innerHTML += `<span class="zb-b-h-close zb-b-h-font">Closed</span>`;
+  }
 }
 showTodayDate();
 
@@ -386,3 +395,24 @@ function ratings() {
   });
 }
 ratings();
+
+// reviews
+
+function ratingFromReviewver() {
+  let rating = document.querySelectorAll(".rating");
+  rating.forEach((e) => {
+    e.innerHTML += `
+    <i class="fas fa-star filled"></i>
+    <i class="fas fa-star filled"></i>
+    <i class="fas fa-star filled"></i>
+    <i class="fas fa-star filled"></i>
+    <i class="fas fa-star"></i>
+    `;
+  });
+}
+ratingFromReviewver();
+function writeWhichDoctor() {
+  let write_review_to = document.querySelector(".write-review-to");
+  write_review_to.innerHTML += `${currentDoctor.name}`;
+}
+writeWhichDoctor();
