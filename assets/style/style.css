@@ -185,12 +185,12 @@
     height: auto;
   }
 }
-.ih-inner-content span {
+.ih-consult-one span {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
 }
-.ih-inner-content h1 {
+.ih-consult h1 {
   font-size: 61px;
   font-weight: 700;
   line-height: 73px;
@@ -411,6 +411,7 @@
 .ih-doctor-text-content {
   padding: 10px 30px;
   color: #fff;
+  height: 200px;
 }
 .ih-doctor-text-content span {
   font-size: 16px;
