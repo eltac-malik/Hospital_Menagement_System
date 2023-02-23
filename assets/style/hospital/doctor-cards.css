@@ -462,6 +462,9 @@ a {
   transition: all 0.35s ease;
 
 }
+#zn-name{
+  font-size: 20px;
+}
 
 a:focus, a:hover {
   color: var(--button-secondary-color);
