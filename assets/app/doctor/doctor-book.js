@@ -28,6 +28,8 @@ function doctorProfileWriter() {
 }
 doctorProfileWriter();
 
-function doctorBacklist() {
-  window.location.href = "../doctor/doctor-view-profile.html";
+
+function doctorBacklist(){
+    window.location.href="../doctor/doctor-list.html"
+
 }
