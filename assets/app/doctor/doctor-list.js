@@ -20,15 +20,15 @@ let doctors = [
     experience: [
       {
         year: "2010 - Present (5 years)",
-        hospital: "Glowing Smiles Family Dental Clinic",
+        hospital: "Massachusetts General Hospital",
       },
       {
         year: "2007 - 2010 (3 years)",
-        hospital: "Comfort Care Dental Clinic",
+        hospital: "Cleveland Clinic",
       },
       {
         year: "2005 - 2007 (2 years)",
-        hospital: "Dream Smile Dental Practice",
+        hospital: "Stanford Health Care",
       },
     ],
     award: [
@@ -69,7 +69,8 @@ let doctors = [
     },
     name: "Dr. Ruby Perrin",
     hosp: "Massachusetts General Hospital",
-    hospitalImage: "https://assets-varnish.triblive.com/2022/01/4688143_web1_vnd-acmh-012822.jpg",
+    hospitalImage:
+      "https://assets-varnish.triblive.com/2022/01/4688143_web1_vnd-acmh-012822.jpg",
     spec: "MDS - Periodontology and Oral Implantology, BDS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-01.jpg",
@@ -106,7 +107,7 @@ let doctors = [
       },
       {
         year: "2013 - 2016 (3 years)",
-        hospital: "Dermatology Associates",
+        hospital: "Mayo Clinic",
       },
     ],
     award: [
@@ -142,7 +143,8 @@ let doctors = [
     },
     name: "Dr. Jessica Wong",
     hosp: "Johns Hopkins Hospital",
-    hospitalImage:"https://www.stanfordchildrens.org/content-public/location/stanford-hospital/stanford-hospital-720x315.jpg",
+    hospitalImage:
+      "https://www.stanfordchildrens.org/content-public/location/stanford-hospital/stanford-hospital-720x315.jpg",
     spec: "MD - Dermatology, MBBS",
     image:
       "https://doccure.dreamguystech.com/html/template/assets/img/doctors/doctor-thumb-03.jpg",
@@ -184,7 +186,7 @@ let doctors = [
       },
       {
         year: "2013 - 2016 (3 years)",
-        hospital: "Cardiology Associates",
+        hospital: "University of California, San Francisco Medical Center",
       },
     ],
     award: [
@@ -220,7 +222,8 @@ let doctors = [
     },
     name: "Dr. James Smith",
     hosp: "Duke University Hospital",
-    hospitalImage:"https://www.stlukeshealth.org/content/dam/stlukeshealth/images/location-header/new-bslmc-day-2-0.jpg/jcr:content/renditions/cq5dam.web.1120.743.jpeg",
+    hospitalImage:
+      "https://www.stlukeshealth.org/content/dam/stlukeshealth/images/location-header/new-bslmc-day-2-0.jpg/jcr:content/renditions/cq5dam.web.1120.743.jpeg",
 
     spec: "MD - Cardiology, MBBS",
     image:
@@ -260,11 +263,11 @@ let doctors = [
     experience: [
       {
         year: "2016 - Present (7 years)",
-        hospital: "Women's Health Clinic",
+        hospital: "Mayo Clinic",
       },
       {
         year: "2013 - 2016 (3 years)",
-        hospital: "Ob/Gyn Associates",
+        hospital: "NewYork-Presbyterian Hospital",
       },
     ],
     award: [
@@ -300,7 +303,8 @@ let doctors = [
     },
     name: "Dr. Maria Rodriguez",
     hosp: "Mayo Clinic",
-    hospitalImage:"https://images.squarespace-cdn.com/content/v1/58b72c843a04112a613d2251/1597326999218-V3KMZDILZMCPV2G7VZEN/Emory1.jpg?format=1500w",
+    hospitalImage:
+      "https://images.squarespace-cdn.com/content/v1/58b72c843a04112a613d2251/1597326999218-V3KMZDILZMCPV2G7VZEN/Emory1.jpg?format=1500w",
 
     spec: "MD - Obstetrics and Gynecology, MBBS",
     image:
@@ -340,7 +344,7 @@ let doctors = [
     experience: [
       {
         year: "2017 - Present (6 years)",
-        hospital: "Neurology Specialists",
+        hospital: "Cleveland Clinic",
       },
       {
         year: "2015 - 2017 (2 years)",
@@ -385,7 +389,8 @@ let doctors = [
     },
     name: "Dr. David Kim",
     hosp: "Cleveland Clinic",
-    hospitalImage: "https://npr.brightspotcdn.com/dims4/default/d2465fe/2147483647/strip/true/crop/1200x630+0+0/resize/1760x924!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb6%2Ffa%2F7fa96f134f41b7bfe00856755edc%2Fcleveland-clinic.jpg",
+    hospitalImage:
+      "https://npr.brightspotcdn.com/dims4/default/d2465fe/2147483647/strip/true/crop/1200x630+0+0/resize/1760x924!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb6%2Ffa%2F7fa96f134f41b7bfe00856755edc%2Fcleveland-clinic.jpg",
 
     spec: "MD - Neurology, MBBS",
     image:
@@ -424,11 +429,11 @@ let doctors = [
     experience: [
       {
         year: "2018 - Present (5 years)",
-        hospital: "Cancer Treatment Centers of America",
+        hospital: "University of California, San Francisco Medical Center",
       },
       {
         year: "2015 - 2018 (3 years)",
-        hospital: "Memorial Sloan Kettering Cancer Center",
+        hospital: "Stanford Health Care",
       },
       {
         year: "2012 - 2015 (3 years)",
@@ -466,7 +471,8 @@ let doctors = [
     },
     name: "Dr. Jonathan Williams",
     hosp: "University of California, San Francisco Medical Center",
-    hospitalImage:"https://www.usa.skanska.com/48ff5f/siteassets/what-we-deliver/projects/west-memorial-place-i-and-ii/image-gallery/west-memorial-place-01.jpg?w=944&h=531&mode=crop&scale=both",
+    hospitalImage:
+      "https://www.usa.skanska.com/48ff5f/siteassets/what-we-deliver/projects/west-memorial-place-i-and-ii/image-gallery/west-memorial-place-01.jpg?w=944&h=531&mode=crop&scale=both",
 
     spec: "MD - Oncology, MBBS",
     image:
@@ -505,15 +511,15 @@ let doctors = [
     experience: [
       {
         year: "2015 - Present (8 years)",
-        hospital: "Pediatrics Associates",
+        hospital: "NewYork-Presbyterian Hospital",
       },
       {
         year: "2013 - 2015 (2 years)",
-        hospital: "Children's Hospital of Philadelphia",
+        hospital: "University of California, San Francisco Medical Center",
       },
       {
         year: "2010 - 2013 (3 years)",
-        hospital: "Boston Children's Hospital",
+        hospital: "Massachusetts General Hospital",
       },
     ],
     award: [
@@ -549,7 +555,8 @@ let doctors = [
     },
     name: "Dr. Sarah Park",
     hosp: "NewYork-Presbyterian Hospital",
-    hospitalImage:"https://www.universityofcalifornia.edu/sites/default/files/styles/article_default_banner/public/Jacobs-Medical-Center_hero.jpg?itok=OhwUy3X_",
+    hospitalImage:
+      "https://www.universityofcalifornia.edu/sites/default/files/styles/article_default_banner/public/Jacobs-Medical-Center_hero.jpg?itok=OhwUy3X_",
 
     spec: "MD - Pediatrics, MBBS",
     image:
@@ -583,11 +590,11 @@ let doctors = [
     experience: [
       {
         year: "2015 - Present (6 years)",
-        hospital: "Pulmonary Associates",
+        hospital: "Stanford Health Care",
       },
       {
         year: "2013 - 2015 (2 years)",
-        hospital: "Lung Health Center",
+        hospital: "Duke University Hospital",
       },
     ],
     award: [
@@ -620,7 +627,8 @@ let doctors = [
     },
     name: "Dr. Michael Johnson",
     hosp: "Stanford Health Care",
-    hospitalImage:"https://www.beckershospitalreview.com/images/2017-images/08/Oncology/University%20of%20Wisconsin%20Hospital%20and%20Clinics.jpg",
+    hospitalImage:
+      "https://www.beckershospitalreview.com/images/2017-images/08/Oncology/University%20of%20Wisconsin%20Hospital%20and%20Clinics.jpg",
 
     spec: "MD - Pulmonology, MBBS",
     image:
@@ -637,32 +645,32 @@ let doctors = [
   },
 ];
 
+if (JSON.parse(localStorage.getItem("doctors")) === null) {
+  localStorage.setItem("doctors", JSON.stringify(doctors));
+}
 
-if(JSON.parse(localStorage.getItem("doctors")) === null){
-
-  localStorage.setItem("doctors", JSON.stringify(doctors))
-  
-  }
+if (localStorage.getItem("currentDoctor") !== null) {
+  localStorage.removeItem("currentDoctor");
+}
 
 // Doctor object - dynamic adder to the page
 
-function profileWriter(param) {
-  param.forEach((e) => {
-    doctorCards.innerHTML += `    
+function profileWriterforOneDoctor(doctor) {
+  doctorCards.innerHTML += `    
         <div class="card">
         <div class="card-body">
         <div class="doctor-widget">
         <div class="doc-info-left">
         <div class="doctor-img">
         <a href="#">
-        <img src="${e.image}" class="img-fluid" alt="User Image">
+        <img src="${doctor.image}" class="img-fluid" alt="User Image">
         </a>
         </div>
         <div class="doc-info-cont">
-        <h4 class="doc-name"><a href="#" onclick='createDoctorProfile(${e.doctorId}); getDoctorProfile()'>${e.name}</a></h4>
-        <p class="doc-hospital">${e.hosp}</p>
-        <p class="doc-speciality">${e.spec}</p>
-        <h5 class="doc-department"><img src="${e.depimg}" class="img-fluid" alt="Speciality">${e.dep}</h5>
+        <h4 class="doc-name"><a href="#" onclick='createDoctorProfile(${doctor.doctorId}); getDoctorProfile()'>${doctor.name}</a></h4>
+        <p class="doc-hospital">${doctor.hosp}</p>
+        <p class="doc-speciality">${doctor.spec}</p>
+        <h5 class="doc-department"><img src="${doctor.depimg}" class="img-fluid" alt="Speciality">${doctor.dep}</h5>
         <div class="rating">
        <span class="star-light"> <i class="fas fa-star filled"></i>
         <i class="fas fa-star filled"></i>
@@ -672,7 +680,7 @@ function profileWriter(param) {
         <span class="d-inline-block average-rating">(17)</span>
         </div>
         <div class="clinic-details">
-        <p class="doc-location"><i class="fas fa-map-marker-alt"></i>${e.location}</p>
+        <p class="doc-location"><i class="fas fa-map-marker-alt"></i>${doctor.location}</p>
         <ul class="zb-clinic-gallery">
         <li>
           <a
@@ -721,40 +729,41 @@ function profileWriter(param) {
       </ul>
         </div>
         <div class="clinic-services">
-        <span>${e.procedure}</span>
-        <span>${e.procedure2}</span>
+        <span>${doctor.procedure}</span>
+        <span>${doctor.procedure2}</span>
         </div>
         </div>
         </div>
         <div class="doc-info-right">
         <div class="clini-infos">
         <ul>
-        <li><i class="far fa-thumbs-up"></i>${e.pers}</li>
-        <li><i class="far fa-comment"></i>${e.feed}</li>
-        <li><i class="fas fa-map-marker-alt"></i>${e.location}</li>
-        <li><i class="far fa-money-bill-alt"></i>${e.wage}<i class="fas fa-info-circle" data-bs-toggle="tooltip" title="" data-bs-original-title="Lorem Ipsum" aria-label="Lorem Ipsum"></i> </li>
+        <li><i class="far fa-thumbs-up"></i>${doctor.pers}</li>
+        <li><i class="far fa-comment"></i>${doctor.feed}</li>
+        <li><i class="fas fa-map-marker-alt"></i>${doctor.location}</li>
+        <li><i class="far fa-money-bill-alt"></i>${doctor.wage}<i class="fas fa-info-circle" data-bs-toggle="tooltip" title="" data-bs-original-title="Lorem Ipsum" aria-label="Lorem Ipsum"></i> </li>
         </ul>
         </div>
         <div class="clinic-booking">
-        <a class="view-pro-btn" style=" text-decoration: none;" href="#" onclick='createDoctorProfile(${e.doctorId}); getDoctorProfile()'>View Profile</a>
-        <a class="apt-btn" style=" text-decoration: none;" href="#" onclick='createDoctorProfile(${e.doctorId}); getBooking()'>Book Appointment</a>
+        <a class="view-pro-btn" style=" text-decoration: none;" href="#" onclick='createDoctorProfile(${doctor.doctorId}); getDoctorProfile()'>View Profile</a>
+        <a class="apt-btn" style=" text-decoration: none;" href="#" onclick='createDoctorProfile(${doctor.doctorId}); getBooking()'>Book Appointment</a>
         </div>
         </div>
         </div>
         </div>
         </div>
         `;
-  });
 }
-profileWriter(doctors);
+
+function profileWriter() {
+  let allDoctors = JSON.parse(localStorage.getItem("doctors"));
+  allDoctors.forEach((e) => profileWriterforOneDoctor(e));
+}
+profileWriter();
 
 // for Doctor view profile
 
-localStorage.setItem("doctors", JSON.stringify(doctors));
-
 function createDoctorProfile(id) {
   let allDoctors = JSON.parse(localStorage.getItem("doctors"));
-
   let currentDoctor = allDoctors.find((item) => item.doctorId === id);
   localStorage.setItem("currentDoctor", JSON.stringify(currentDoctor));
 }
@@ -772,74 +781,55 @@ function getBooking() {
 // searchBar.addEventListener("keyup", (e)=>{
 // const searchPerson = e.target.value;
 // const filteredDoc = doctors.filter( person =>{
-//  return ( person.name.toLowerCase().includes(searchPerson) || 
+//  return ( person.name.toLowerCase().includes(searchPerson) ||
 //  person.hosp.toLowerCase().includes(searchPerson)
 //  );
 // });
 // console.log(filteredDoc)
 // })
 
+// let filteredDoc = []
+// const searchBar = document.querySelector('#searchBar');
+// if (searchBar) {
+//   searchBar.addEventListener('keyup', (e) => {
+//   doctorCards.innerHTML = "";
+//     const searchPerson = e.target.value.toLowerCase().trim();
+//     if (searchPerson.length > 0) {
+//     filteredDoc = doctors.filter(person => {
+//         return (person.name.toLowerCase().includes(searchPerson) || person.hosp.toLowerCase().includes(searchPerson));
+//       });
+//       console.log(filteredDoc)
+//     } else {
+//       console.log(doctors);
+//     }
+//     let sorted = filteredDoc
+//     sorted.sort(function(a, b){return b - a});
+
+//     profileWriter(sorted)
+//   });
+// }
 
 
+const searchBar = document.querySelector("#searchBar");
+searchBar.addEventListener("keyup", searchDoctor);
 
-
-
-let filteredDoc = []
-const searchBar = document.querySelector('#searchBar');
-if (searchBar) {
-  searchBar.addEventListener('keyup', (e) => {
+// According to doctor's name or hospital's name search
+function searchDoctor() { 
   doctorCards.innerHTML = "";
-    const searchPerson = e.target.value.toLowerCase().trim();
-    if (searchPerson.length > 0) {
-    filteredDoc = doctors.filter(person => {
-        return (person.name.toLowerCase().includes(searchPerson) || person.hosp.toLowerCase().includes(searchPerson));
-      });
-      console.log(filteredDoc)
-    } else {
-      console.log(doctors);
+  let allDoctors = JSON.parse(localStorage.getItem("doctors"));
+  allDoctors.forEach((person) => {
+    let searchPerson = searchBar.value.toLowerCase().trim();
+    let personName = person.name.toLowerCase().includes(searchPerson);
+    let personHospital = person.hosp.toLowerCase().includes(searchPerson);
+    if (searchPerson.length > 0 && (personName || personHospital)) {
+      localStorage.setItem("doctorSearch", JSON.stringify(person));
+      let search = JSON.parse(localStorage.getItem("doctorSearch"));
+      profileWriterforOneDoctor(search);
     }
-    let sorted = filteredDoc
-    sorted.sort(function(a, b){return b - a});
-
-    profileWriter(sorted)
   });
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  if (searchBar.value === "") {
+    localStorage.removeItem('doctorSearch');
+    profileWriter();
+  }
 }
-
-
