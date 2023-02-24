@@ -3,9 +3,8 @@
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,7 +14,7 @@ body {
 }
 
 .text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 60px;
   text-align: center;
   padding: 0;
@@ -42,10 +41,16 @@ body {
   animation: left-header 1.5s ease-out forwards;
   width: 15rem;
   text-align: center;
-
+  margin-left: 18rem;
 }
 
+/* footer design */
+footer {
+  width: 100%;
+  overflow: hidden;
+}
 
+/* animation header  */
 @keyframes left-header {
   20% {
     opacity: 0;
@@ -62,13 +67,17 @@ body {
   }
 }
 
-/* screen div */
+
+    /* screen div */
 #AS-main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  padding: 0 5rem;
+ 
 }
 
 .AShospital-card {
@@ -85,7 +94,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 /* card hoverleri */
@@ -177,6 +186,15 @@ body {
 
 /* repsonsive design */
 
+@media (min-width: 1000px) {
+  .AS-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .AS-header {
     font-size: 50px;
@@ -191,5 +209,6 @@ body {
     transform: none;
     opacity: 1;
     animation: none;
+    margin-left: 0;
   }
 }
