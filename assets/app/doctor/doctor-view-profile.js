@@ -40,8 +40,11 @@ function doctorProfileWriter() {
             </p>
             <p class="zb-d-padding-t-b-5 zb-ratings"></p>
             <p class="zb-d-address zb-d-padding-t-b-5">
-              <i class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
+            <i class="fa-sharp fa-regular fa-hospital"></i>
+              <span>${currentDoctor.hosp}</span><br>
+              <i style ="margin-right:10px" class="zb-icon-bg-gray fa-solid fa-location-dot"></i>
               <span>${currentDoctor.location}</span>
+              
             </p>
 
             <!-- clinic galary -->
