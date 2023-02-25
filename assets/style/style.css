@@ -71,6 +71,11 @@
   font-size: 48px;
   color: var(--page-secondary-color);
 }
+.ih-item-num-acc {
+  font-size: 48px;
+  color: var(--page-secondary-color);
+}
+
 .ih-item-text {
   font-size: 20px;
   color: var(--page-secondary-color);
