@@ -13,8 +13,35 @@ mobMenuBtn.addEventListener('click', () => {
 })
 
 
+var login = document.querySelector('#login');
+var register = document.querySelector('#registr');
+var logout = document.querySelector('#logout');
+var profileBlok = document.querySelectorAll('.profileBlok');
+var profile = document.querySelector('#profile');
+var profile1 = document.querySelector('#profile1');
 
 
+if(JSON.parse(localStorage.getItem('currentUser')) != null){
+  let current =JSON.parse(localStorage.getItem('currentUser'));
+   login.style.display = 'none'
+   register.style.display = 'none'
+   logout.style.display = 'inline-block'
+   profile1.style.display = 'inline-block'
+   profile.style.display = 'inline-block'
+
+   profileBlok.forEach(e=>{ e.textContent = `${current.fullName}`
+   })
+
+}else{
+  login.style.display = 'inline-block'
+  register.style.display = 'none'
+  logout.style.display = 'none'
+  profile.style.display = 'none';
+  profile1.style.display = 'none';
+
+
+
+}
 
 const doctorlist = JSON.parse(localStorage.getItem("doctors"))
 
