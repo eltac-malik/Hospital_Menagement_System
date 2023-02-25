@@ -20,7 +20,8 @@ mobMenuBtn.addEventListener('click', ()=>{
 // let current = JSON.parse(localStorage.getItem("current"))
 
 
-// let name = document.getElementById("name")
+let name = document.getElementById("name")
+
 // let eMail1 = document.getElementById("email")
 
 // let fullName = document.getElementById("fullName")
@@ -32,26 +33,28 @@ mobMenuBtn.addEventListener('click', ()=>{
 // eMail1.textContent = current.email
 
 
-// submitBtn.addEventListener("click",()=>{
-//     let current = JSON.parse(localStorage.getItem("current"))
+submitBtn.addEventListener("click",()=>{
+    // let current = JSON.parse(localStorage.getItem("current"))
+console.log(name.value)
 
-//     let checkName = fullName.value !== '' ? {...current,name:fullName.value} : current;
-//     let checkMail = eMail.value !== '' ? { ...checkName, email: eMail.value } : checkName; 
-//     let newCurrent = phone.value !== '' ? { ...checkMail, phone: phone.value } : checkMail;
 
-//     localStorage.setItem("current", JSON.stringify(newCurrent))
+    // let checkName = fullName.value !== '' ? {...current,name:fullName.value} : current;
+    // let checkMail = eMail.value !== '' ? { ...checkName, email: eMail.value } : checkName; 
+    // let newCurrent = phone.value !== '' ? { ...checkMail, phone: phone.value } : checkMail;
 
-//     let allUsers = JSON.parse(localStorage.getItem("users"));
+    // localStorage.setItem("current", JSON.stringify(newCurrent))
 
-//     let newAllUsers = allUsers.map(e=> {
-//         if (e.id == newCurrent.id) {
-//             e = newCurrent
-//         }
-//         return e
-//     })
+    // let allUsers = JSON.parse(localStorage.getItem("users"));
 
-//     localStorage.setItem("users", JSON.stringify(newAllUsers))
+    // let newAllUsers = allUsers.map(e=> {
+    //     if (e.id == newCurrent.id) {
+    //         e = newCurrent
+    //     }
+    //     return e
+    // })
 
-// })
+    // localStorage.setItem("users", JSON.stringify(newAllUsers))
+
+})
 
 
