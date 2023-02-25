@@ -9,6 +9,7 @@ const swiper = new Swiper(".zf-login-swiper", {
   },
 });
 
+
 function initializeUsers() {
   const users = [
     {
@@ -39,16 +40,19 @@ function login(email, password) {
   console.log(localUsers);
 
   const loggedInUser = localUsers.find(
+
     (user) => user.email === email && user.password === password
   );
-
-  if (loggedInUser) {
+  localStorage.setItem('currentUser',JSON.stringify(loggedInUser))
+  let current =JSON.parse(localStorage.getItem('currentUser'));
+  if (current) {
     // localStorage.setItem("current-user", JSON.stringify(loggedInUser));
     // console.log(window.location.origin);
-    window.location.href = window.location.origin + "/pages/home/navbar.html";
+    window.location.href = window.location.origin + "/index.html";
+    
   }
-
-  return loggedInUser;
+console.log(current);
+  return current;
 }
 
 function register(email, password, fullName) {
