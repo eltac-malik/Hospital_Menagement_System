@@ -39,9 +39,14 @@ if(JSON.parse(localStorage.getItem('currentUser')) != null){
   profile.style.display = 'none';
   profile1.style.display = 'none';
 
-
-
 }
+
+logout.addEventListener('click', ()=>{
+  localStorage.removeItem('currentUser');
+  login.style.display = 'inline-block'
+  register.style.display = 'inline-block'
+
+})
 
 const doctorlist = JSON.parse(localStorage.getItem("doctors"))
 
