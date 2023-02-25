@@ -1,6 +1,7 @@
-var mobMenu = document.querySelector('.hc-nav-list-drop');
-var removeBtn = document.querySelector('#hc-remove-mob');
-var mobMenuBtn = document.querySelector('.hc-mob-bar')
+let mobMenu = document.querySelector('.hc-nav-list-drop');
+let removeBtn = document.querySelector('#hc-remove-mob');
+let mobMenuBtn = document.querySelector('.hc-mob-bar');
+let NZcards = document.querySelector(".portfolio-gallery");
 removeBtn.addEventListener('click', () => {
 	mobMenu.style.left = '-350px'
 	removeBtn.style.transform = 'rotate(-90deg)'
@@ -10,8 +11,12 @@ mobMenuBtn.addEventListener('click', () => {
 	mobMenu.style.left = '0'
 	removeBtn.style.transform = 'rotate(90deg)'
 })
+if (localStorage.getItem("currentDoctor") !== null) {
+	localStorage.removeItem("currentDoctor");
+  }
+fromHospitaldoctorWriter();
 
-	(function ($) {
+	 (function ($) {
 		'use strict';
 		if ($(window).width() < 992) {
 			$('.navigation .dropdown-toggle').on('click', function () {
@@ -220,4 +225,48 @@ mobMenuBtn.addEventListener('click', () => {
 
 
 
+
+function fromHospitaldoctorWriter() {
+	let NZarr = JSON.parse(localStorage.getItem("doctors"));
+	NZarr.forEach((e) => {
+	   NZcards.innerHTML += `
+	   	<div
+	   	class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item"
+	   	data-groups='["cat1","cat2"]'
+	     >
+	   	<div class="position-relative doctor-inner-box">
+	   	  <div class="doctor-profile">
+	   		<div class="doctor-img">
+	   		  <img
+	   			src="${e.image}"
+	   			alt="doctor-image"
+	   			class="img-fluid w-100"
+	   		  />
+	   		</div>
+	   	  </div>
+	   	  <div class="content mt-3">
+	   		<h4 class="mb-0">
+	   		  <a  id="zn-name" href="#" onclick='createDoctorProfile(${e.doctorId}); getDoctorProfile()'>${e.name}</a>
+	   		</h4>
+	   		<p>${e.dep}</p>
+	   	  </div>
+	   	</div>
+	   </div>
+		 
+		   
+		   `;
+		   
+	 });
+	 
+   }
+
+   function createDoctorProfile(id) {
+	let allDoctors = JSON.parse(localStorage.getItem("doctors"));
+	let currentDoctor = allDoctors.find((item) => item.doctorId === id);
+	localStorage.setItem("currentDoctor", JSON.stringify(currentDoctor));
+  }
+  
+  function getDoctorProfile() {
+	window.location.href = "/pages/doctor/doctor-view-profile.html";
+  }
 
