@@ -356,7 +356,7 @@ padding: 20px;
 
   
 }
-body { background: #e8e8e8; }
+body { background: #ffffff; }
 .container { margin: 0 auto; }
 
 /* Example wrapper */
@@ -385,7 +385,7 @@ body { background: #e8e8e8; }
 	margin: 0 20px 0 0;
 	padding: 0;
 	color: #ddd;
-	text-align: center;
+	text-align: left;
 	cursor: pointer;
 }
 .frame ul li.active {
