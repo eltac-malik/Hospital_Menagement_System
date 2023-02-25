@@ -1,372 +1,590 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=m, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style/root.css" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="stylesheet" href="/assets/style/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <title>Home02-Family Doctor</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=m, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/style/root.css" />
-  <link rel="stylesheet" href="/assets/style/style.css" />
-  <link rel="stylesheet" href="/assets/style/global.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <title>Home02-Family Doctor</title>
-</head>
+  <body>
+    <header>
+      <!-- <div class="hc-header-cont"></div> -->
+      <div class="hc-cont-header">
+        <div class="row hc-nav">
+          <div class="hc-shadow"></div>
 
-<body>
- 
-  <header>
-    <!-- <div class="hc-header-cont"></div> -->
-    <div class="hc-cont-header">
-      <div class="row hc-nav">
-        <div class="hc-shadow"> </div>
-
-        <div class="col-6 col-md-1 hc-logo">
-          <div class="hc-mob-bar d-block d-md-none">
-            <div class=" hc-mob-bar1"></div>
-            <div class="hc-mob-bar2"></div>
-            <div class="hc-mob-bar3"></div>
-          </div>
-          <img src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2019/02/logo_black.png"
-            alt="">
-          <ul class="hc-nav-list-drop">
-            <div class="hc-drop-logo">
-              <img
-                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
-                alt="">
+          <div class="col-6 col-md-1 hc-logo">
+            <div class="hc-mob-bar d-block d-md-none">
+              <div class="hc-mob-bar1"></div>
+              <div class="hc-mob-bar2"></div>
+              <div class="hc-mob-bar3"></div>
             </div>
-            <li>
-              <a href="">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Doctors
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Hospitals
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Profile
-              </a>
-            </li>
-            <div class="hc-adr-drop">
-              <div>
-                <i class="fa-solid fa-location-dot"></i> <span><a>Visit Us Anytime</a></span>
-                <p>14th Swann Street</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-phone"></i>
-                <span><a>Book A Doctor</a></span>
-                <p>0-800-433-5788</p>
-              </div>
-              <form action="" class="hc-mob-menu-serch">
-                <input type="text" placeholder="search...">
-                <i class="fa fa-search"></i>
-              </form>
-            </div>
-            <button type="button" id="hc-remove-mob" class="btn-close" aria-label="Close"></button>
-          </ul>
-
-        </div>
-        <div class="col-md-8  d-none d-md-block">
-          <ul class="hc-nav-list">
-            <li>
-              <a href="">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Doctors
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Hospitals
-              </a>
-            </li>
-            <li id="profile">
-              <a href="">
-                Profile
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class=" col-6 col-md-3">
-          <ul class="hc-log-list">
-            <li id="logout"><a href="">Logout</a></li>
-            <li id="login"><a href="">Login</a></li>
-            <li id="registr"><a href="">Registration</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
- 
- 
- 
- 
-  <div class="ih-content">
-    <section class="ih-main">
-      <div class="ih-bgimg-wrapper">
-        <div class="ih-bgimg"></div>
-      </div>
-      <div class="ih-bb-port">
-        <div class="ih-main-row row">
-          <div class="ih-column col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <h1>Best Medical Care For Your Family</h1>
-            <p>
-              Capitalize on low hanging fruit to identify a ballpark value
-              added activity to beta test.
-            </p>
-            <div class="ih-inner-row row">
-              <div class="ih-inner-row-item col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <i class="fa-solid fa-stethoscope fa-3x"></i>
-                <span class="ih-item-num" data-val="30">00</span><span class="ih-item-num-acc">+</span> <br />
-                <span class="ih-item-text">Years of Professional Medical Excellence</span>
-              </div>
-              <div class="ih-inner-row-item col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <i class="fa-solid fa-briefcase-medical fa-3x"></i>
-                <span class="ih-item-num" data-val="250">000</span><span class="ih-item-num-acc">+</span> <br />
-                <span class="ih-item-text">
-                  People Cared in Washington District</span>
-              </div>
-              <div class="ih-inner-row-item col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <i class="fa-solid fa-globe fa-3x"></i>
-                <span class="ih-item-num" data-val="100">000</span><span class="ih-item-num-acc">%</span> <br />
-                <span class="ih-item-text">Guaranteed Patient Satisfaction</span>
-              </div>
-            </div>
-          </div>
-          <div class="ih-column col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6"></div>
-        </div>
-      </div>
-    </section>
-    <section class="ih-second">
-      <div class="ih-bb-port">
-        <div class="ih-second row">
-          <div class="ih-second-column col-xl-5 col-xs-12 col-sm-12 col-md-12 col-lg-5">
-            <div class="ih-image">
-              <span>
+            <img
+              src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2019/02/logo_black.png"
+              alt=""
+            />
+            <ul class="hc-nav-list-drop">
+              <div class="hc-drop-logo">
                 <img
-                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_01_home_02.png"
-                  alt="..." />
-              </span>
-            </div>
-          </div>
-          <div class="ih-second-column-two col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7">
-            <div class="ih-button-row row">
-              <div class="col-xl-8 col-xs-12 col-sm-12 col-md-12 col-lg-8">
-                <h1>Quality Healthcare Anywhere, Anytime</h1>
+                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
+                  alt=""
+                />
               </div>
-              <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="ih-button">
-                  <button class="ih-btn">
-                    Book Your Visit
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </button>
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+              <li>
+                <a href="./pages/doctor/doctor-list.html"> Doctors </a>
+              </li>
+              <li>
+                <a href="./pages/hospital/hospital.html"> Hospitals </a>
+              </li>
+              <li>
+                <a href="./pages/log-re-pro/profil.html"> Profile </a>
+              </li>
+              <div class="hc-adr-drop">
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span><a>Visit Us Anytime</a></span>
+                  <p>14th Swann Street</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                  <span><a>Book A Doctor</a></span>
+                  <p>0-800-433-5788</p>
+                </div>
+                <form action="" class="hc-mob-menu-serch">
+                  <input type="text" placeholder="search..." />
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+              <button
+                type="button"
+                id="hc-remove-mob"
+                class="btn-close"
+                aria-label="Close"
+              ></button>
+            </ul>
+          </div>
+          <div class="col-md-8 d-none d-md-block">
+            <ul class="hc-nav-list">
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+              <li>
+                <a href="./pages/doctor/doctor-list.html"> Doctors </a>
+              </li>
+              <li>
+                <a href="./pages/hospital/hospital.html"> Hospitals </a>
+              </li>
+              <li id="profile">
+                <a href="./pages/log-re-pro/profil.html"> Profile </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="hc-log-list">
+              <li id="logout"><a href="./index.html">Logout</a></li>
+              <li id="login">
+                <a href="./pages/log-re-pro/log-reg-pro.html">Login</a>
+              </li>
+              <li id="registr">
+                <a href="./pages/log-re-pro/register.html">Registration</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="ih-content">
+      <section class="ih-main">
+        <div class="ih-bgimg-wrapper">
+          <div class="ih-bgimg"></div>
+        </div>
+        <div class="ih-bb-port">
+          <div class="ih-main-row row">
+            <div
+              class="ih-column col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6"
+            >
+              <h1>Best Medical Care For Your Family</h1>
+              <p>
+                Capitalize on low hanging fruit to identify a ballpark value
+                added activity to beta test.
+              </p>
+              <div class="ih-inner-row row">
+                <div
+                  class="ih-inner-row-item col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4"
+                >
+                  <i class="fa-solid fa-stethoscope fa-3x"></i>
+                  <span class="ih-item-num" data-val="30">00</span
+                  ><span class="ih-item-num-acc">+</span> <br />
+                  <span class="ih-item-text"
+                    >Years of Professional Medical Excellence</span
+                  >
+                </div>
+                <div
+                  class="ih-inner-row-item col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4"
+                >
+                  <i class="fa-solid fa-briefcase-medical fa-3x"></i>
+                  <span class="ih-item-num" data-val="250">000</span
+                  ><span class="ih-item-num-acc">+</span> <br />
+                  <span class="ih-item-text">
+                    People Cared in Washington District</span
+                  >
+                </div>
+                <div
+                  class="ih-inner-row-item col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4"
+                >
+                  <i class="fa-solid fa-globe fa-3x"></i>
+                  <span class="ih-item-num" data-val="100">000</span
+                  ><span class="ih-item-num-acc">%</span> <br />
+                  <span class="ih-item-text"
+                    >Guaranteed Patient Satisfaction</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="ih-second-blog-row row">
-              <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <i class="fa-solid fa-3x fa-flag ih-second-blog-row-icon"></i>
-                <h3>Compassionate Care & Medicine</h3>
-                <p>
-                  Objectively seize scalable metrics whereas proactive
-                  e-services in any time. Seamlessly empower fully researched
-                  growth.F
-                </p>
-                <a href="">
-                  <span>Find Out More</span>
-                  <i class="fa-solid  fa-arrow-right"></i>
-                </a>
-              </div>
-              <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <i class="fa-solid fa-3x fa-house-medical ih-second-blog-row-icon"></i>
-                <h3>Close to Home, Far from Ordinary</h3>
-                <p>
-                  Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive before
-                  vertical architectures.
-                </p>
-                <a href="">
-                  <span>
-                    Our Health Team</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-              <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <i class="fa-solid fa-3x fa-users ih-second-blog-row-icon"></i>
-                <h3>You'll Love the Way We Care for You</h3>
-                <p>
-                  Objectively integrate emerging core competencies before process-centric communities and issues in the
-                  centric data.
-                </p>
-                <a href="">
-                  <span>
-                    Health Services</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
+            <div
+              class="ih-column col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6"
+            ></div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="ih-third">
-      <div class="ih-third-bb container">
-        <div class="ih-third-row row">
-          <div class="col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-            <div class="ih-width-div"></div>
-          </div>
-          <div class="ih-third-row-second col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7">
-            <h1>
-              COVID-19 Guidelines and Resources</h1>
-            <p>Be Prepared for Your Visit, Check Vivo Dental Guidelines</p>
-          </div>
-          <div class="col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
-        </div>
-        <div class="ih-bb">
-          <div class="ih-fourth-row">
-            <div class="ih-fourth-row-first col-xl-10 col-xs-12 col-sm-12 col-md-12 col-lg-10">
-              <span>
-                <img width="275" height="265"
-                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_02_home_02.png"
-                  alt="...">
-              </span>
-            </div>
-            <div class="col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <divc class="ih-clean-space"></divc>
-    <section class="ih-fifth">
-      <div class="ih-bb container">
-        <div class="ih-fifth-row row">
-          <div class=" col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7">
-            <div class="ih-inner-content">
-              <div class="ih-consult-one">
-                <span>How Can We Help You?</span>
-                <h1>Discover a Path To Excellent Health</h1>
-              </div>
-              <div class="ih-text">
-                <p>
-                  Our Office provides the services of the pediatrician and consultants, covering all fields of
-                  Pediatrics, ultrasound examination and laboratory analyses. Consulting team members include physicians
-                  with extensive professional experience.</p>
+      </section>
+      <section class="ih-second">
+        <div class="ih-bb-port">
+          <div class="ih-second row">
+            <div
+              class="ih-second-column col-xl-5 col-xs-12 col-sm-12 col-md-12 col-lg-5"
+            >
+              <div class="ih-image">
+                <span>
+                  <img
+                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_01_home_02.png"
+                    alt="..."
+                  />
+                </span>
               </div>
             </div>
-          </div>
-          <div class="col-xl-5 col-xs-12 col-sm-12 col-md-12 col-lg-5">
-            <div class="ih-fifth-column-inner-content">
-              <div class="ih-choice-row row">
-                <div class=" ih-consult col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <h1>Consult Our Doctors</h1>
-                  <p>Select the doctor you prefer to get a checkup and book a visit with them in a matter of minutes.
+            <div
+              class="ih-second-column-two col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7"
+            >
+              <div class="ih-button-row row">
+                <div class="col-xl-8 col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                  <h1>Quality Healthcare Anywhere, Anytime</h1>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                  <div class="ih-button">
+                    <button class="ih-btn">
+                      Book Your Visit
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="ih-second-blog-row row">
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                  <i class="fa-solid fa-3x fa-flag ih-second-blog-row-icon"></i>
+                  <h3>Compassionate Care & Medicine</h3>
+                  <p>
+                    Objectively seize scalable metrics whereas proactive
+                    e-services in any time. Seamlessly empower fully researched
+                    growth.F
                   </p>
-                  <div class="ih-dropdown">
-                    <div class="ih-dropdown-img"><img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/doctor_01.jpg"
-                        alt=""></div>
-                    <div class="ih-dropdown-select">
-                      <span>Select Your Doctor
-                      </span>
-                      <select name="doctors" id="doctors">
-                        <option value="Dr Adriana Silvers">Dr Adriana Silvers</option>
-                        <option value="Dr Nicholas Horton">Dr Nicholas Horton</option>
-                        <option value="Dr Todd Howard">Dr Todd Howard</option>
-                      </select>
-                      <hr>
+                  <a href="">
+                    <span>Find Out More</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                  <i
+                    class="fa-solid fa-3x fa-house-medical ih-second-blog-row-icon"
+                  ></i>
+                  <h3>Close to Home, Far from Ordinary</h3>
+                  <p>
+                    Quickly disseminate superior deliverables whereas
+                    web-enabled applications. Quickly drive before vertical
+                    architectures.
+                  </p>
+                  <a href="">
+                    <span> Our Health Team</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                  <i
+                    class="fa-solid fa-3x fa-users ih-second-blog-row-icon"
+                  ></i>
+                  <h3>You'll Love the Way We Care for You</h3>
+                  <p>
+                    Objectively integrate emerging core competencies before
+                    process-centric communities and issues in the centric data.
+                  </p>
+                  <a href="">
+                    <span> Health Services</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ih-third">
+        <div class="ih-third-bb container">
+          <div class="ih-third-row row">
+            <div class="col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
+              <div class="ih-width-div"></div>
+            </div>
+            <div
+              class="ih-third-row-second col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7"
+            >
+              <h1>COVID-19 Guidelines and Resources</h1>
+              <p>Be Prepared for Your Visit, Check Vivo Dental Guidelines</p>
+            </div>
+            <div class="col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
+          </div>
+          <div class="ih-bb">
+            <div class="ih-fourth-row">
+              <div
+                class="ih-fourth-row-first col-xl-10 col-xs-12 col-sm-12 col-md-12 col-lg-10"
+              >
+                <span>
+                  <img
+                    width="275"
+                    height="265"
+                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_02_home_02.png"
+                    alt="..."
+                  />
+                </span>
+              </div>
+              <div
+                class="col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ih-clean-space"></div>
+      <section class="ih-fifth">
+        <div class="ih-bb container">
+          <div class="ih-fifth-row row">
+            <div class="col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-7">
+              <div class="ih-inner-content">
+                <div class="ih-consult-one">
+                  <span>How Can We Help You?</span>
+                  <h1>Discover a Path To Excellent Health</h1>
+                </div>
+                <div class="ih-text">
+                  <p>
+                    Our Office provides the services of the pediatrician and
+                    consultants, covering all fields of Pediatrics, ultrasound
+                    examination and laboratory analyses. Consulting team members
+                    include physicians with extensive professional experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-xs-12 col-sm-12 col-md-12 col-lg-5">
+              <div class="ih-fifth-column-inner-content">
+                <div class="ih-choice-row row">
+                  <div
+                    class="ih-consult col-xl-7 col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                  >
+                    <h1>Consult Our Doctors</h1>
+                    <p>
+                      Select the doctor you prefer to get a checkup and book a
+                      visit with them in a matter of minutes.
+                    </p>
+                    <div class="ih-dropdown">
+                      <div class="ih-dropdown-img">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/doctor_01.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="ih-dropdown-select">
+                        <span>Select Your Doctor </span>
+                        <select name="doctors" id="doctors">
+                          <option value="Dr Adriana Silvers">
+                            Dr Adriana Silvers
+                          </option>
+                          <option value="Dr Nicholas Horton">
+                            Dr Nicholas Horton
+                          </option>
+                          <option value="Dr Todd Howard">Dr Todd Howard</option>
+                        </select>
+                        <hr />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-5 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="ih-img-consult">
+                      <img
+                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/inner_01_home_02.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-5 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <div class="ih-img-consult">
-                    <img
-                      src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/inner_01_home_02.png"
-                      alt="">
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-
+          <div class="ih-departments row">
+            <div
+              class="ih-departments-col col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 row"
+            >
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-viruses"></i>
+                <span>Allergology</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-virus"></i>
+                <span> Dermatology</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-head-side-virus"></i>
+                <span>Speech pathology</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-disease"></i>
+                <span>Infectious Diseases</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-briefcase-medical"></i>
+                <span>Orthopedics</span>
+              </div>
+            </div>
+            <div
+              class="ih-departments-col col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 row"
+            >
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-bacterium"></i>
+                <span>Gastroenterology </span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-heart-pulse"></i>
+                <span> Heart & Vascular Care</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-lungs-virus"></i>
+                <span>Respiratory Care</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-tooth"></i>
+                <span> Dentistry</span>
+              </div>
+              <div
+                class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+              >
+                <i class="fa-solid fa-6x fa-children"></i>
+                <span>General Pediatrics</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="ih-departments row">
-          <div class=" ih-departments-col col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 row">
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>Allergology</span>
+      </section>
+      <section class="ih-six">
+        <div class="ih-six-bg"></div>
+        <div class="ih-bb container">
+          <div class="ih-six-row row">
+            <div
+              class="ih-six-col col-xl-8 col-xs-12 col-sm-12 col-md-12 col-lg-8"
+            >
+              <span>Our Patients Are Our Practice</span>
+              <h1>Great Story Means Everything</h1>
             </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>
-                Dermatology</span>
-            </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>Speech pathology</span>
-            </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>Infectious Diseases</span>
-            </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>Orthopedics</span>
-            </div>
-          </div>
-          <div class="ih-departments-col col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 row">
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>Gastroenterology
-              </span>
-            </div>
-            <div class=" ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>
-                Heart & Vascular Care</span>
-            </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>Respiratory Care</span>
-            </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>
-                Dentistry</span>
-            </div>
-            <div class="ih-departments-col-item col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2">
-              <i class="fa-solid fa-6x fa-viruses"></i>
-              <span>General Pediatrics</span>
+            <div
+              class="ih-button-side col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4"
+            >
+              <div class="ih-button">
+                <button class="ih-btn">
+                  Book Your Visit
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-    </section>
-    <section class="ih-six">
-      <div class="ih-six-bg">
-      </div>
-      <div class="ih-bb container">
-        <div class="ih-six-row row">
-          <div class=" ih-six-col col-xl-8 col-xs-12 col-sm-12 col-md-12 col-lg-8 ">
-            <span>Our Patients Are Our Practice</span>
-            <h1>Great Story Means Everything</h1>
+        <div class="container">
+          <div class="ih-quotes-row row">
+            <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4 row">
+              <div
+                class="ih-quotes-img col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3"
+              >
+                <img
+                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/testimonial_05_home_02.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="ih-quotes-text col-xl-9 col-xs-12 col-sm-12 col-md-12 col-lg-9"
+              >
+                <div class="ih-quotes">
+                  <span><i class="fa-solid fa-3x fa-quote-right"></i></span>
+                  <hr />
+                </div>
+                <p>
+                  I've never had my daughter in such good hands since I met Dr
+                  O'Neil. He's kind and his approach is great.
+                </p>
+                <p>Vivian Kirk, Patient's Mother</p>
+                <hr class="ih-bottom-hr" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4 row">
+              <div
+                class="ih-quotes-img col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3"
+              >
+                <img
+                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/testimonial_02_home_02.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="ih-quotes-text col-xl-9 col-xs-12 col-sm-12 col-md-12 col-lg-9"
+              >
+                <div class="ih-quotes">
+                  <span><i class="fa-solid fa-3x fa-quote-right"></i></span>
+                  <hr />
+                </div>
+                <p>
+                  Anthony was just great. I love him as my doctor. I have been
+                  going to for about a year and will only see him.
+                </p>
+                <p>Jesse Norman, Patient</p>
+                <hr class="ih-bottom-hr" />
+              </div>
+            </div>
+            <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4 row">
+              <div
+                class="ih-quotes-img col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3"
+              >
+                <img
+                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/testimonial_06_home_02.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="ih-quotes-text col-xl-9 col-xs-12 col-sm-12 col-md-12 col-lg-9"
+              >
+                <div class="ih-quotes">
+                  <span><i class="fa-solid fa-3x fa-quote-right"></i></span>
+                  <hr />
+                </div>
+                <p>
+                  Throughout my pregnancy and these months with my baby, all
+                  help came from Vivo. Thanks!
+                </p>
+                <p>Sibley Stevens, Mother</p>
+                <hr class="ih-bottom-hr" />
+              </div>
+            </div>
           </div>
-          <div class="ih-button-side col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+          <div class="ih-seperate"></div>
+        </div>
+        <div class="ih-coverage-img">
+          <img
+            src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/top_cover_01.png"
+            alt="..."
+          />
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="ih-popular-doctors">
+            <div class="ih-doctorcards row"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="ih-company-slide">
+            <h1>Insurances Accepted</h1>
+            <p>
+              Here is a short list of the insurance providers we accept, click
+              on a link to view a full list of all
+              <br />
+              providers. Please call the office with any questions you might
+              have.
+            </p>
+            <div class="slider owl-carousel">
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_08.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_04.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="img">
+                  <img
+                    src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_01.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
             <div class="ih-button">
               <button class="ih-btn">
                 Book Your Visit
@@ -375,711 +593,928 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="ih-quotes-row row">
-          <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4 row ">
-            <div class="ih-quotes-img col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3 ">
-              <img
-                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/testimonial_05_home_02.jpg"
-                alt="">
-            </div>
-            <div class=" ih-quotes-text col-xl-9 col-xs-12 col-sm-12 col-md-12 col-lg-9 ">
-              <div class="ih-quotes"><span><i class="fa-solid fa-3x fa-quote-right"></i></span>
-                <hr>
-              </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="ih-form-row row">
+            <div
+              class="ih-form col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6"
+            >
+              <span>Doctor to the Community </span>
+              <h1>Book Your Doctor</h1>
               <p>
-                I've never had my daughter in such good hands since I met Dr O'Neil. He's kind and his approach is
-                great.</p>
-              <p>Vivian Kirk, Patient's Mother</p>
-              <hr class="ih-bottom-hr">
-            </div>
-          </div>
-          <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4 row ">
-            <div class="ih-quotes-img col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3 ">
-              <img
-                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/testimonial_02_home_02.jpg"
-                alt="">
-            </div>
-            <div class=" ih-quotes-text col-xl-9 col-xs-12 col-sm-12 col-md-12 col-lg-9 ">
-              <div class="ih-quotes"><span><i class="fa-solid fa-3x fa-quote-right"></i></span>
-                <hr>
-              </div>
-              <p>
-                Anthony was just great. I love him as my doctor. I have been going to for about a year and will only see
-                him.
+                Fill out the Booking Form below and we will contact you as soon
+                as possible to confirm the booking date. Please use the phone
+                number if it's only an emergency.
               </p>
-              <p>Jesse Norman, Patient</p>
-              <hr class="ih-bottom-hr">
-            </div>
-          </div>
-          <div class="col-xl-4 col-xs-12 col-sm-12 col-md-12 col-lg-4 row">
-            <div class="ih-quotes-img col-xl-3 col-xs-12 col-sm-12 col-md-12 col-lg-3 ">
-              <img
-                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/testimonial_06_home_02.jpg"
-                alt="">
-            </div>
-            <div class=" ih-quotes-text col-xl-9 col-xs-12 col-sm-12 col-md-12 col-lg-9 ">
-              <div class="ih-quotes"><span><i class="fa-solid fa-3x fa-quote-right"></i></span>
-                <hr>
+              <div class="ih-name-input">
+                <span>
+                  <input
+                    class="ih-inp-style"
+                    type="text"
+                    placeholder="First name and Family name*"
+                /></span>
+                <span>
+                  <input
+                    class="ih-inp-style"
+                    type="email"
+                    placeholder="Your Email adress*"
+                /></span>
               </div>
-              <p>
-                Throughout my pregnancy and these months with my baby, all help came from Vivo. Thanks!</p>
-              <p>Sibley Stevens, Mother</p>
-              <hr class="ih-bottom-hr">
+              <div class="ih-select-input">
+                <span>
+                  <select class="ih-inp-style" name="doctors" id="doctors">
+                    <option value="Dr Adriana Silvers">
+                      Dr Adriana Silvers
+                    </option>
+                    <option value="Dr Nicholas Horton">
+                      Dr Nicholas Horton
+                    </option>
+                    <option value="Dr Todd Howard">Dr Todd Howard</option>
+                  </select></span
+                >
+
+                <span
+                  ><input
+                    class="ih-inp-style"
+                    type="date"
+                    placeholder="Appointment Date*"
+                /></span>
+              </div>
+              <div class="ih-date-input">
+                <span>
+                  <textarea
+                    class="ih-inp-style-two"
+                    placeholder="Any Additional Notes To Doctor?"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </span>
+              </div>
+              <div class="ih-button">
+                <button class="ih-btn-appointment">
+                  Book Your Appointment
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="ih-seperate"></div>
-      </div>
-      <div class="ih-coverage-img">
-        <img src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/top_cover_01.png"
-          alt="...">
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="ih-popular-doctors">
-          <div class="ih-doctorcards row">
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-
-        <div class="ih-company-slide">
-          <h1>Insurances Accepted</h1>
-          <p>Here is a short list of the insurance providers we accept, click on a link to view a full list of all <br>
-            providers. Please call the office with any questions you might have.</p>
-          <div class="slider owl-carousel">
-            <div class="card">
-              <div class="img">
+            <div class="col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="ih-form-image">
                 <img
-                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_02.png"
-                  alt="">
-              </div>
-            </div>
-            <div class="card">
-              <div class="img">
-                <img
-                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_08.png"
-                  alt="">
-              </div>
-            </div>
-            <div class="card">
-              <div class="img">
-                <img
-                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_04.png"
-                  alt="">
-              </div>
-            </div>
-            <div class="card">
-              <div class="img">
-                <img
-                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/customer_logo_01.png"
-                  alt="">
+                  src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_03_home_02.png"
+                  alt="..."
+                />
               </div>
             </div>
           </div>
-          <div class="ih-button">
-            <button class="ih-btn">
-              Book Your Visit
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-            </button>
+        </div>
+      </section>
+      <section class="hc-slide-cards">
+        <div class="pagespan">
+          <div class="wrap">
+            <div class="hc-slide-cards-header">
+              <h1>Tips on Healthy Life</h1>
+              <div class="row">
+                <p class="col-md-5">
+                  Objectively integrate emerging core competencies before
+                  communities, elevate and evisculate holistic interoperable
+                  innovation client data.
+                </p>
+                <ul class="pages col-md-7 d-none d-md-block"></ul>
+              </div>
+            </div>
+
+            <div class="frame" id="basic">
+              <ul class="clearfix">
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/03/post_11-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >21 <br />
+                            Jun</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>What Should You Know About Hyperpigmentation</h3>
+                        <p>
+                          Hyperpigmentation refers to patches of skin that
+                          become darker than the surrounding areas of skin. It
+                          occurs when the skin produces excess melanin, the
+                          pigment that gives skin distinctively exploit optimal
+                          alignments for intuitive bandwidth. Quickly coordinate
+                          e-business applications through revolutionary
+                          catalysts for change. Seamlessly underwhelm optimal
+                          testing procedures whereas bricks-and-clicks
+                          processes.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >28 <br />
+                            May</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>Everything You Need to Know About Measles</h3>
+                        <p>
+                          Collaboratively administrate turnkey channels whereas
+                          virtual e-tailers. Objectively seize scalable metrics
+                          whereas proactive e-services. Quickly communicate
+                          enabled technology and turnkey leadership skills.
+                          Uniquely enable accurate supply chains rather than
+                          frictionless technology. Globally network focused
+                          materials vis-a-vis cost effective manufactured
+                          products.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_04-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >30 <br />
+                            Apr</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>Is Saltwater Good For The Skin? What to Know?</h3>
+                        <p>
+                          Saltwater may contain certain nutrients, have
+                          antibacterial properties, and work to exfoliate the
+                          skin, which may benefit skin health. Saltwater may
+                          benefit the skin, although there is quickly
+                          incentivize impactful action items before tactical
+                          collaboration and idea-sharing. Monotonically engage
+                          market-driven intellectual capital through wireless
+                          opportunities.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_02-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >25 <br />
+                            Apr</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>How Should You Treat Seborrheic Dermatitis</h3>
+                        <p>
+                          Seborrheic dermatitis is a skin condition
+                          characterized by discoloration and greasy scales on
+                          the skin. However, seborrheic dermatitis may appear
+                          differently on people innovate granular internal or
+                          "organic" sources whereas high standards in
+                          web-readiness. Energistically scale future-proof core
+                          competencies vis-a-vis impactful experiences.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/03/post_12-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >16 <br />
+                            Jul</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>How Should You Treat Seborrheic Dermatitis</h3>
+                        <p>
+                          Seborrheic dermatitis is a skin condition
+                          characterized by discoloration and greasy scales on
+                          the skin. However, seborrheic dermatitis may appear
+                          differently on people innovate granular internal or
+                          "organic" sources whereas high standards in
+                          web-readiness. Energistically scale future-proof core
+                          competencies vis-a-vis impactful experiences.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/03/post_11-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >21 <br />
+                            Jun</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>What Should You Know About Hyperpigmentation</h3>
+                        <p>
+                          Hyperpigmentation refers to patches of skin that
+                          become darker than the surrounding areas of skin. It
+                          occurs when the skin produces excess melanin, the
+                          pigment that gives skin distinctively exploit optimal
+                          alignments for intuitive bandwidth. Quickly coordinate
+                          e-business applications through revolutionary
+                          catalysts for change. Seamlessly underwhelm optimal
+                          testing procedures whereas bricks-and-clicks
+                          processes.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >28 <br />
+                            May</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>Everything You Need to Know About Measles</h3>
+                        <p>
+                          Collaboratively administrate turnkey channels whereas
+                          virtual e-tailers. Objectively seize scalable metrics
+                          whereas proactive e-services. Quickly communicate
+                          enabled technology and turnkey leadership skills.
+                          Uniquely enable accurate supply chains rather than
+                          frictionless technology. Globally network focused
+                          materials vis-a-vis cost effective manufactured
+                          products.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_04-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >30 <br />
+                            Apr</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>Is Saltwater Good For The Skin? What to Know?</h3>
+                        <p>
+                          Saltwater may contain certain nutrients, have
+                          antibacterial properties, and work to exfoliate the
+                          skin, which may benefit skin health. Saltwater may
+                          benefit the skin, although there is quickly
+                          incentivize impactful action items before tactical
+                          collaboration and idea-sharing. Monotonically engage
+                          market-driven intellectual capital through wireless
+                          opportunities.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_02-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >25 <br />
+                            Apr</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>How Should You Treat Seborrheic Dermatitis</h3>
+                        <p>
+                          Seborrheic dermatitis is a skin condition
+                          characterized by discoloration and greasy scales on
+                          the skin. However, seborrheic dermatitis may appear
+                          differently on people innovate granular internal or
+                          "organic" sources whereas high standards in
+                          web-readiness. Energistically scale future-proof core
+                          competencies vis-a-vis impactful experiences.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/03/post_12-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >16 <br />
+                            Jul</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>How Should You Treat Seborrheic Dermatitis</h3>
+                        <p>
+                          Seborrheic dermatitis is a skin condition
+                          characterized by discoloration and greasy scales on
+                          the skin. However, seborrheic dermatitis may appear
+                          differently on people innovate granular internal or
+                          "organic" sources whereas high standards in
+                          web-readiness. Energistically scale future-proof core
+                          competencies vis-a-vis impactful experiences.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/03/post_11-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >21 <br />
+                            Jun</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>What Should You Know About Hyperpigmentation</h3>
+                        <p>
+                          Hyperpigmentation refers to patches of skin that
+                          become darker than the surrounding areas of skin. It
+                          occurs when the skin produces excess melanin, the
+                          pigment that gives skin distinctively exploit optimal
+                          alignments for intuitive bandwidth. Quickly coordinate
+                          e-business applications through revolutionary
+                          catalysts for change. Seamlessly underwhelm optimal
+                          testing procedures whereas bricks-and-clicks
+                          processes.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >28 <br />
+                            May</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>Everything You Need to Know About Measles</h3>
+                        <p>
+                          Collaboratively administrate turnkey channels whereas
+                          virtual e-tailers. Objectively seize scalable metrics
+                          whereas proactive e-services. Quickly communicate
+                          enabled technology and turnkey leadership skills.
+                          Uniquely enable accurate supply chains rather than
+                          frictionless technology. Globally network focused
+                          materials vis-a-vis cost effective manufactured
+                          products.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_04-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >30 <br />
+                            Apr</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>Is Saltwater Good For The Skin? What to Know?</h3>
+                        <p>
+                          Saltwater may contain certain nutrients, have
+                          antibacterial properties, and work to exfoliate the
+                          skin, which may benefit skin health. Saltwater may
+                          benefit the skin, although there is quickly
+                          incentivize impactful action items before tactical
+                          collaboration and idea-sharing. Monotonically engage
+                          market-driven intellectual capital through wireless
+                          opportunities.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_02-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >25 <br />
+                            Apr</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>How Should You Treat Seborrheic Dermatitis</h3>
+                        <p>
+                          Seborrheic dermatitis is a skin condition
+                          characterized by discoloration and greasy scales on
+                          the skin. However, seborrheic dermatitis may appear
+                          differently on people innovate granular internal or
+                          "organic" sources whereas high standards in
+                          web-readiness. Energistically scale future-proof core
+                          competencies vis-a-vis impactful experiences.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="ih-doctor-column-outer">
+                    <div class="ih-doctor-column-inner">
+                      <div class="ih-doctor-img-content">
+                        <img
+                          src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/03/post_12-640x480.jpg"
+                          alt=""
+                        />
+                        <div class="ih-doctors-inner-icon">
+                          <span
+                            >16 <br />
+                            Jul</span
+                          >
+                        </div>
+                      </div>
+                      <div class="ih-doctor-text-content">
+                        <h3>How Should You Treat Seborrheic Dermatitis</h3>
+                        <p>
+                          Seborrheic dermatitis is a skin condition
+                          characterized by discoloration and greasy scales on
+                          the skin. However, seborrheic dermatitis may appear
+                          differently on people innovate granular internal or
+                          "organic" sources whereas high standards in
+                          web-readiness. Energistically scale future-proof core
+                          competencies vis-a-vis impactful experiences.
+                        </p>
+                        <a href="">
+                          <i class="fa-solid fa-user"></i>
+                          <span>by BoldThemes</span>
+                        </a>
+                        <br />
+                        <span
+                          ><i class="fa-regular fa-comment"></i
+                          ><span>3</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="ih-form col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <span>Doctor to the Community
-            </span>
-            <h1>Book Your Doctor
-            </h1>
-            <p>Fill out the Booking Form below and we will contact you as soon as possible to confirm the booking date.
-              Please use the phone number if it's only an emergency.
-            </p>
-            <div class="ih-name-input">
-              <span> <input class="ih-inp-style" type="text" placeholder="First name and Family name*"></span>
-              <span> <input class="ih-inp-style" type="email" placeholder="Your Email adress*"></span>
-            </div>
-            <div class="ih-select-input">
-              <span> <select class="ih-inp-style" name="doctors" id="doctors">
-                  <option value="Dr Adriana Silvers">Dr Adriana Silvers</option>
-                  <option value="Dr Nicholas Horton">Dr Nicholas Horton</option>
-                  <option value="Dr Todd Howard">Dr Todd Howard</option>
-                </select></span>
-
-              <span><input class="ih-inp-style" type="date" placeholder="Appointment Date*"></span>
-            </div>
-            <div class="ih-date-input">
-              <span> <textarea class="ih-inp-style-two" placeholder="Any Additional Notes To Doctor?" name="" id=""
-                  cols="30" rows="10"></textarea></span>
-            </div>
-            <div class="ih-button">
-              <button class="ih-btn-appointment">
-                Book Your Appointment
-              </button>
-            </div>
-          </div>
-          <div class="col-xl-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <div class="ih-form-image">
-              <img
-                src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_03_home_02.png"
-                alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hc-slide-cards">
-      <div class="pagespan">
-        <div class="wrap">
-          <div class="hc-slide-cards-header">
-            <h1>Tips on Healthy Life</h1>
-            <div class="row">
-              <p class="col-md-5">Objectively integrate emerging core competencies before communities, elevate and evisculate holistic interoperable innovation client data.</p>
-              <ul class="pages col-md-7 d-none d-md-block"></ul>
-            </div>
-          </div>
-          
-  
-          <div class="frame" id="basic">
-            <ul class="clearfix">
-              <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>  <li class="">
-                <div class="ih-doctor-column-outer">
-                  <div class="ih-doctor-column-inner">
-                    <div class="ih-doctor-img-content">
-                      <img
-                        src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2018/09/post_03-640x480.jpg"
-                        alt="">
-                      <div class="ih-doctors-inner-icon">
-                        <span>28 <br> May</span>
-                      </div>
-                    </div>
-                    <div class="ih-doctor-text-content">
-                      <h3>How Long Should You Wash Your Hands Every Time?</h3>
-                      <p>Holistically pontificate installed base portals after maintainable products. Phosfluorescently
-                        engage worldwide methodologies with technology. Enthusiastically mesh long-term high-impact
-                        infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership
-                        rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing
-                        procedures whereas next-generation manufactured products.
-                      </p>
-                      <a href="">
-                        <i class="fa-solid  fa-user"></i> <span>by BoldThemes</span>
-                      </a>
-                      <br>
-                      <span><i class="fa-regular fa-comment"></i><span>3</span></span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ch-six">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.275936724692!2d49.8713362835693!3d40.40273753657028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4ec87bb83f%3A0x1be945267a4cef08!2zQmFrxLEgxZ7JmWjJmXJpIFZlcmdpbMmZciBEZXBhcnRhbWVudGk!5e0!3m2!1sen!2saz!4v1677314013756!5m2!1sen!2saz" width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="ih-coverage-img">
-        <img src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/top_cover_01.png" alt="...">
-      </div>
-    </section>
-<section>
-  <div class="row hc-before-footer">
-    <div class="col-xl-6 hc-before-footer-img"><img src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_04_home_02.png" alt=""></div>
-    <div class="col-xl-6 hc-before-footer-right">
-      <h1>You Deserve The <br>
-        Best Healthcare</h1>
-        <p>Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition via workplace diversity empowerment.</p>
-        <div class="row hc-right">
-          <div class="col-xl-6">
-            <i class=" fa fa-phone"></i>
-             <span>
-              <span>24/7 Emergency Line</span>
-              <br>
-              <a>0-800-433-5788</a>
-            </span>
-          </div>
-          <div class="col-xl-6">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span>
-             <span>Online Booking</span>
-             <br>
-             <a>Book Appointment</a>
-           </span>
-          </div>
-        </div>
-  </div>
-</div>
-</section>
-
-
-   <footer>
-
-      <div class="hc-fot-cont">
-        <div class="hc-drop-logo">
+      </section>
+      <section class="ch-six">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.275936724692!2d49.8713362835693!3d40.40273753657028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4ec87bb83f%3A0x1be945267a4cef08!2zQmFrxLEgxZ7JmWjJmXJpIFZlcmdpbMmZciBEZXBhcnRhbWVudGk!5e0!3m2!1sen!2saz!4v1677314013756!5m2!1sen!2saz"
+          width="100%"
+          height="650px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="ih-coverage-img">
           <img
-            src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
-            alt="">
+            src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/top_cover_01.png"
+            alt="..."
+          />
         </div>
-        <div class="hc-footer">
-
-          <div class="row">
-            <div class="col-md-3">
-              <p>Dynamically procrastinate B2C users after installed base benefits directed content in real time will
-                have
-                multiple touchpoints for offshoring without revolutionary medicine.</p>
-              <div>
-                <p><i class="fa-solid fa-envelope"></i></i> <span>info@vivomedic.com</span></p>
-                <p><i class="fa-solid fa-location-dot"></i> <span>68 Erie St, Jersey City, NJ 07302</span></p>
-                <p><i class="fa fa-phone"></i> <span>0-800-400-6556</span></p>
-
-
-              </div>
+      </section>
+      <section>
+        <div class="ih-adress-row container">
+          <div class="ih-adress-row-inner row">
+            <div
+              class="ih-adress-col col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+            >
+              <i class="fa-solid fa-3x fa-phone"></i>
+              <h5>0-800-433-5788</h5>
+              <span
+                >Vivo Emergency Phone <br />
+                Call us Anytime 24/7</span
+              >
             </div>
-            <div class="col-md-2">
-              <h1>About Vivo</h1>
-              <ul>
-                <li><a href="">General Information</a></li>
-                <li><a href="">Working Hours</a></li>
-                <li><a href="">Appointments</a></li>
-                <li><a href="">Contact & Location</a></li>
-
-              </ul>
+            <div
+              class="ih-adress-col col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+            >
+              <i class="fa-solid fa-3x fa-location-dot"></i>
+              <h5>Address</h5>
+              <span
+                >68 Erie St, Jersey City, <br />
+                New Jersey, United States</span
+              >
             </div>
-            <div class="col-md-2">
-              <h1>Medical Services</h1>
-              <ul>
-                <li><a href="">Your Family Doctor</a></li>
-                <li><a href="">Pediatrics</a></li>
-                <li><a href="">Clinics</a></li>
-                <li><a href="">Dentistry</a></li>
-                <li><a href="">Optometrist</a></li>
-                <li><a href="">Surgery</a></li>
-              </ul>
+            <div
+              class="ih-adress-col col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+            >
+              <i class="fa-solid fa-3x fa-envelope"></i>
+              <h5>Email Us</h5>
+              <span
+                >info@vivomedic.com <br />
+                office@vivomedic.com</span
+              >
             </div>
-            <div class="col-md-2">
-              <h1>Latest News</h1>
-              <ul class="hc-shot-link">
-
-                <li>
-                  <p><a href="" maxlength="10">How Should You Treat Seborrheic Dermatitis</a>
-                  </p>
-                  <span>July 16, 2022</span>
-
-                </li>
-
-                <li>
-                  <p>
-                    <a href="">What Should You Know About Hyperpigmentation</a>
-                  </p>
-                  <span>July 16, 2022</span>
-                </li>
-
-                <li>
-                  <p>
-                    <a href="">How Long Should You Wash Your Hands Every Time?</a>
-                  </p>
-                  <span>July 16, 2022</span>
-                </li>
-              </ul>
+            <div
+              class="ih-adress-col col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+            >
+              <i class="fa-solid fa-3x fa-route"></i>
+              <h5>Get Directions</h5>
+              <span
+                >Get Directions to Vivo Office with <br />
+                the help of Google Maps</span
+              >
             </div>
-            <div class="col-md-3">
-              <h1>Social Networks</h1>
-              <div class="hc-social">
-                <a href=""><i class="fa-brands fa-facebook-f"></i> </a>
-                <a href=""><i class="fa-brands fa-twitter"></i> </a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i> </a>
-                <a href=""><i class="fa-brands fa-facebook-messenger"></i> </a>
-                <a href=""><i class="fa-brands fa-instagram"></i> </a>
-              </div>
-              <div class="hc-cookie">
-                <a href="">Cookie Policy</a>
-                <a href="">Terms of Use</a>
-                <a href="">Privacy Policy</a>
-              </div>
-              <p>Copyright © 2022 BoldThemes. <br>
-                All Rights Reserved.</p>
-
+            <div
+              class="ih-adress-col col-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-2"
+            >
+              <i class="fa-solid fa-3x fa-headset"></i>
+              <h5>Working Hours</h5>
+              <span
+                >Monday - Friday: 8AM - 7PM <br />
+                Weekends: Closed</span
+              >
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section>
+        <div class="row hc-before-footer">
+          <div class="col-xl-6 hc-before-footer-img">
+            <img
+              src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/08/image_04_home_02.png"
+              alt=""
+            />
+          </div>
+          <div class="col-xl-6 hc-before-footer-right">
+            <h1>
+              You Deserve The <br />
+              Best Healthcare
+            </h1>
+            <p>
+              Iterative approaches to corporate strategy foster collaborative
+              thinking to further the overall value proposition via workplace
+              diversity empowerment.
+            </p>
+            <div class="row hc-right">
+              <div class="col-xl-6">
+                <i class="fa fa-phone"></i>
+                <span>
+                  <span>24/7 Emergency Line</span>
+                  <br />
+                  <a>0-800-433-5788</a>
+                </span>
+              </div>
+              <div class="col-xl-6">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <span>
+                  <span>Online Booking</span>
+                  <br />
+                  <a>Book Appointment</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="hc-fot-cont">
+          <div class="hc-drop-logo">
+            <img
+              src="https://vivo.bold-themes-cdn.com/christina/wp-content/uploads/sites/3/2022/10/logo_black_responsive-1.png"
+              alt=""
+            />
+          </div>
+          <div class="hc-footer">
+            <div class="row">
+              <div class="col-md-3">
+                <p>
+                  Dynamically procrastinate B2C users after installed base
+                  benefits directed content in real time will have multiple
+                  touchpoints for offshoring without revolutionary medicine.
+                </p>
+                <div>
+                  <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@vivomedic.com</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>68 Erie St, Jersey City, NJ 07302</span>
+                  </p>
+                  <p><i class="fa fa-phone"></i> <span>0-800-400-6556</span></p>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <h1>About Vivo</h1>
+                <ul>
+                  <li><a href="">General Information</a></li>
+                  <li><a href="">Working Hours</a></li>
+                  <li><a href="">Appointments</a></li>
+                  <li><a href="">Contact & Location</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h1>Medical Services</h1>
+                <ul>
+                  <li><a href="">Your Family Doctor</a></li>
+                  <li><a href="">Pediatrics</a></li>
+                  <li><a href="">Clinics</a></li>
+                  <li><a href="">Dentistry</a></li>
+                  <li><a href="">Optometrist</a></li>
+                  <li><a href="">Surgery</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h1>Latest News</h1>
+                <ul class="hc-shot-link">
+                  <li>
+                    <p>
+                      <a href="" maxlength="10"
+                        >How Should You Treat Seborrheic Dermatitis</a
+                      >
+                    </p>
+                    <span>July 16, 2022</span>
+                  </li>
+
+                  <li>
+                    <p>
+                      <a href=""
+                        >What Should You Know About Hyperpigmentation</a
+                      >
+                    </p>
+                    <span>July 16, 2022</span>
+                  </li>
+
+                  <li>
+                    <p>
+                      <a href=""
+                        >How Long Should You Wash Your Hands Every Time?</a
+                      >
+                    </p>
+                    <span>July 16, 2022</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h1>Social Networks</h1>
+                <div class="hc-social">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i> </a>
+                  <a href=""><i class="fa-brands fa-twitter"></i> </a>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i> </a>
+                  <a href=""
+                    ><i class="fa-brands fa-facebook-messenger"></i>
+                  </a>
+                  <a href=""><i class="fa-brands fa-instagram"></i> </a>
+                </div>
+                <div class="hc-cookie">
+                  <a href="">Cookie Policy</a>
+                  <a href="">Terms of Use</a>
+                  <a href="">Privacy Policy</a>
+                </div>
+                <p>
+                  Copyright © 2022 BoldThemes. <br />
+                  All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
+    </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/app/doctor/doctor-list.js"></script>
 
-
-
-  </div>
-   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-  crossorigin="anonymous"></script>
-  <script src="/assets/app/doctor/doctor-list.js"></script>
- 
-  <script src="/assets/app/app.js"></script>
- 
-</body>
-
+    <script src="/assets/app/app.js"></script>
+  </body>
 </html>
