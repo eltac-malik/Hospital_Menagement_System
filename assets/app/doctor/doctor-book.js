@@ -33,3 +33,6 @@ function doctorBacklist(){
     window.location.href="../doctor/doctor-view-profile.html"
 
 }
+
+
+
