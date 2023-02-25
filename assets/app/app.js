@@ -1,7 +1,7 @@
 
-var mobMenu = document.querySelector('.hc-nav-list-drop');
-var removeBtn = document.querySelector('#hc-remove-mob');
-var mobMenuBtn = document.querySelector('.hc-mob-bar')
+let mobMenu = document.querySelector('.hc-nav-list-drop');
+let removeBtn = document.querySelector('#hc-remove-mob');
+let mobMenuBtn = document.querySelector('.hc-mob-bar')
 removeBtn.addEventListener('click', () => {
     mobMenu.style.left = '-350px'
     removeBtn.style.transform = 'rotate(-90deg)'
@@ -63,3 +63,20 @@ function doctorWriter(arr){
 }
 
 doctorWriter(popular)
+
+
+let valueDisplays = document.querySelectorAll(".ih-item-num");
+let interval = 1000;
+console.log(valueDisplays);
+valueDisplays.forEach((valueDisplay)=>{
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function(){
+        startValue+= 1;
+        valueDisplay.textContent = startValue;
+        if (startValue == endValue){
+          clearInterval(counter)
+        }
+  }, duration);
+})
