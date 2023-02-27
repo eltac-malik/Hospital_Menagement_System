@@ -14,10 +14,11 @@ function initializeUsers() {
   const users = [
     {
       email: "feridz@gmail.com",
+      id: 0,
       password: "123",
       fullName: "FaridZ",
     },
-    {},
+   
   ];
   localStorage.setItem("local-users", JSON.stringify(users));
   return users;
@@ -56,18 +57,21 @@ console.log(current);
 }
 
 function register(email, password, fullName) {
-  const localUsers = getUsers();
-  console.log(localUsers);
 
-  const existingUser = localUsers.find((user) => user.email === email);
+  const localUsers = getUsers();
+  console.log(localUsers[0]['id']);
+   let count = localUsers.length;
+  const existingUser = localUsers.find((user) => user.id === count);
 
   if (existingUser) {
-    alert(`There is already a user with email: ${email}`);
+    alert(`There is already a user with email: ${count}`);
     return;
   }
+ 
 
   localUsers.push({
     email: email,
+    id: count,
     password: password,
     fullName: fullName,
   });
