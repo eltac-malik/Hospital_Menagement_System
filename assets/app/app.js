@@ -47,6 +47,11 @@ logout.addEventListener('click', ()=>{
   register.style.display = 'inline-block'
 
 })
+let ihlist =document.querySelector(".ih-doctorcards")
+
+if(ihlist != null){
+
+
 
 const doctorlist = JSON.parse(localStorage.getItem("doctors"))
 
@@ -58,7 +63,6 @@ let iconarr = [
 
 ]
 
-let ihlist =document.querySelector(".ih-doctorcards")
 
 function doctorWriter(arr){
   arr.forEach(e => {
@@ -188,3 +192,4 @@ $(".slider").owlCarousel({
   autoplayTimeout: 2000, //2000ms = 2s;
   autoplayHoverPause: true,
 });
+}
