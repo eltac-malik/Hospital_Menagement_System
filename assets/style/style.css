@@ -531,6 +531,7 @@ body {
   width: 90%;
 }
 .ih-main {
+  margin-top: 110px;
   max-width: 100%;
   overflow: hidden;
   position: relative;
