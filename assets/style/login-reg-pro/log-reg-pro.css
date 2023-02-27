@@ -170,3 +170,17 @@
 .swiper-pagination-bullet {
   transition: 0.3s ease-in-out width;
 }
+
+@media (max-width: 900px) {
+  .zf-right{
+    display: none;
+  }
+  .zf-half {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    overflow: hidden;
+  }
+}
