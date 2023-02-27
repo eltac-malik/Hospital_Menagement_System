@@ -539,3 +539,12 @@ body { background: #ffffff; }
 .color-white {
   color: white
 }
+#profile{
+  display: none;
+}
+#profile1{
+  display: none;
+}
+#logout{
+  display: none;
+}
