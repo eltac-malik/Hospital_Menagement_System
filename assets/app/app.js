@@ -2,6 +2,7 @@
 let mobMenu = document.querySelector('.hc-nav-list-drop');
 let removeBtn = document.querySelector('#hc-remove-mob');
 let mobMenuBtn = document.querySelector('.hc-mob-bar')
+let doctorBiography=document.querySelector(".doctorBiography")
 removeBtn.addEventListener('click', () => {
     mobMenu.style.left = '-350px'
     removeBtn.style.transform = 'rotate(-90deg)'
@@ -81,8 +82,8 @@ function doctorWriter(arr){
         <h3>${e.name}</h3>
         <p>${e.overview.about}
         </p>
-        <a href="">
-          <span>Biography</span>
+        <a >
+          <span onclick="doctorBiograph()" style="cursor: pointer;">Biography</span>
           <i class="fa-solid  fa-arrow-right"></i>
         </a>
       </div>
@@ -92,6 +93,13 @@ function doctorWriter(arr){
     
   });
 }
+
+// function doctorBiograph(){
+
+//   window.location.href="./pages/doctor/doctor-view-profile.html"
+
+// }
+
 
 doctorWriter(popular)
 
