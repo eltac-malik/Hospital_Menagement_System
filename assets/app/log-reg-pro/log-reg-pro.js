@@ -120,3 +120,15 @@ function handleRegisterForm() {
 
 handleLoginForm();
 handleRegisterForm();
+
+const forget = document.querySelector('.zf-forgotten');
+
+forget.addEventListener('click', ()=>{
+  let enterFullNameAndEmail= prompt("Please enter your fullname and email", "fullname/email");
+  let fullName = enterFullNameAndEmail.trim().toLowerCase().substring(0, enterFullNameAndEmail.indexOf('/'));
+  let email = enterFullNameAndEmail.trim().toLowerCase().substring(enterFullNameAndEmail.indexOf('/')+1);
+   let allUsers = JSON.parse(localStorage.getItem('local-users')); 
+   let findUser = allUsers.find(item => item.fullName === fullName || item.email === email ); 
+   findUser ? alert("Your password:\n"+findUser.password) : alert("No information found");
+  }
+)
